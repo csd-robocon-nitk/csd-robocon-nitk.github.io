@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll } from "react-scroll/modules";
 import logo from "../../images/logo.png"
+import { useLocation } from "react-router-dom";
 
 import {
     Nav,
@@ -14,6 +14,8 @@ import {
     NavLinks,
 } from "./NavbarElements";
 
+
+
 const Navbar = ({ toggle }) => {
     const [scrolNav, setScrollNav] = useState(false);
     const changeNav = () => {
@@ -23,19 +25,21 @@ const Navbar = ({ toggle }) => {
             setScrollNav(false);
         }
     };
+
+    let location = useLocation()
+    let [ path, setPath ] = useState(location.hash)
+
+    useEffect(() => setPath(location.pathname), [ location ])
+
     useEffect(() => {
         window.addEventListener("scroll", changeNav);
     }, []);
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    };
     return (
         <>
             <IconContext.Provider value={{ color: "#fff" }}>
                 <Nav scrollNav={scrolNav}>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>
+                        <NavLogo to="/">
                             <img src={logo} style={{maxHeight: "80px", padding: "10px" }}/>
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
@@ -44,57 +48,36 @@ const Navbar = ({ toggle }) => {
                         <NavMenu>
                             <NavItem>
                                 <NavLinks
-                                    to="about"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    activeClass="active"
+                                    to="/"
+                                    active={path == "/"}
                                 >
-                                    About
+                                    Home
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="gallery"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
+                                    to="/gallery"
+                                    active={path=="/gallery"}
                                 >
                                     Gallery
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="services"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
+                                    to="/team"
                                 >
                                     Team
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="signup"
-                                    smooth={true}
-                                    duration={1000}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
+                                    to="http://csd.nitk.ac.in/"
                                 >
-                                    Contact Us
+                                    CSD
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>
-                        {/* <NavBtn>
-                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                        </NavBtn> */}
+
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
