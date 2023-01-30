@@ -1,6 +1,7 @@
 import './gallery.css'
 import React from 'react'
 import collage from '../../../images/collage.png'
+import { Link } from 'react-router-dom'
 
 export default function GallerySection () {
     return (
@@ -11,7 +12,7 @@ export default function GallerySection () {
             <div id="right">
                 <h1>GALLERY</h1>
                 <h2>Snapshots</h2>
-                <a className="button" href="/gallery">View More</a>
+                <Link to="/gallery" className="button">View More</Link>
             </div>
         </div>
     )
