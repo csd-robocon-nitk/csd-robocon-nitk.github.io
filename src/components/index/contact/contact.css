@@ -8,7 +8,9 @@
 }
 
 #contact #left {
-    width: min(600px, 50%);
+    max-width: 700px;
+    width: 100%;
+    min-width: 400px;
 }
 
 #contact #right {
@@ -18,12 +20,6 @@
 #contact img {
     max-width: 100%;
 }
-
-#contact #left p {
-    margin: 40px 0px 80px 0px;
-}
-
-
 
 #contact form {
     background-color: var(--bg);
@@ -65,7 +61,15 @@
     
     #contact #left {
         max-width: initial;
-        padding: 50px 20px 0px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+    #contact input {
+        margin-bottom: 20px;
     }
     
     #contact #left .button {
