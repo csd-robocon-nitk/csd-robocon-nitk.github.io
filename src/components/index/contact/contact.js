@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import './contact.css'
 import image from '../../../images/svg-3.svg'
 import axios from 'axios'
+import 'animate.css'
 
 export default function ContactSection () {
 
     let [name, setName] = useState("")
     let [email, setEmail] = useState("")
     let [message, setMessage] = useState("")
-    let submitHandler = (event) =>{
+    let [modalOpen, setModalOpen] = useState(false)
+
+    let submitHandler = async (event) => {
         event.preventDefault();
         let formData = {
             name:name,
@@ -16,44 +19,52 @@ export default function ContactSection () {
             message:message
         }
         // sheet url = 'https://docs.google.com/spreadsheets/d/1BeIkPnzWcrgL8jdpF5ob1ZmWH0IVqIJ0axIt5Zngpag/edit?usp=sharing'
-        axios.post('https://script.google.com/macros/s/AKfycbz0ktzlgtbsJg2Al4A6EInN_MzE6LE6K6mgMakTxglGEYE4cHQRKo2LtxtAxlhNJH43NA/exec',JSON.stringify(formData)).then(response=>{
-            console.log(response);
-        });
+        let response = await axios.post(
+            'https://script.google.com/macros/s/AKfycbz0ktzlgtbsJg2Al4A6EInN_MzE6LE6K6mgMakTxglGEYE4cHQRKo2LtxtAxlhNJH43NA/exec',
+            JSON.stringify(formData)
+        )
 
         setName("");
         setEmail("");
         setMessage("");
+        setModalOpen(true)
     }
     return (
-        <div id="contact" className="light">
-            <div id="left">
-                <h1>CONTACT US</h1>
-                <h2>Get in touch  us</h2>
-                
-                <form class="dark" onSubmit={submitHandler}>
-                    <label for="name">Name</label>
-                    <br/>
-                    <input id="name" value={name} type="text" onChange={(e) => setName(e.target.value)} />
-                    <br/>
-                    
-                    <label for="email">Email</label>
-                    <br/>
-                    <input id="email" value={email} type="text" onChange={(e) => setEmail(e.target.value)} />
-                    <br/>
-
-                    <label for="message">Message</label>
-                    <br/>
-                    <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-                    <br/>
-
-                    <button type="submit" className='button'>Submit</button>
-                </form>
-
-
+        <>
+            <div id="contact" className="light">
+                <div id="left">
+                    <h1>CONTACT US</h1>
+                    <h2>Get in touch  us</h2>
+            
+                    <form className="dark" onSubmit={submitHandler}>
+                        <label htmlFor="name">Name</label>
+                        <br/>
+                        <input id="name" value={name} type="text" onChange={(e) => setName(e.target.value)} required />
+                        <br/>
+            
+                        <label htmlFor="email">Email</label>
+                        <br/>
+                        <input id="email" value={email} type="email" onChange={(e) => setEmail(e.target.value)} required />
+                        <br/>
+                        <label htmlFor="message">Message</label>
+                        <br/>
+                        <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+                        <br/>
+                        <button type="submit" className='button'>Submit</button>
+                    </form>
+                </div>
+                <div id="right">
+                    <img src={image} />
+                </div>
             </div>
-            <div id="right">
-                <img src={image} />
+
+            <div className="modal-container light"  style={{display: modalOpen ? "flex" : "none"}}>
+                <div className={`modal ${modalOpen && "animate__animated animate__zoomIn animate__faster"}`}>
+                    <h3>Your response has been submitted!</h3>
+                    <p>We will get back to you soon :)</p>
+                    <a onClick={() => setModalOpen(false)} className="button">Got it!</a>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
