@@ -7,6 +7,7 @@ import Footer from "../Footer";
 import GallerySection from '../index/gallery/gallery'
 import AboutSection from "../index/about/about";
 import ContactSection from "../index/contact/contact";
+import ParallaxSection from '../index/parallax/parallax'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Home = () => {
             <HeroSection />
             <AboutSection />
             <GallerySection />
-            <Services />
+            <ParallaxSection />
             <ContactSection />
             <Footer />
         </>
