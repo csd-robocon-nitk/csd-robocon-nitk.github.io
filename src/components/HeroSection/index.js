@@ -42,20 +42,6 @@ const HeroSection = () => {
                     The Robocon team from National Institute Of Technology
                     Karnataka, Surathkal
                 </HeroP>
-                <HeroBtnWrapper>
-                    <Button
-                        to="signup"
-                        smooth={true}
-                        duration={1000}
-                        spy={true}
-                        onMouseEnter={onHover}
-                        onMouseLeave={onHover}
-                        primary="true"
-                        dark="true"
-                    >
-                        Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
-                </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
     );

@@ -21,9 +21,9 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
+            <ParallaxSection />
             <AboutSection />
             <GallerySection />
-            <ParallaxSection />
             <ContactSection />
             <Footer />
         </>
