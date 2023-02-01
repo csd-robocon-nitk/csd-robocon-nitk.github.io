@@ -8,6 +8,7 @@ import GallerySection from '../index/gallery/gallery'
 import AboutSection from "../index/about/about";
 import ContactSection from "../index/contact/contact";
 import ParallaxSection from '../index/parallax/parallax'
+import SocialSection from '../index/social/social'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <ParallaxSection />
+            <SocialSection />
             <AboutSection />
             <GallerySection />
             <ContactSection />

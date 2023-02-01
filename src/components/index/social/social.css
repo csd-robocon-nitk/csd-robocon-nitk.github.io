@@ -1,0 +1,33 @@
+#social {
+    background-color: var(--bg);
+    padding: 50px max(20px, calc((100vw - 1100px)/2));
+}
+
+#social #videos {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#social #videos iframe {
+    border-radius: 10px;
+    --width: calc(200px + 100vw / 5);
+
+    width: var(--width);
+    height: calc(var(--width) / 1.6); 
+}
+
+
+
+@media (max-width: 850px) {
+    #social #videos {
+        flex-direction: column;
+    }
+
+    #social #videos iframe {
+        --width: min(500px, 90vw);
+    }
+}
