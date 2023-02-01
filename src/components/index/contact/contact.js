@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './contact.css'
 import image from '../../../images/svg-3.svg'
 import axios from 'axios'
@@ -10,6 +10,10 @@ export default function ContactSection () {
     let [email, setEmail] = useState("")
     let [message, setMessage] = useState("")
     let [modalOpen, setModalOpen] = useState(false)
+
+    useEffect(() => {
+            document.body.style.overflow = "hidden auto"
+    })
 
     let submitHandler = async (event) => {
         event.preventDefault();
@@ -28,15 +32,17 @@ export default function ContactSection () {
         setEmail("");
         setMessage("");
         setModalOpen(true)
+        document.body.style.overflow = "hidden"
+        document.querySelector('.modal-container').style.top = document.body.scrollTop + 80 + "px"
     }
     return (
         <>
-            <div id="contact" className="light">
+            <div id="contact" className="dark">
                 <div id="left">
                     <h1>CONTACT US</h1>
                     <h2>Get in touch  us</h2>
             
-                    <form className="dark" onSubmit={submitHandler}>
+                    <form className="light" onSubmit={submitHandler}>
                         <label htmlFor="name">Name</label>
                         <br/>
                         <input id="name" value={name} type="text" onChange={(e) => setName(e.target.value)} required />
