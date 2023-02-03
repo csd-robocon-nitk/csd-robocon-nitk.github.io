@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import HeroSection from "../HeroSection";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
-import Services from "../Services";
 import Footer from "../Footer";
 import GallerySection from '../index/gallery/gallery'
 import AboutSection from "../index/about/about";
