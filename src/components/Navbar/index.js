@@ -65,6 +65,7 @@ const Navbar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks
                                     to="/team"
+                                    active={path=="/team"}
                                 >
                                     Team
                                 </NavLinks>

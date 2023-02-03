@@ -4,6 +4,8 @@
     --light-text: #f7f8fa;
     --dark-text: #100606;
     --accent: #9f6bff;
+    --accent-light: hsl(261, 70%, 71%);
+    --accent-transparent: rgba(159, 107, 255, 0.3);
 }
 
 .dark {
