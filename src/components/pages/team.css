@@ -83,7 +83,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 40px 0px;
 }
@@ -113,7 +113,9 @@
     /* color: var(--color); */
     /* min-height: 300px; */
     min-width: 200px;
-    padding: 60px 0px;
+    padding: 60px 20px;
+    width: 300px;
+    max-width: 95vw;
 
     display: flex;
     justify-content: center;
@@ -136,6 +138,12 @@
 
 #team-page .team-card h4 {
     font-size: 22px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#team-page .team-card p {
+    text-align: center;
 }
 
 #team-page #team-content ul {
