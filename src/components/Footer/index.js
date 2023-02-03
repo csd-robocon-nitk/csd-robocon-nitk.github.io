@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {FaInstagram,FaYoutube, FaLinkedin, } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll/modules";
 import {
     FooterContainer,
@@ -30,59 +30,13 @@ const Footer = () => {
                             <FooterLinksItems>
                                 <FooterLinkTitle>About Us</FooterLinkTitle>
                                 <FooterLink to="/signin">
-                                    How it Works
+                                    Vision
                                 </FooterLink>
-                                <FooterLink to="/signin">
-                                    Testimonials
-                                </FooterLink>
+                                
                                 <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">
-                                    Terms of Service
-                                </FooterLink>
-                            </FooterLinksItems>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">
-                                    How it Works
-                                </FooterLink>
-                                <FooterLink to="/signin">
-                                    Testimonials
-                                </FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">
-                                    Terms of Service
-                                </FooterLink>
-                            </FooterLinksItems>
-                        </FooterLinksWrapper>
-                        <FooterLinksWrapper>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">
-                                    How it Works
-                                </FooterLink>
-                                <FooterLink to="/signin">
-                                    Testimonials
-                                </FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">
-                                    Terms of Service
-                                </FooterLink>
-                            </FooterLinksItems>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">
-                                    How it Works
-                                </FooterLink>
-                                <FooterLink to="/signin">
-                                    Testimonials
-                                </FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">
-                                    Terms of Service
+                                <FooterLink to="https://www.nitk.ac.in/">NITK</FooterLink>
+                                <FooterLink to="https://csd.nitk.ac.in/">
+                                    CSD
                                 </FooterLink>
                             </FooterLinksItems>
                         </FooterLinksWrapper>
@@ -90,25 +44,21 @@ const Footer = () => {
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to="/" onClick={toggleHome}>
-                                Robocon
+                            Robocon
                             </SocialLogo>
                             <WebsiteRights>
                                 {" "}
-                                Robocon © {new Date().getFullYear()}
-                                All rights reserved
+                                
+                                Robocon
+                                 ©   {new Date().getFullYear()}
+                                All rights reserved 
+
+                                FOLLOW US ON SOCIAL MEDIA TO KNOW MORE ABOUT US
                             </WebsiteRights>
+                            
                             <SocialIcons>
                                 <SocialIconLink
-                                    href="/"
-                                    target="_blank"
-                                    aria-label="Facebook"
-                                >
-                                    <FaFacebook />
-                                </SocialIconLink>
-                            </SocialIcons>
-                            <SocialIcons>
-                                <SocialIconLink
-                                    href="/"
+                                    href="https://www.instagram.com/csdroboconnitk/"
                                     target="_blank"
                                     aria-label="Instagram"
                                 >
@@ -117,16 +67,16 @@ const Footer = () => {
                             </SocialIcons>
                             <SocialIcons>
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://www.youtube.com/@csdroboconnitk9210"
                                     target="_blank"
-                                    aria-label="Twitter"
+                                    aria-label="Youtube"
                                 >
-                                    <FaTwitter />
+                                    <FaYoutube />
                                 </SocialIconLink>
                             </SocialIcons>
                             <SocialIcons>
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://www.linkedin.com/company/csd-robocon-nitk"
                                     target="_blank"
                                     aria-label="LinkedIn"
                                 >
