@@ -1,6 +1,7 @@
 * { 
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -moz-transform-style: initial;
 }
 
 html {
@@ -22,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     padding: 0px 20px;
 }
@@ -34,6 +36,7 @@ body {
     width: 100vw;
     perspective: 1px;
     transform: translateZ(-2px) scale(3);
+    -moz-transform: none;
     z-index: -1;
     
     background-image: url('../../../images/board.jpg');
