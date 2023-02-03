@@ -5,7 +5,7 @@
 
 #team-page #container {
     margin: 0px auto;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 120px 20px;
 }
 
@@ -75,36 +75,82 @@
 
 
 
-
-
-
-#team-page #team-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+#team-page .section {
+    border-bottom: 2px dashed var(--accent);
 }
 
-#team-page #team-content .team-card {
+#team-page .flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+
+#team-page h2 {
+    text-align: center;
+}
+
+#team-page h3 {
+    font-size: calc(18px + 1vw);
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#team-page #team-content {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    /* gap: 20px; */
+}
+
+#team-page .team-card {
     border-radius: 8px;
-    background-color: var(--bg);
-    color: var(--color);
-    min-height: 300px;
+    border: 3px solid var(--accent);
+    /* background-color: var(--bg); */
+    /* color: var(--color); */
+    /* min-height: 300px; */
+    min-width: 200px;
+    padding: 60px 0px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
-    transition: 0.15s;
+    /* cursor: pointer; */
+    /* transition: 0.15s; */
 }
 
-#team-page #team-content .team-card:hover {
+/* #team-page .team-card:hover {
     margin: -2px 0px 0px -2px;
     box-shadow: 1px 1px 10px var(--accent-light);
-}
+} */
 
-#team-page #team-content .team-card img {
+#team-page .team-card img {
     width: 100px;
     border-radius: 50%;
     margin: 0px 0px 40px 0px;
+}
+
+#team-page .team-card h4 {
+    font-size: 22px;
+}
+
+#team-page #team-content ul {
+    list-style-type: none;
+    padding: 10px;
+    min-width: min(100%, 650px);
+}
+
+#team-page #team-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+}
+
+#team-page #team-content ul li span {
+    font-size: 50px;
 }

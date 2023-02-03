@@ -1,16 +1,39 @@
 import React from "react"
 import 'animate.css'
+import TeamCard from "./TeamCard"
 
 export default function TeamContent ({ team }) {
     return (
-        <div id="team-content">
-            {team.map(({ name, photo, designation }, i) => 
-            <div key={name} className="team-card light animate__animated animate__zoomIn" style={{"animation-delay": `${i*100}ms`}}>
-                <img src={`${process.env.PUBLIC_URL}/images/team/${photo}`} />
-                <h3>{name}</h3>
-                <p>{designation}</p>
+        <>
+            <div className="flex">
+                {team.map(({ name, photo, designation }, i) => 
+                    (
+                        photo
+                        ?
+                        <TeamCard
+                            name={name} photo={photo} designation={designation} position={i}
+                        />
+                        :
+                        null
+                    )
+                )}
             </div>
-            )}
-        </div>
+
+            <div id="team-content">
+                <ul>
+                    
+                    {team.map(({ name, photo }) =>
+                        (
+                            photo
+                            ?
+                            null
+                            :
+                            <li><span class="material-symbols-outlined">smart_toy</span>{name}</li>
+                        )
+                    )}
+                
+                </ul>
+            </div>
+        </>
     )
 }

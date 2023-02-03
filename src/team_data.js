@@ -14,6 +14,11 @@ export default {
             "name": "Sriramu",
             "designation": "Tech Lead",
             "photo": "001.jpg"
+        },
+        {
+            "name": "Dev",
+            "designation": "Treasurer",
+            "photo": "001.jpg"
         }
     ],
 
@@ -25,48 +30,40 @@ export default {
         },
         {
             "name": "AB",
-            "designation": "Team Member",
+            "designation": "Team Lead",
             "photo": "001.jpg"
         },
         {
             "name": "AC",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AD",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AE",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AF",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AG",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AH",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AI",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "AJ",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         }
     ],
 
@@ -78,12 +75,11 @@ export default {
         },
         {
             "name": "D",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         }
     ],
 
-    "Web Team": [
+    "Support Team": [
         {
             "name": "E",
             "designation": "Team Lead",
@@ -91,34 +87,23 @@ export default {
         },
         {
             "name": "F",
-            "designation": "Team Member",
-            "photo": "001.jpg"
-        }
-    ],
-
-    "Media": [
+            "designation": "Team Member"
+        },
         {
             "name": "G",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "H",
-            "designation": "Team Member",
-            "photo": "001.jpg"
-        }
-    ],
-
-    "Marketing": [
+            "designation": "Team Member"
+        },
         {
             "name": "I",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "J",
-            "designation": "Team Member",
-            "photo": "001.jpg"
+            "designation": "Team Member"
         }
     ]
 }
