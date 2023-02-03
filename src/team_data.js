@@ -1,109 +1,247 @@
 export default {
     "Core Team": [
         {
-            "name": "Siddh",
+            "name": "Siddh Narhari",
             "designation": "Captain",
-            "photo": "001.jpg"
+            "photo": "Siddh.jpg"
         },
         {
-            "name": "Aryan",
+            "name": "Aryan Rawate",
             "designation": "Vice-Captain",
-            "photo": "001.jpg"
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "Sriramu",
-            "designation": "Tech Lead",
-            "photo": "001.jpg"
+            "name": "Sriramu A R",
+            "designation": "Technical Head",
+            "photo": "Shriramu.jpg"
         },
         {
-            "name": "Dev",
+            "name": "Dev Goti",
             "designation": "Treasurer",
-            "photo": "001.jpg"
+            "photo": "Dev Goti.jpg"
         }
     ],
 
     "ECE & P Team": [
         {
-            "name": "AA",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "name": "Sai Aswin Madhavan",
+            "designation": "ECE & P Head ",
+            "photo": "Sai Aswin.jpg"
         },
         {
-            "name": "AB",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "name": "Joel Jojo Painuthara",
+            "designation": "ECE & P Head",
+            "photo": "Joel.jpg"
         },
         {
-            "name": "AC",
-            "designation": "Team Member"
+            "name": "Prakhar Goel",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AD",
-            "designation": "Team Member"
+            "name": "Srinivasa R",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AE",
-            "designation": "Team Member"
+            "name": "Dev Goti",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AF",
-            "designation": "Team Member"
+            "name": "Minank K P",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AG",
-            "designation": "Team Member"
+            "name": "Omkar Arvind Jungade",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AH",
-            "designation": "Team Member"
+            "name": "N Nagabhushanam",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AI",
-            "designation": "Team Member"
+            "name": "Ashna Sanjay Gaude",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "AJ",
-            "designation": "Team Member"
+            "name": "Adithya Kasal",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Niranjan M K",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Ninad B Shetty",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         }
+        
     ],
 
-    "Mechanical Team": [
+    "Mech Team": [
+        
         {
-            "name": "C",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "name": "Hafiz Yunus Kalathil",
+            "designation": "Mech Head",
+            "photo": "Hafiz.jpg"
         },
         {
-            "name": "D",
-            "designation": "Team Member"
+            "name": "Harish B",
+            "designation": "Mech Head",
+            "photo": "Harish.jpg"
+        },
+        {
+            "name": "Siddh Narhari",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Aryan Rawate",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Shriramu A R",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Matcha Nitin",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Pooja M",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Dhiren V Bhandary",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Anandita Tiwari",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Tahsin Khan",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Shivam Tewari",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Raghavendra Pandurang Jadhav",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Pulibandla Charan",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Gopavaram Chakradhar",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Anushka Das",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Chirag Ingle",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Suchet Nayak",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Pranav Sudheer",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Avadhoot Anant Nadgouda",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         }
     ],
 
     "Support Team": [
         {
-            "name": "E",
-            "designation": "Team Lead",
-            "photo": "001.jpg"
+            "name": "Dhiren V Bhandary",
+            "designation": "Marketing Head",
+            "photo": "Dhiren.jpg"
         },
         {
-            "name": "F",
-            "designation": "Team Member"
+            "name": "Raghavendra Pandurang Jadhav",
+            "designation": "Media & Web Head",
+            "photo": "Raghavendra.jpg"
         },
         {
-            "name": "G",
-            "designation": "Team Member"
+            "name": "Shriramu A R",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "H",
-            "designation": "Team Member"
+            "name": "Aryan Rawate",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "I",
-            "designation": "Team Member"
+            "name": "Joel Jojo Painuthara",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         },
         {
-            "name": "J",
-            "designation": "Team Member"
+            "name": "Pooja M",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Ayush Deshmukh",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Roshini P",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Shivam Tewari",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "J Hariharan",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
+        },
+        {
+            "name": "Mohammad Adil",
+            "designation": "Team Member",
+            "photo": "empty photo.jpg"
         }
-    ]
+    ],
+
+   
 }
