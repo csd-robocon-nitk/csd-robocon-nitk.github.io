@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.png";
 import { useLocation } from "react-router-dom";
 
 import {

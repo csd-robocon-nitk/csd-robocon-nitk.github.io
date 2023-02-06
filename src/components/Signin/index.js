@@ -17,7 +17,7 @@ function SignIn() {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to="/">Dolla</Icon>
+                    <Icon to="/">FORM</Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Sign in to your account</FormH1>
@@ -26,7 +26,7 @@ function SignIn() {
                             <FormLabel htmlFor="for">Password</FormLabel>
                             <FormInput type="password" required></FormInput>
                             <FormButton type="submit">Continue</FormButton>
-                            <Text>Forget password</Text>
+                            <Text>Forgot password?</Text>
                         </Form>
                     </FormContent>
                 </FormWrap>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+/*import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
@@ -30,11 +30,12 @@ export const FooterLinksWrapper = styled.div`
 `;
 export const FooterLinksItems = styled.div`
     display: flex;
+    justify content: right;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
+    align-items: end;
+    margin: 20px;
+    text-align: right;
+    width: 100%;
     box-sizing: border-box;
     color: #fff;
 
@@ -102,4 +103,95 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+`;*/
+
+
+import styled from 'styled-components';
+import { Link as Link } from "react-router-dom";
+
+export const Box = styled.div`
+padding: 40px 24px;
+background: black;
+position: absolute;
+bottom: 05;
+width: 100%;
+margin: 0 auto;
+
+
+@media screen and(max-width: 820px) {
+	padding-top:100px;
+}
+`;
+
+export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	max-width: 1000px;
+	margin: 0 auto;
+	/* background: red; */
+`
+
+export const Column = styled.div`
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-left: 10px;
+`;
+
+export const Row = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fill,
+						minmax(150px, 1fr));
+grid-gap: 100px;
+
+@media (max-width: 1000px) {
+	grid-template-columns: repeat(auto-fill,
+						minmax(200px, 1fr));
+}
+`;
+
+export const FooterLink = styled.a`
+color: #fff;
+margin-bottom: 20px;
+font-size: 18px;
+text-decoration: none;
+
+&:hover {
+	color: green;
+	transition: 200ms ease-in;
+}
+`;
+
+export const Heading = styled.p`
+font-size: 22px;
+color: #fff;
+margin-bottom: 30px;
+font-weight: bold;
+`;
+export const WebsiteRights = styled.small`
+    color: #fff;
+    margin-bottom: 24px;
+`;
+export const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    width: 720px;
+`;
+
+export const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 24px;
+`;
+export const NavLogo = styled(Link)`
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;
 `;
