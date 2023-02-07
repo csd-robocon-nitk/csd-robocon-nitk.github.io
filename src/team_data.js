@@ -8,7 +8,7 @@ export default {
         {
             "name": "Aryan Rawate",
             "designation": "Vice-Captain",
-            "photo": "empty photo.jpg"
+            "photo": "Aryan.jpg"
         },
         {
             "name": "Sriramu A R",
@@ -70,10 +70,13 @@ export default {
             "designation": "Team Member"
         },
         {
+            "name": "Sunil Thunga",
+            "designation": "Team Member"
+        },
+        {
             "name": "Ninad B Shetty",
             "designation": "Team Member"
         }
-        
     ],
 
     "Mechanical Team": [
