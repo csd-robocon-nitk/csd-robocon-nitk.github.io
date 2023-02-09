@@ -12,15 +12,15 @@ export default function ContactSection () {
     let [modalOpen, setModalOpen] = useState(false)
 
     useEffect(() => {
-            document.body.style.overflow = "hidden auto"
-    })
+        document.body.style.overflow = "hidden auto"
+    }, [])
 
     let submitHandler = async (event) => {
         event.preventDefault();
         let formData = {
-            name:name,
-            email:email,
-            message:message
+            name: name,
+            email: email,
+            message: message
         }
         // sheet url = 'https://docs.google.com/spreadsheets/d/1BeIkPnzWcrgL8jdpF5ob1ZmWH0IVqIJ0axIt5Zngpag/edit?usp=sharing'
         let response = await axios.post(
@@ -40,7 +40,7 @@ export default function ContactSection () {
             <div id="contact" className="dark">
                 <div id="left">
                     <h1>CONTACT US</h1>
-                    <h2>Get in touch  us</h2>
+                    <h2>Get in touch with us</h2>
             
                     <form className="light" onSubmit={submitHandler}>
                         <label htmlFor="name">Name</label>
