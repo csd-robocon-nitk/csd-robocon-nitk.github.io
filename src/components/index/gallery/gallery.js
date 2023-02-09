@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import img1 from '../../../images/001.jpg'
 import img2 from '../../../images/002.jpg'
 import img3 from '../../../images/003.jpg'
-import img4 from '../../../images/001.jpg'
-import img5 from '../../../images/002.jpg'
-import img6 from '../../../images/003.jpg'
+import img4 from '../../../images/004.jpg'
+import img5 from '../../../images/005.jpg'
+import img6 from '../../../images/006.jpg'
 import { Link } from 'react-router-dom'
 
 export default function GallerySection () {
