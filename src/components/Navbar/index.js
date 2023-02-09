@@ -17,7 +17,7 @@ import {
 
 
 const Navbar = ({ toggle }) => {
-    const [scrolNav, setScrollNav] = useState(false);
+    const [scrolNav, setScrollNav] = useState(document.body.scrollTop >= 80);
     const changeNav = () => {
         if (document.body.scrollTop >= 80) {
             setScrollNav(true);
