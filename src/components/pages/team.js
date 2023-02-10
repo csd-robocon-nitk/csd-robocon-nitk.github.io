@@ -30,7 +30,7 @@ export default function Team () {
             <div id="container">
                 <h2>Our Team</h2>
 
-                <div class="section">
+                <div className="section">
                     <h3>Core Team</h3>
                     <div className='flex'>
                         <TeamCard
@@ -50,25 +50,39 @@ export default function Team () {
                     </div>
                 </div>
 
-                <div class="section">
+                <div className="section">
                     <h3>Electronics and Programming Team</h3>
                     <TeamContent
                         team={team_data['ECE & P Team']}
                     />
                 </div>
 
-                <div class="section">
+                <div className="section">
                     <h3>Mechanical Team</h3>
                     <TeamContent
                         team={team_data['Mechanical Team']}
                     />
                 </div>
 
-                <div class="section">
+                <div className="section">
                     <h3>Support Team</h3>
                     <TeamContent
                         team={team_data['Support Team']}
                     />
+                </div>
+
+                <h2>Factulty Advisors</h2>
+                
+                <div className="section">
+                    <div className="flex">
+                        {
+                            team_data['Faculty Advisors'].map(d => 
+                                <TeamCard 
+                                    {...d}
+                                />    
+                            )    
+                        }
+                    </div>
                 </div>
             </div>
         </div>

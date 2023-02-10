@@ -210,5 +210,17 @@ export default {
         }
     ],
 
+    "Faculty Advisors": [
+        {
+            "name": "Dr Pruthviraj U",
+            "designation": "Associated Faculty, CSD",
+            "photo": "Pruthviraj.jpg"
+        },
+        {
+            "name": "Dr Gangadharan K V",
+            "designation": "Associated Faculty, CSD",
+            "photo": "Gangadharan.jpg"
+        }
+    ]
    
 }
