@@ -25,8 +25,8 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="/team" onClick={toggle}>
                         Team
                     </SidebarLink>
-                    <SidebarLink to="http://csd.nitk.ac.in/" onClick={toggle}>
-                        CSD
+                    <SidebarLink to="/supporters" onClick={toggle}>
+                        Supporters
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>

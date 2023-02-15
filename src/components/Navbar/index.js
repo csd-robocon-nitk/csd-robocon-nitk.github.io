@@ -72,9 +72,10 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="http://csd.nitk.ac.in/"
+                                    to="/supporters"
+                                    active={path=="/supporters"}
                                 >
-                                    CSD
+                                    Supporters
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

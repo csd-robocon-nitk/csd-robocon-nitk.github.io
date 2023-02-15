@@ -4,6 +4,7 @@ import Home from "./components/pages";
 import React from 'react'
 import Gallery from "./components/pages/gallery";
 import Team from './components/pages/team'
+import Alumni from "./components/pages/alumni"
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/supporters" element={<Alumni />} />
             </Routes>
         </Router>
     );
