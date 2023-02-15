@@ -134,4 +134,8 @@ p {
 .nav-placeholder {
     height: 80px;
     background-color: var(--dark-bg);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }
