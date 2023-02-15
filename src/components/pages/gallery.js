@@ -1,21 +1,11 @@
-import React, { useState } from 'react'
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+import React from 'react'
 import './gallery.css'
 
 
 export default function Gallery () {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    };
-
-
     return (
         <div id="gallery-page" className='dark'>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            <div className="nav-placeholder" />
             <div id="container" className="dark">
                 <h2>Gallery</h2>
                 <div id="grid">

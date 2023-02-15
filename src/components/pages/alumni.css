@@ -4,11 +4,6 @@
     color: var(--color);
 }
 
-#alumni-page #nav-placeholder {
-    height: 80px;
-}
-
-
 #alumni-page #container {
     padding: 40px 30px;  
     max-width: 1000px;

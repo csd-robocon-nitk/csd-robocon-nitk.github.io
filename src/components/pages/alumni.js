@@ -1,25 +1,11 @@
-import React, { useState } from "react"
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+import React from "react"
 import './alumni.css'
 import alumni_data from '../../alumni_data'
 
-export default function Alumni () {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    };
-
-    
+export default function Alumni () {    
     return (
         <div id="alumni-page" className="dark">
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
-
-            <div id="nav-placeholder"></div>
-
+            <div className="nav-placeholder" />
             <div id="container">
                 <h2>Our Alumni Supporters</h2>
 

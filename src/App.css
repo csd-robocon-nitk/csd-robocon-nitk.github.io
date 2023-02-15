@@ -127,3 +127,11 @@ p {
         font-size: 17px;
     }
 }
+
+
+
+
+.nav-placeholder {
+    height: 80px;
+    background-color: var(--dark-bg);
+}
