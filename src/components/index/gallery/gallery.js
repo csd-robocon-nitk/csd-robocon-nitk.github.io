@@ -25,7 +25,7 @@ export default function GallerySection () {
     )
 
     return (
-        <div id="gallery" className="dark">
+        <div id="gallery" className="light">
             <div id="left" className={visible ? "visible" : undefined} ref={images}>
                 <img src={img1} />
                 <img src={img2} />
