@@ -43,5 +43,11 @@ export default [
         "department": "Electrical & Electronics Engineering",
         "photo": "Prasanna Udupi.jpg",
         "amount": "75,000"
+    },
+    {
+        "name": "Sadanand Hegde",
+        "batch": "1982",
+        "department": "ELectronics & Communication Engineering",
+        "photo": "empty photo.jpg"
     }
 ]
