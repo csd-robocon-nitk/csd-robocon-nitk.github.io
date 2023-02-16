@@ -8,6 +8,7 @@ import Gallery from "./components/pages/gallery";
 import Team from './components/pages/team'
 import Alumni from "./components/pages/alumni"
 import Footer from "./components/Footer";
+import About from "./components/pages/about";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/supporters" element={<Alumni />} />
+                <Route path="/about" element={<About />} />
             </Routes>
             <Footer />
         </Router>

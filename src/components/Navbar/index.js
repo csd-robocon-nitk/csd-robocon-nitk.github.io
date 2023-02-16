@@ -56,6 +56,14 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
+                                    to="/about"
+                                    active={path=="/about"}
+                                >
+                                    About
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
                                     to="/gallery"
                                     active={path=="/gallery"}
                                 >
