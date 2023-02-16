@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf91c97c.css",
-    "main.js": "/static/js/main.5bf97caf.js",
+    "main.css": "/static/css/main.cbf971ab.css",
+    "main.js": "/static/js/main.acc39eb2.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
+    "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
     "static/media/006.jpg": "/static/media/006.10e3c3e950370b4c3d98.jpg",
     "static/media/abu.webp": "/static/media/abu.c3d6d9c2c99c745e4f7d.webp",
     "static/media/004.jpg": "/static/media/004.cbf91c6e99d7a5230156.jpg",
@@ -14,11 +15,11 @@
     "static/media/005.jpg": "/static/media/005.efc6ffa5eb09cec0e1ab.jpg",
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
     "index.html": "/index.html",
-    "main.cf91c97c.css.map": "/static/css/main.cf91c97c.css.map",
-    "main.5bf97caf.js.map": "/static/js/main.5bf97caf.js.map"
+    "main.cbf971ab.css.map": "/static/css/main.cbf971ab.css.map",
+    "main.acc39eb2.js.map": "/static/js/main.acc39eb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf91c97c.css",
-    "static/js/main.5bf97caf.js"
+    "static/css/main.cbf971ab.css",
+    "static/js/main.acc39eb2.js"
   ]
 }
