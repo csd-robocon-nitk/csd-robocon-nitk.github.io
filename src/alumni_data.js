@@ -28,8 +28,7 @@ export default [
         "name": "Prashanth R Samaga",
         "batch": "1991",
         "department": "Electrical & Electronics Engineering",
-        "photo": "Prashanth.jpg",
-        "amount": "50,000"
+        "photo": "Prashanth.jpg"
     },
     {
         "name": "Prasanna Koteshwara",
