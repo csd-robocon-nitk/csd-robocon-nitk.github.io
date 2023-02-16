@@ -6,6 +6,8 @@
     --accent: #9f6bff;
     --accent-light: hsl(261, 70%, 71%);
     --accent-transparent: rgba(159, 107, 255, 0.3);
+    --accent-dark: hsl(261, 38%, 30%);
+    --dark-bg-darker: hsl(269, 96%, 8%);
 }
 
 .dark {
