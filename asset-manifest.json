@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbf971ab.css",
-    "main.js": "/static/js/main.acc39eb2.js",
+    "main.css": "/static/css/main.a771c7d8.css",
+    "main.js": "/static/js/main.ff8677d9.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
-    "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
     "static/media/006.jpg": "/static/media/006.10e3c3e950370b4c3d98.jpg",
     "static/media/abu.webp": "/static/media/abu.c3d6d9c2c99c745e4f7d.webp",
+    "static/media/background_alumni.png": "/static/media/background_alumni.0dcaa8aa82a9d64572aa.png",
     "static/media/004.jpg": "/static/media/004.cbf91c6e99d7a5230156.jpg",
     "static/media/board.jpg": "/static/media/board.8e05ec5ef427ed0fc63e.jpg",
     "static/media/002.jpg": "/static/media/002.76f498bc41e3f5b758dd.jpg",
@@ -13,13 +13,14 @@
     "static/media/003.jpg": "/static/media/003.ef5bc5dfd25d8381bdf2.jpg",
     "static/media/logo.png": "/static/media/logo.8a3e5f8c1eae2d6d98e7.png",
     "static/media/005.jpg": "/static/media/005.efc6ffa5eb09cec0e1ab.jpg",
+    "static/media/about_bg.jpg": "/static/media/about_bg.6ffacd42a580dbec8439.jpg",
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
     "index.html": "/index.html",
-    "main.cbf971ab.css.map": "/static/css/main.cbf971ab.css.map",
-    "main.acc39eb2.js.map": "/static/js/main.acc39eb2.js.map"
+    "main.a771c7d8.css.map": "/static/css/main.a771c7d8.css.map",
+    "main.ff8677d9.js.map": "/static/js/main.ff8677d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbf971ab.css",
-    "static/js/main.acc39eb2.js"
+    "static/css/main.a771c7d8.css",
+    "static/js/main.ff8677d9.js"
   ]
 }
