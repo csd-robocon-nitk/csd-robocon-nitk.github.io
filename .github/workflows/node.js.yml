@@ -29,5 +29,11 @@ jobs:
       run: echo "workflow working"
     - name: test2
       run: echo ${{secrets.IG_TOKEN}}
+    - name: test3
+      run: touch .env
+    - name: test4
+      run: echo IG_TOKEN:${{secrets.IG_TOKEN}} >> .env
+    - name: test5
+      run: cat .env
       
    
