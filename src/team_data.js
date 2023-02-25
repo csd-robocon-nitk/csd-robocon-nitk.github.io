@@ -8,7 +8,7 @@ export default {
         {
             "name": "Aryan Rawate",
             "designation": "Vice-Captain",
-            "photo": "empty photo.jpg"
+            "photo": "Aryan.jpg"
         },
         {
             "name": "Sriramu A R",
@@ -36,37 +36,34 @@ export default {
         {
             "name": "Prakhar Goel",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Prakhar.jpg"
         },
-        {
-            "name": "Srinivasa R",
-            "designation": "Team Member",
-            "photo": "empty photo.jpg"
-        },
+        
+       
         {
             "name": "Dev Goti",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Dev Goti.jpg"
         },
         {
             "name": "Minank K P",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Minank.jpg"
         },
         {
             "name": "Omkar Arvind Jungade",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Omkar.jpg"
         },
         {
             "name": "N Nagabhushanam",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Bhushan.jpg"
         },
         {
             "name": "Ashna Sanjay Gaude",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Ashna.jpg"
         },
         {
             "name": "Adithya Kasal",
@@ -76,12 +73,12 @@ export default {
         {
             "name": "Niranjan M K",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Niranjan.jpg"
         },
         {
-            "name": "Ninad B Shetty",
+            "name": "Sunil Thunga",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Sunil.jpg"
         }
         
     ],
@@ -101,87 +98,88 @@ export default {
         {
             "name": "Siddh Narhari",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Siddh.jpg"
         },
         {
             "name": "Aryan Rawate",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Aryan.jpg"
         },
         {
             "name": "Shriramu A R",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Shriramu.jpg"
         },
         {
             "name": "Matcha Nitin",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Nitin.jpg"
         },
         {
             "name": "Pooja M",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Pooja.jpeg"
         },
         {
             "name": "Dhiren V Bhandary",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Dhiren.jpg"
         },
         {
             "name": "Anandita Tiwari",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Anandita.jpg"
         },
         {
             "name": "Tahsin Khan",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Tahsin.jpg"
         },
         {
             "name": "Shivam Tewari",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Shivam.jpg"
         },
         {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Raghavendra.jpg"
         },
         {
             "name": "Pulibandla Charan",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Charan.jpg"
         },
         {
             "name": "Gopavaram Chakradhar",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Gopavaram.jpeg"
         },
         {
             "name": "Anushka Das",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Anushka.jpg"
+        },
+        {
+            "name": "Jash Lapsiwala",
+            "designation": "Team Member",
+            "photo": "Jash.jpg"
         },
         {
             "name": "Chirag Ingle",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Chirag.jpg"
         },
-        {
-            "name": "Suchet Nayak",
-            "designation": "Team Member",
-            "photo": "empty photo.jpg"
-        },
+        
         {
             "name": "Pranav Sudheer",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Pranav.jpg"
         },
         {
             "name": "Avadhoot Anant Nadgouda",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Anant.jpg"
         }
     ],
 
@@ -199,47 +197,47 @@ export default {
         {
             "name": "Shriramu A R",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Shriramu.jpg"
         },
         {
             "name": "Aryan Rawate",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Aryan.jpg"
         },
         {
             "name": "Joel Jojo Painuthara",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Joel.jpg"
         },
         {
             "name": "Pooja M",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Pooja.jpeg"
         },
         {
             "name": "Ayush Deshmukh",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Ayush.jpg"
         },
         {
             "name": "Roshini P",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Roshini.png"
         },
         {
             "name": "Shivam Tewari",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Shivam.jpg"
         },
         {
             "name": "J Hariharan",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Hariharan.jpg"
         },
         {
             "name": "Mohammad Adil",
             "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "photo": "Adil.jpeg"
         }
     ],
 
