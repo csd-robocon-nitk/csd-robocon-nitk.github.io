@@ -6,6 +6,8 @@
     --accent: #9f6bff;
     --accent-light: hsl(261, 70%, 71%);
     --accent-transparent: rgba(159, 107, 255, 0.3);
+    --accent-dark: hsl(261, 38%, 30%);
+    --dark-bg-darker: hsl(269, 96%, 8%);
 }
 
 .dark {
@@ -22,7 +24,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Encode Sans Expanded", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 /* 
 body {
@@ -126,4 +128,16 @@ p {
     .modal p {
         font-size: 17px;
     }
+}
+
+
+
+
+.nav-placeholder {
+    height: 80px;
+    background-color: var(--dark-bg);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }

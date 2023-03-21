@@ -67,8 +67,7 @@ export default {
         },
         {
             "name": "Adithya Kasal",
-            "designation": "Team Member",
-            "photo": "empty photo.jpg"
+            "designation": "Team Member"
         },
         {
             "name": "Niranjan M K",
@@ -80,10 +79,9 @@ export default {
             "designation": "Team Member",
             "photo": "Sunil.jpg"
         }
-        
     ],
 
-    "Mech Team": [
+    "Mechanical Team": [
         
         {
             "name": "Hafiz Yunus Kalathil",
@@ -241,5 +239,17 @@ export default {
         }
     ],
 
+    "Faculty Advisors": [
+        {
+            "name": "Dr Pruthviraj U",
+            "designation": "Associated Faculty, CSD",
+            "photo": "Pruthviraj.jpg"
+        },
+        {
+            "name": "Dr Gangadharan K V",
+            "designation": "Associated Faculty, CSD",
+            "photo": "Gangadharan.jpg"
+        }
+    ]
    
 }

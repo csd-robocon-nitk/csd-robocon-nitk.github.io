@@ -1,28 +1,22 @@
-import React, { useState } from 'react'
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+import React from 'react'
 import './gallery.css'
 
 
 export default function Gallery () {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    };
-
-
     return (
         <div id="gallery-page" className='dark'>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            <div className="nav-placeholder" />
             <div id="container" className="dark">
                 <h2>Gallery</h2>
                 <div id="grid">
                     {
-                        (new Array(27)).fill(0, 0, 26).map((el, i) => {
-                            let n = (i+1)/1000
-                            let path = `${process.env.PUBLIC_URL}/images/gallery/${n.toString().slice(2)}.jpg`
+                        (new Array(28)).fill(0).map((el, i) => {
+                            let n = 2-Math.floor(Math.log(i+1)/Math.log(10))
+                            let x = ""
+                            for (let i=0 ; i<n ; i++) x += "0"
+                            x += i+1
+
+                            let path = `${process.env.PUBLIC_URL}/images/gallery/${x}.jpg`
                             return <img src={path}  key={i} />
                         })
                     }

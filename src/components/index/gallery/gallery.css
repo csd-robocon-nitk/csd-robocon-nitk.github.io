@@ -4,6 +4,7 @@
     align-items: center;
     gap: 20px;
     background-color: var(--bg);
+    padding: 30px 0px;
 }
 
 #gallery #left {

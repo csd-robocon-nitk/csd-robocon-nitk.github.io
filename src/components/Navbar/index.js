@@ -17,7 +17,7 @@ import {
 
 
 const Navbar = ({ toggle }) => {
-    const [scrolNav, setScrollNav] = useState(false);
+    const [scrolNav, setScrollNav] = useState(document.body.scrollTop >= 80);
     const changeNav = () => {
         if (document.body.scrollTop >= 80) {
             setScrollNav(true);
@@ -56,6 +56,14 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
+                                    to="/about"
+                                    active={path=="/about"}
+                                >
+                                    About
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
                                     to="/gallery"
                                     active={path=="/gallery"}
                                 >
@@ -72,9 +80,10 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="http://csd.nitk.ac.in/"
+                                    to="/supporters"
+                                    active={path=="/supporters"}
                                 >
-                                    CSD
+                                    Supporters
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

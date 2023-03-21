@@ -4,13 +4,9 @@ import {
     HeroBg,
     HeroContent,
     HeroH1,
-    HeroP,
-    HeroBtnWrapper,
-    ArrowForward,
-    ArrowRight,
+    HeroP
 } from "./HeroElements";
 import Video from "../../videos/robocon.mp4";
-import { Button } from "../ButtonElements";
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);

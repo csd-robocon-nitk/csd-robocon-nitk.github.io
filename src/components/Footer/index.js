@@ -105,16 +105,18 @@ SocialIconLink,
 } from "./FooterElements";
 const Footer = () => {
 return (
-	<Box>
-	<h1 style={{ color: "voilet",
-				textAlign: "center",
-                fontSize: "30px",
-				marginTop: "-20px" }}>
-		CSD ROBOCON NITK: We Build Robots !
-	</h1>
+<Box>
+    <h1 style={{ color: "voilet",
+                textAlign: "center",
+                fontSize: "20px",
+                margin: "0px 0px 40px 0px" }}>
+        CSD ROBOCON NITK: We Build Robots !
+    </h1>
 	<Container>
         
 		<Row>
+
+
             <Column>
             <Row style={{marginBottom: "30px"}}>
   <NavLogo to="/">
@@ -180,7 +182,7 @@ return (
 		</Column>
 		</Row>
 	</Container>
-	</Box>
+</Box>
 );
 };
 export default Footer;
