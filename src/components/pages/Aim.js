@@ -6,9 +6,11 @@ const Aim = () => {
       <h1>
        AIM
       </h1>
-      
-    </div>
+      Founded in 2017,CSD Robocon NITK is the college's official robotics team . As a group of 30 interdisciplinary undergraduates,we aim to win the grandprix at prestigious ABU Robocon
+      </div>
   );
 };
   
 export default Aim;
+
+
