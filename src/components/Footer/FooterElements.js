@@ -169,21 +169,30 @@ color: #fff;
 margin-bottom: 30px;
 font-weight: bold;
 `;
+
 export const WebsiteRights = styled.small`
     color: #fff;
     margin-bottom: 24px;
 `;
 export const SocialIcons = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: right;
-    width: 720px;
+    align-items: center;
 `;
 
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+    display: flex;
+    width: 100%;
+    max-width: 140px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
 `;
+
 export const NavLogo = styled(Link)`
     color: #fff;
     justify-self: flex-start;
@@ -193,5 +202,4 @@ export const NavLogo = styled(Link)`
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
-    text-decoration: none;
-`;
+    `;
