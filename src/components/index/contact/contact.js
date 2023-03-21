@@ -15,6 +15,10 @@ export default function ContactSection () {
         document.body.style.overflow = "hidden auto"
     }, [])
 
+    useEffect(() => {
+        document.body.style.overflow = modalOpen ? "hidden" : "hidden auto"
+    }, [modalOpen])
+
     let submitHandler = async (event) => {
         event.preventDefault();
         let formData = {

@@ -53,7 +53,7 @@ export default function Team () {
                     />
                 </div>
 
-                <h2>Factulty Advisors</h2>
+                <h2>Faculty Advisors</h2>
                 
                 <div className="section">
                     <div className="flex">
