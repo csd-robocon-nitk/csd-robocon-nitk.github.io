@@ -47,6 +47,13 @@ export default [
         "name": "Sadanand Hegde",
         "batch": "1982",
         "department": "ELectronics & Communication Engineering",
-        "photo": "empty photo.jpg"
+        "photo": "Sadanand Hegde.jpg"
+    },
+    {
+        "name": "Umesh Sangurmath",
+        "batch": "1991",
+        "department": "Electrical & Electronics Engineering",
+        "photo": "empty photo.jpg",
+        "amount": "1,00,000"
     }
 ]
