@@ -143,16 +143,8 @@ export default {
             "designation": "Team Member",
             "photo": "Raghavendra.jpg"
         },
-        {
-            "name": "Pulibandla Charan",
-            "designation": "Team Member",
-            "photo": "Charan.jpg"
-        },
-        {
-            "name": "Gopavaram Chakradhar",
-            "designation": "Team Member",
-            "photo": "Gopavaram.jpeg"
-        },
+       
+       
         {
             "name": "Anushka Das",
             "designation": "Team Member",
@@ -212,11 +204,7 @@ export default {
             "designation": "Team Member",
             "photo": "Pooja.jpeg"
         },
-        {
-            "name": "Ayush Deshmukh",
-            "designation": "Team Member",
-            "photo": "Ayush.jpg"
-        },
+       
         {
             "name": "Roshini P",
             "designation": "Team Member",
