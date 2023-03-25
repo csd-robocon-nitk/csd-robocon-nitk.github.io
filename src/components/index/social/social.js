@@ -8,19 +8,25 @@ export default function SocialSection () {
 let posts= useRef();
 useEffect(()=>{
 const apiUrl = "https://graph.instagram.com/me/media";
-const accessToken = "IGQVJYN0swUVQtNzNBNjhIdDI2UzljdUt6a1NERGhWTjYyZAVF5QTZAsY0tVTXJIcDlUbG1jNllXa0ZArSzAyTnlZAXzRaLUZAPYjBUQlF3QVB2OXZAqU25ERkpDYTlWazdrZA3VFSlZABQ3RPaHYyNEVLeWdmYgZDZD";
+//console.log(process.env.REACT_APP_IG_KEY);
+const accessToken = window.ig_token;
 const params = new URLSearchParams({
   fields: "id,caption,media_type,media_url,thumbnail_url,permalink",
   access_token: accessToken,
 });
+    // console.log("inside useEffect");
     axios.get(apiUrl + "?" + params).then(response=>{
         posts.current = response.data.data;
+    }).then(()=>{
+        console.log(posts.current);
+    }).catch(error => {
+        console.log(error);
     });
 },
 []
 );
 
-console.log(posts.current);
+
 
     return (
         <div id="social" className="light">
