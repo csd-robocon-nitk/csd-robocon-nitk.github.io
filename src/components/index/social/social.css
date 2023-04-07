@@ -31,3 +31,74 @@
         --width: min(500px, 90vw);
     }
 }
+
+
+
+
+
+#social #instagram {
+    height: 520px;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+}
+
+#social #instagram #post {
+    height: 100%;
+    padding: 10px;
+    flex-shrink: 0;
+    border: 3px solid var(--accent);
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+#social #instagram #post:hover {
+    box-shadow: -2px 2px 5px 3px var(--accent-transparent);
+}
+
+#social #instagram #post #media {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+#social #instagram #post p {
+    text-align: justify;
+    font-size: 15px;
+    width: 100%;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  
+}
+
+
+
+#social #instagram #post #header {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    align-items: center;
+    border-bottom: 3px dashed var(--accent);
+}
+
+#social #instagram #post #header #logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+#social #instagram #post #header a {
+    text-decoration: none;
+    color: black;
+}
+
+#social #instagram #post #header h5 {
+    font-size: 18px;
+}
