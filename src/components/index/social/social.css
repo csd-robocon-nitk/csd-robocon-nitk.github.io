@@ -1,26 +1,41 @@
 #social {
-    background-color: var(--bg);
+    background-image: url('C:\React Projects\csd-robocon-nitk.github.io\public\images\gallery\istockphoto-1369748264-612x612.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 50px max(20px, calc((100vw - 1100px)/2));
-}
-
-#social #videos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fffdfd;
+  }
+  
+  #social #videos {
     display: flex;
     padding: 20px 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-#social #videos iframe {
+  }
+  
+  #social #videos iframe {
     border-radius: 10px;
     --width: calc(200px + 100vw / 5);
-
     width: var(--width);
-    height: calc(var(--width) / 1.6); 
-}
-
-
+    height: calc(var(--width) / 1.6);
+    box-shadow: 0 4px 8px rgba(238, 232, 232, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #social #videos iframe:hover {
+    transform: scale(1.05);
+  }
+  
+  #social #videos .video-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
 
 @media (max-width: 850px) {
     #social #videos {
@@ -35,70 +50,102 @@
 
 
 
-
 #social #instagram {
-    height: 520px;
+    height: 600px;
     padding: 20px;
     overflow-y: hidden;
     overflow-x: scroll;
     display: flex;
     gap: 20px;
-}
-
-#social #instagram #post {
-    height: 100%;
-    padding: 10px;
-    flex-shrink: 0;
-    border: 3px solid var(--accent);
-    border-radius: 10px;
-    width: 250px;
-    transition: 0.3s;
-}
-
-#social #instagram #post:hover {
-    box-shadow: -2px 2px 5px 3px var(--accent-transparent);
-}
-
-#social #instagram #post #media {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 7px;
-}
-
-#social #instagram #post p {
-    text-align: justify;
-    font-size: 15px;
-    width: 100%;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    background-color: #eeebf1;
+    border-radius: 20px;
+  }
   
-}
-
-
-
-#social #instagram #post #header {
+  #social #instagram #post {
+    height: 100%;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.3s;
+    background-color: #f0c5ff;
+    box-shadow: 0px 3px 10px rgba(165, 12, 12, 0.1);
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #social #instagram #post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #social #instagram #post #media {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  #social #instagram #post p {
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.5;
+    color: #444444;
     margin-bottom: 15px;
-    padding-bottom: 5px;
+    height: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  
+  #social #instagram #post #header {
+    display: flex;
     align-items: center;
-    border-bottom: 3px dashed var(--accent);
-}
-
-#social #instagram #post #header #logo {
-    height: 45px;
-    width: 45px;
+    margin-bottom: 10px;
+  }
+  
+  #social #instagram #post #header #logo {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-}
-
-#social #instagram #post #header a {
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  #social #instagram #post #header a {
     text-decoration: none;
-    color: black;
-}
-
-#social #instagram #post #header h5 {
+    color: #333333;
+  }
+  
+  #social #instagram #post #header h5 {
     font-size: 18px;
-}
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  #social #instagram #post #footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #social #instagram #post #footer span {
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  #social #instagram #post #footer a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  #social #instagram #post #footer a:hover {
+    color: #f5ebeb;
+  }
