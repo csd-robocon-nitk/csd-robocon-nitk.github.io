@@ -1,0 +1,24 @@
+#sponsors {
+    background-color: var(--bg);
+    padding: 100px 30px;
+}
+
+#sponsors #container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+#sponsors #container #images {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+}
+
+#sponsors #container #images img {
+    max-width: min(200px, 100%);
+    border-radius: 5px;
+}

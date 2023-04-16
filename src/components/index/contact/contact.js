@@ -41,12 +41,12 @@ export default function ContactSection () {
     }
     return (
         <>
-            <div id="contact" className="dark">
+            <div id="contact" className="light">
                 <div id="left">
                     <h1>CONTACT US</h1>
                     <h2>Get in touch with us</h2>
             
-                    <form className="light" onSubmit={submitHandler}>
+                    <form className="dark" onSubmit={submitHandler}>
                         <label htmlFor="name">Name</label>
                         <br/>
                         <input id="name" value={name} type="text" onChange={(e) => setName(e.target.value)} required />
