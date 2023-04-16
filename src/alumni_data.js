@@ -55,5 +55,17 @@ export default [
         "department": "Electrical & Electronics Engineering",
         "photo": "empty photo.jpg",
         "amount": "1,00,000"
+    },
+    {
+        "name": "Keshav Venkatraman Nayak",
+        "batch": "1973",
+        "department": "Mechanical Engineering",
+        "photo": "KV Nayak.jpg",
+    },
+    {
+        "name": "Ajit Kadwadkar",
+        "batch": "1979",
+        "department": "_",
+        "photo": "Ajit Kadwadkar.jpg",
     }
 ]
