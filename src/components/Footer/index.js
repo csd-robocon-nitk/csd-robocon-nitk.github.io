@@ -118,63 +118,68 @@ return (
 
 
             <Column>
-                <Heading>About Us</Heading>
-                <FooterLink href="#">Aim</FooterLink>
-                <FooterLink href="#">Vision</FooterLink>
-                <FooterLink href="#">Careers</FooterLink>
-            </Column>
-            <Column>
-                <Heading>Contact Us</Heading>
-                <FooterLink href="https://www.nitk.ac.in/">NITK</FooterLink>
-                <FooterLink href="https://csd.nitk.ac.in/">CSD</FooterLink>
-                <FooterLink href="mailto:robocon@nitk.edu.in">Email: robocon@nitk.edu.in</FooterLink>
-                <FooterLink href="tel:8890688735">Phone No: 8890688735</FooterLink>
-            </Column>
-            <Column>
-                <Heading>Social Media</Heading>
-                <SocialIcons style={{marginBottom: "20px"   }}>
-                    <SocialIconLink
-                        href="https://www.instagram.com/csdroboconnitk/"
-                        target="_blank"
-                        aria-label="Instagram"
-                    >
-                        <p>Instagram</p>
-                        <FaInstagram />
-                    </SocialIconLink>
-                </SocialIcons>
-                <SocialIcons style={{marginBottom: "20px"}}>
-                    <SocialIconLink
-                        href="https://www.youtube.com/@csdroboconnitk9210"
-                        target="_blank"
-                        aria-label="Youtube"
-                    >
-                        <p>Youtube</p>
-                        <FaYoutube />
-                    </SocialIconLink>
-                </SocialIcons>
-                <SocialIcons style={{marginBottom: "20px"}}>
-                    <SocialIconLink
-                        href="https://www.linkedin.com/company/csd-robocon-nitk"
-                        target="_blank"
-                        aria-label="LinkedIn"
-                    >
-                        <p>Linkedin</p>
-                        <FaLinkedin />
-                    </SocialIconLink>
-                </SocialIcons>
-            </Column>
-            <Column>
-                <Row style={{marginBottom: "30px"}}>
-                    <NavLogo to="/">
-                        <img src={logo} style={{maxHeight: "90px", padding: "05px", display: "block", margin: "0px auto" }}/>
-                    </NavLogo>
-                </Row>
-                <Row style={{textAlign:"center"}}> 
-                    <WebsiteRights>
-                        Robocon © {new Date().getFullYear()} All Rights Reserved 
-                    </WebsiteRights>
-                </Row>
-            </Column>
+            <Row style={{marginBottom: "30px"}}>
+  <NavLogo to="/">
+    <img src={logo} style={{maxHeight: "90px", padding: "05px" }}/>
+  </NavLogo>
+</Row>
+<Row style={{textAlign:"right"}}> 
+  <WebsiteRights>
+    Robocon © {new Date().getFullYear()} All Rights Reserved 
+  </WebsiteRights>
+</Row>
+
+
+           </Column>
+
+
+		<Column>
+			<Heading>About Us</Heading>
+			<FooterLink href="#/Aim">Aim</FooterLink>
+			<FooterLink href="#/Vision">Vision</FooterLink>
+			<FooterLink href="#">Careers</FooterLink>
+            <FooterLink href="#">Testimonials</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Contact Us</Heading>
+			<FooterLink href="https://www.nitk.ac.in/">NITK</FooterLink>
+			<FooterLink href="https://csd.nitk.ac.in/">CSD</FooterLink>
+			<FooterLink href="#">Email-: robocon@nitk.edu.in</FooterLink>
+			<FooterLink href="#">Phone No -: 8890688735</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Social Media</Heading>
+            <SocialIcons style={{marginBottom: "20px"   }}>
+                                <SocialIconLink
+                                    href="https://www.instagram.com/csdroboconnitk/"
+                                    target="_blank"
+                                    aria-label="Instagram"
+                                >
+                                    <p>Instagram</p>
+                                    <FaInstagram />
+                                </SocialIconLink>
+                            </SocialIcons>
+                            <SocialIcons style={{marginBottom: "20px"}}>
+                                <SocialIconLink
+                                    href="https://www.youtube.com/@csdroboconnitk9210"
+                                    target="_blank"
+                                    aria-label="Youtube"
+                                >
+                                    <p>Youtube</p>
+                                    <FaYoutube />
+                                </SocialIconLink>
+                            </SocialIcons>
+                            <SocialIcons style={{marginBottom: "20px"}}>
+                                <SocialIconLink
+                                    href="https://www.linkedin.com/company/csd-robocon-nitk"
+                                    target="_blank"
+                                    aria-label="LinkedIn"
+                                >
+                                    <p>Linkedin</p>
+                                    <FaLinkedin />
+                                </SocialIconLink>
+                            </SocialIcons>
+		</Column>
 		</Row>
 	</Container>
 </Box>

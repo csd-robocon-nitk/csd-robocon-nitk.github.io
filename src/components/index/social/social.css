@@ -4,26 +4,39 @@
     background-position: center; */
     background-color: var(--bg);
     padding: 50px max(20px, calc((100vw - 1100px)/2));
-}
-
-#social #videos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fffdfd;
+  }
+  
+  #social #videos {
     display: flex;
     padding: 20px 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-#social #videos iframe {
+  }
+  
+  #social #videos iframe {
     border-radius: 10px;
     --width: calc(200px + 100vw / 5);
-
     width: var(--width);
-    height: calc(var(--width) / 1.6); 
-}
-
-
+    height: calc(var(--width) / 1.6);
+    box-shadow: 0 4px 8px rgba(238, 232, 232, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #social #videos iframe:hover {
+    transform: scale(1.05);
+  }
+  
+  #social #videos .video-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
 
 @media (max-width: 850px) {
     #social #videos {
@@ -31,10 +44,10 @@
     }
 
     #social #videos iframe {
+      
         --width: min(500px, 90vw);
     }
 }
-
 
 
 
@@ -50,8 +63,10 @@
   
 #social #instagram #post {
     height: 100%;
-    padding: 10px;
+    padding: 20px;
     flex-shrink: 0;
+    border-radius: 15px;
+    width: 300px;
     border-radius: 15px;
     width: 300px;
     transition: 0.3s;
@@ -70,6 +85,7 @@
 #social #instagram #post #media {
     width: 100%;
     height: 250px;
+    height: 250px;
     margin-bottom: 10px;
     border-radius: 10px;
     object-fit: cover;
@@ -78,13 +94,20 @@
 #social #instagram #post p {
     text-align: justify;
     font-size: 16px;
+    font-size: 16px;
     width: 100%;
     line-height: 1.5;
     color: #444444;
     margin-bottom: 15px;
     height: 90px;
     overflow: hidden;
+    line-height: 1.5;
+    color: #444444;
+    margin-bottom: 15px;
+    height: 90px;
+    overflow: hidden;
     display: -webkit-box;
+    -webkit-line-clamp: 4;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
