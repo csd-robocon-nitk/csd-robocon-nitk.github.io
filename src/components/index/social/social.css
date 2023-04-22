@@ -43,6 +43,7 @@
     }
 
     #social #videos iframe {
+      
         --width: min(500px, 90vw);
     }
 }
