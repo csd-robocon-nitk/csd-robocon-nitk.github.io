@@ -67,7 +67,8 @@ export default {
         },
         {
             "name": "Adithya Kasal",
-            "designation": "Team Member"
+            "designation": "Team Member",
+            "photo": "Adithya Kasal.jpg"
         },
         {
             "name": "Niranjan M K",
