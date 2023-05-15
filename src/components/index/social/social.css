@@ -1,5 +1,5 @@
 #social {
-    background-image: url('C:\React Projects\csd-robocon-nitk.github.io\public\images\gallery\istockphoto-1369748264-612x612.jpg');
+    /*background-image: url('C:\React Projects\csd-robocon-nitk.github.io\public\images\gallery\istockphoto-1369748264-612x612.jpg');*/
     background-size: cover;
     background-position: center;
     padding: 50px max(20px, calc((100vw - 1100px)/2));
@@ -52,7 +52,7 @@
 
 
 #social #instagram {
-    height: 600px;
+    height: 400px;
     padding: 20px;
     overflow-y: hidden;
     overflow-x: scroll;

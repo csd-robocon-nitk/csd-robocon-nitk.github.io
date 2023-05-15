@@ -15,7 +15,7 @@ export default function Post ({ details }) {
             <a href={details.permalink}>
                 <img id="media" src={details.media_url} />
             </a>
-            <p>{details.caption}</p>
+            
         </div>
     )
 }

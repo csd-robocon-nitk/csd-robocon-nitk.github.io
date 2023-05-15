@@ -10,7 +10,7 @@ import Aim from './components/pages/Aim';
 import Alumni from "./components/pages/alumni"
 import Footer from "./components/Footer";
 import About from "./components/pages/about";
-import Vision from "./components/pages/vision";
+import Vision from "./components/pages/Vision";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ function App() {
                 <Route path="/Aim" element={<Aim />} />
                 <Route path="/supporters" element={<Alumni />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/vision" element={<Vision />} />
+                <Route path="/Vision" element={<Vision />} />
             </Routes>
             <Footer />
         </Router>

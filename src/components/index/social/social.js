@@ -127,8 +127,9 @@ export default function SocialSection() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = 'https://graph.instagram.com/me/media';
+    
     const accessToken = window.ig_token;
+    const apiUrl = 'https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username,children{media_url,thumbnail_url}&access_token='+ accessToken;
     const params = new URLSearchParams({
       fields:
         'id,caption,media_type,media_url,thumbnail_url,permalink,children',
@@ -147,7 +148,7 @@ export default function SocialSection() {
   return (
     <div id="social" className="light">
       <h1>VIDEOS</h1>
-      <h2>A Glimpse into Our Work</h2>
+      <h2 style = {{color: 'white'}}>A Glimpse into Our Work</h2>
       <div id="videos">
         <iframe
           src="https://www.youtube.com/embed/B3DctwOAsaM"
@@ -170,8 +171,8 @@ export default function SocialSection() {
       <br />
 
       <h1>SOCIAL</h1>
-      <h2>Keep up with our Updates</h2>
-      <div id="instagram">
+      <h2 style = {{color: 'white'}}>Keep up with our Updates</h2>
+      <div id="instagram" style= {{backgroundColor: "#190133", marginRight: "45px"}}>
         {posts.map((post) =>
           post.media_type === 'IMAGE' ? (
             <Post details={post} key={post.id} />
@@ -179,8 +180,6 @@ export default function SocialSection() {
             post.children.data.map((child) => (
               <Post details={child} key={child.id} />
             ))
-          ) : post.media_type === 'VIDEO' ? (
-            <video src={post.media_url} controls key={post.id} />
           ) : null
         )}
       </div>
