@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.7de32a4d.css",
-    "main.js": "/static/js/main.6df6cda5.js",
+    "main.css": "/static/css/main.c948f8e4.css",
+    "main.js": "/static/js/main.02dd0b2b.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
+    "static/media/bosch.png": "/static/media/bosch.a12b9e9d3c1d6c87aeee.png",
     "static/media/006.jpg": "/static/media/006.10e3c3e950370b4c3d98.jpg",
     "static/media/abu.webp": "/static/media/abu.c3d6d9c2c99c745e4f7d.webp",
     "static/media/ansys.png": "/static/media/ansys.9a48eeae893ab586e4f2.png",
     "static/media/004.jpg": "/static/media/004.cbf91c6e99d7a5230156.jpg",
     "static/media/board.jpg": "/static/media/board.8e05ec5ef427ed0fc63e.jpg",
     "static/media/002.jpg": "/static/media/002.76f498bc41e3f5b758dd.jpg",
-    "static/media/nitk alumni.png": "/static/media/nitk alumni.a6385c2d6266000e3f4d.png",
     "static/media/001.jpg": "/static/media/001.65b021f5a8b47e7dadf7.jpg",
     "static/media/003.jpg": "/static/media/003.ef5bc5dfd25d8381bdf2.jpg",
+    "static/media/signitive.png": "/static/media/signitive.204a1a04491dc9b30549.png",
     "static/media/logo.png": "/static/media/logo.8a3e5f8c1eae2d6d98e7.png",
     "static/media/005.jpg": "/static/media/005.efc6ffa5eb09cec0e1ab.jpg",
     "static/media/about_bg.jpg": "/static/media/about_bg.6ffacd42a580dbec8439.jpg",
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
-    "static/media/csd.jpg": "/static/media/csd.297ce5cd42ba63282bed.jpg",
     "index.html": "/index.html",
-    "main.7de32a4d.css.map": "/static/css/main.7de32a4d.css.map",
-    "main.6df6cda5.js.map": "/static/js/main.6df6cda5.js.map"
+    "main.c948f8e4.css.map": "/static/css/main.c948f8e4.css.map",
+    "main.02dd0b2b.js.map": "/static/js/main.02dd0b2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7de32a4d.css",
-    "static/js/main.6df6cda5.js"
+    "static/css/main.c948f8e4.css",
+    "static/js/main.02dd0b2b.js"
   ]
 }
