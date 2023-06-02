@@ -1,0 +1,143 @@
+:root {
+    --light-bg: #f9f9f9;
+    --dark-bg: #190133;
+    --light-text: #f7f8fa;
+    --dark-text: #100606;
+    --accent: #9f6bff;
+    --accent-light: hsl(261, 70%, 71%);
+    --accent-transparent: rgba(159, 107, 255, 0.3);
+    --accent-dark: hsl(261, 38%, 30%);
+    --dark-bg-darker: hsl(269, 96%, 8%);
+}
+
+.dark {
+    --color: var(--light-text);
+    --bg: var(--dark-bg);
+}
+
+.light {
+    --bg: var(--light-bg);
+    --color: var(--dark-text);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* 
+body {
+    overflow: hidden;
+} */
+
+
+
+h1 {
+    color: var(--accent);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin-bottom: 24px;
+    font-size: calc(25px + 1.4vw);
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--color);
+}
+
+p {
+    font-size: 20px;
+    color: var(--color);
+}
+
+.button {
+    border-radius: 50px;
+    background: var(--accent);
+    white-space: nowrap;
+    padding: 14px 48px;
+    color: var(--light-text);
+    font-size:  16px;
+    outline: none;
+    border: 1px solid var(--bg);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    font-weight: 700;
+    max-width: 200px;
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    background: var(--bg);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.modal-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.modal h3 {
+    font-size: 25px;
+}
+
+.modal p {
+    margin: 40px 0px;
+}
+
+.modal .button {
+    width: 100%;
+    border-radius: 10px;
+    max-width: initial;
+}
+
+
+@media (max-width: 600px) {
+    .modal {
+        padding: 20px;
+    }
+
+    .modal h3 {
+        font-size: 20px;
+    }
+
+    .modal p {
+        font-size: 17px;
+    }
+}
+
+
+
+
+.nav-placeholder {
+    height: 80px;
+    background-color: var(--dark-bg);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
