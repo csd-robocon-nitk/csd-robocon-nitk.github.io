@@ -19,7 +19,7 @@ import {
 const Navbar = ({ toggle }) => {
     const [scrolNav, setScrollNav] = useState(document.body.scrollTop >= 80);
     const changeNav = () => {
-        if (document.body.scrollTop >= 80) {
+        if (window.scrollY >= 80) {
             setScrollNav(true);
         } else {
             setScrollNav(false);
@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
     useEffect(() => setPath(location.pathname), [ location ])
 
     useEffect(() => {
-        document.body.addEventListener("scroll", changeNav);
+        window.addEventListener("scroll", changeNav);
     }, []);
     return (
         <>
