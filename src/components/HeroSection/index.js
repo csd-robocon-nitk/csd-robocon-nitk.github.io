@@ -14,9 +14,21 @@ let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m)
 const HeroSection = () => {
     let [ visible, setVisible ] = useState(true)
     let [ progress, setProgress ] = useState(0)
+    let [ tagline, setTagline ] = useState(0)
+
+    let taglineFull = "PASSION. PRECISION. VICTORY."
+    let taglineShown = taglineFull.slice(0, tagline) 
 
     useEffect(() => {
-        if (!visible) return
+        if (!visible) {
+            if (tagline == taglineFull.length) return
+            
+            let delay = 100
+            if (taglineFull[tagline] == " ") delay = 300
+
+            setTimeout(() => setTagline(t => t+1), delay)
+        }
+
         if (progress == 100) {
             setTimeout(() => setVisible(false), 1000)
             return
@@ -48,9 +60,8 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>CSD ROBOCON NITK</HeroH1>
-                <HeroP>
-                    The Robocon team from National Institute Of Technology
-                    Karnataka, Surathkal
+                <HeroP className="cursor">
+                    {taglineShown}
                 </HeroP>
             </HeroContent>
             <div style = {{
@@ -58,7 +69,7 @@ const HeroSection = () => {
                 opacity: visible ? 1 : 0,
                 transitionDuration: "800ms",
                 position: "fixed",
-                width: "100%",
+                width: "100vw",
                 height: "100vh",
                 backgroundColor: "black",
                 justifyContent: "center",
