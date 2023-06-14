@@ -64,28 +64,28 @@ export const HeroH1 = styled.h1`
     margin: 0;
 
     @media screen and (max-width: 768px) {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     @media screen and (max-width: 400px) {
-        font-size: 32px;
+        font-size: 35px;
     }
 `;
 
 export const HeroP = styled.p`
     color: #fff;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 500;
     text-align: center;
     max-width: 600px;
-    font-family: cursive;
+    font-family: 'Kanit';
 
     @media screen and (max-width: 768px) {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     @media screen and (max-width: 400px) {
-        font-size: 18px;
+        font-size: 24px;
     }
 `;
 

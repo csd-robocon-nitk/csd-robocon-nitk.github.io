@@ -17,7 +17,7 @@ const HeroSection = () => {
     let [ progress, setProgress ] = useState(0)
     let [ tagline, setTagline ] = useState(0)
 
-    let taglineFull = "PASSION. PRECISION. VICTORY."
+    let taglineFull = "ENGINEER THE IMPOSSIBLE"
     let taglineShown = taglineFull.slice(0, tagline) 
 
     useEffect(() => {
