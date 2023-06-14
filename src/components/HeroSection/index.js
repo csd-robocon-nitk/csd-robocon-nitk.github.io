@@ -10,8 +10,8 @@ import Video from "../../videos/robocon.mp4";
 import logo from "../../images/logo.png"
 import ClickAudio from '../../videos/click.wav'
 
-let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m) 
-let click = new Audio(ClickAudio)
+let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m)
+
 
 const HeroSection = () => {
     let [ visible, setVisible ] = useState(true)
@@ -24,8 +24,7 @@ const HeroSection = () => {
     useEffect(() => {
         if (!visible) {
             if (tagline == taglineFull.length) return
-            
-            click.play()
+
             let delay = 100
             if (taglineFull[tagline] == " ") delay = 300
 
