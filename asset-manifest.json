@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f43768ed.css",
-    "main.js": "/static/js/main.5f5f93ab.js",
+    "main.css": "/static/css/main.54854781.css",
+    "main.js": "/static/js/main.1e45186c.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/009.jpg": "/static/media/009.ce88c1d02e334af05edc.jpg",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
@@ -24,15 +24,15 @@
     "static/media/signitive.png": "/static/media/signitive.204a1a04491dc9b30549.png",
     "static/media/logo.png": "/static/media/logo.8a3e5f8c1eae2d6d98e7.png",
     "static/media/005.jpg": "/static/media/005.efc6ffa5eb09cec0e1ab.jpg",
+    "static/media/night.jpg": "/static/media/night.62565402135dab10551e.jpg",
     "static/media/about_bg.jpg": "/static/media/about_bg.6ffacd42a580dbec8439.jpg",
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
-    "static/media/click.wav": "/static/media/click.4d394dbf6c527370bc2d.wav",
     "index.html": "/index.html",
-    "main.f43768ed.css.map": "/static/css/main.f43768ed.css.map",
-    "main.5f5f93ab.js.map": "/static/js/main.5f5f93ab.js.map"
+    "main.54854781.css.map": "/static/css/main.54854781.css.map",
+    "main.1e45186c.js.map": "/static/js/main.1e45186c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f43768ed.css",
-    "static/js/main.5f5f93ab.js"
+    "static/css/main.54854781.css",
+    "static/js/main.1e45186c.js"
   ]
 }
