@@ -8,7 +8,6 @@ import {
 } from "./HeroElements";
 import Video from "../../videos/robocon.mp4";
 import logo from "../../images/logo.png"
-import ClickAudio from '../../videos/click.wav'
 
 let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m)
 
