@@ -47,7 +47,7 @@ export default function Sponsor () {
                     <h2>Quick Links</h2>
 
                     <div id = "links">
-                        <a href = {process.env.PUBLIC_URL + "/assets/CRN 2023 Season Report.pdf"} target = "_blank">
+                        <a href = {process.env.PUBLIC_URL + "/assets/CSD Robocon NITK Endowment Form.pdf"} target = "_blank">
                             <div>
                                 <span class="material-symbols-outlined">
                                     description
@@ -56,7 +56,7 @@ export default function Sponsor () {
                             </div>
                         </a>
 
-                        <a href = {process.env.PUBLIC_URL + "/assets/CSD Robocon NITK Endowment Form.pdf"} target = "_blank">
+                        <a href = {process.env.PUBLIC_URL + "/assets/CRN 2023 Season Report.pdf"} target = "_blank">
                             <div>
                                 <span class="material-symbols-outlined">
                                     newspaper
