@@ -11,6 +11,7 @@ import Alumni from "./components/pages/alumni"
 import Footer from "./components/Footer";
 import About from "./components/pages/about";
 import Vision from "./components/pages/vision";
+import Sponsor from "./components/pages/sponsor";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/team" element={<Team />} />
                 <Route path="/Aim" element={<Aim />} />
                 <Route path="/supporters" element={<Alumni />} />
+                <Route path="/sponsor" element={<Sponsor />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/vision" element={<Vision />} />
             </Routes>
