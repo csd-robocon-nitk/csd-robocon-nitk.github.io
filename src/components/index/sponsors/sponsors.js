@@ -4,7 +4,7 @@ import './sponsors.css'
 import bosch from '../../../images/bosch.png'
 import ansys from '../../../images/ansys.png'
 import signitive from '../../../images/signitive.png'
-
+import capstone from '../../../images/capstone.jpg'
 export default function SponsorsSection () {
     return (
         <div id="sponsors" className="dark">
@@ -18,6 +18,7 @@ export default function SponsorsSection () {
                     <div className="row">
                         <img src={ansys} />
                         <img src={signitive} />
+                        <img src={capstone} />
                     </div>
                 </div>
             </div>

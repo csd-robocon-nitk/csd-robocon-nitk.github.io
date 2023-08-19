@@ -1,17 +1,4 @@
-* { 
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -moz-transform-style: initial;
-}
-
-html {
-    overflow: hidden;
-}
-
 body {
-    overflow: hidden auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
     width: 100vw;
     height: 100vh;
 }
@@ -27,27 +14,6 @@ body {
 
     padding: 0px 20px;
 }
-
-#parallax::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    perspective: 1px;
-    transform: translateZ(-2px) scale(3);
-    -moz-transform: none;
-    z-index: -1;
-    
-    background-image: url('../../../images/board.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    content: "";
-}
-
 
 
 #parallax #content {
