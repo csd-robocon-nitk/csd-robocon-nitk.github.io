@@ -46,11 +46,6 @@ export default {
             "photo": "Dev Goti.jpg"
         },
         {
-            "name": "Minank K P",
-            "designation": "Team Member",
-            "photo": "Minank.jpg"
-        },
-        {
             "name": "Omkar Arvind Jungade",
             "designation": "Team Member",
             "photo": "Omkar.jpg"
@@ -74,11 +69,6 @@ export default {
             "name": "Niranjan M K",
             "designation": "Team Member",
             "photo": "Niranjan.jpg"
-        },
-        {
-            "name": "Sunil Thunga",
-            "designation": "Team Member",
-            "photo": "Sunil.jpg"
         }
     ],
 
@@ -205,12 +195,6 @@ export default {
             "designation": "Team Member",
             "photo": "Pooja.jpeg"
         },
-       
-        {
-            "name": "Roshini P",
-            "designation": "Team Member",
-            "photo": "Roshini.png"
-        },
         {
             "name": "Shivam Tewari",
             "designation": "Team Member",
@@ -220,11 +204,6 @@ export default {
             "name": "J Hariharan",
             "designation": "Team Member",
             "photo": "Hariharan.jpg"
-        },
-        {
-            "name": "Mohammad Adil",
-            "designation": "Team Member",
-            "photo": "Adil.jpeg"
         }
     ],
 
