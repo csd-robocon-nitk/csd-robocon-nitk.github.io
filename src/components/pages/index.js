@@ -6,13 +6,13 @@ import ContactSection from "../index/contact/contact";
 import ParallaxSection from '../index/parallax/parallax'
 import SponsorsSection from "../index/sponsors/sponsors"
 import SocialSection from '../index/social/social'
-import TimelineSection from '../index/timeline/timeline'
+// import TimelineSection from '../index/timeline/timeline'
 
 const Home = () => {
     return (
         <>
             <HeroSection />
-            <TimelineSection />
+            {/* <TimelineSection /> */}
             <ParallaxSection />
             <SocialSection />
             <AboutSection />
