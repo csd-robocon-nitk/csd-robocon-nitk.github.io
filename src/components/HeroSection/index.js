@@ -16,6 +16,7 @@ const HeroSection = () => {
     let [ visible, setVisible ] = useState(true)
     let [ progress, setProgress ] = useState(0)
     let [ tagline, setTagline ] = useState(0)
+    let [ display, setDisplay ] = useState(true)
 
     let taglineFull = "ENGINEER THE IMPOSSIBLE"
     let taglineShown = taglineFull.slice(0, tagline) 
@@ -41,6 +42,12 @@ const HeroSection = () => {
         }), randint(100, 150))
     })
 
+    useEffect(() => {
+        if (!visible) {
+            setDisplay(false)
+        }
+    }, [ visible ])
+
     return (
         <HeroContainer id="home">
             <HeroBg>
@@ -62,11 +69,11 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>CSD ROBOCON NITK</HeroH1>
                 <HeroP className="cursor">
-                    {taglineShown}
+                    &nbsp;{taglineShown}&nbsp;
                 </HeroP>
             </HeroContent>
             <div style = {{
-                display: "flex",
+                display: display ? "flex" : "none",
                 opacity: visible ? 1 : 0,
                 transitionDuration: "800ms",
                 position: "fixed",
