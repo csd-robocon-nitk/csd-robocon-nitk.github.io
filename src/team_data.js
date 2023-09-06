@@ -38,8 +38,6 @@ export default {
             "designation": "Team Member",
             "photo": "Prakhar.jpg"
         },
-        
-       
         {
             "name": "Dev Goti",
             "designation": "Team Member",
@@ -98,21 +96,6 @@ export default {
             "name": "Harish B",
             "designation": "Mech Head",
             "photo": "Harish.jpg"
-        },
-        {
-            "name": "Siddh Narhari",
-            "designation": "Team Member",
-            "photo": "Siddh.jpg"
-        },
-        {
-            "name": "Aryan Rawate",
-            "designation": "Team Member",
-            "photo": "Aryan.jpg"
-        },
-        {
-            "name": "Shriramu A R",
-            "designation": "Team Member",
-            "photo": "Shriramu.jpg"
         },
         {
             "name": "Matcha Nitin",
@@ -179,15 +162,15 @@ export default {
             "name": "Naisha Kishore",
             "designation": "Team Member",
             "photo": "Naisha.jpg"
+        },
+        {
+            "name": "Afeef Bin Ahamed Ali",
+            "designation": "Team Member",
+            "photo": "Afeef.jpg"
         }
     ],
 
     "Support Team": [
-        {
-            "name": "Dhiren V Bhandary",
-            "designation": "Marketing Head",
-            "photo": "Dhiren.jpg"
-        },
         {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Media & Web Head",
