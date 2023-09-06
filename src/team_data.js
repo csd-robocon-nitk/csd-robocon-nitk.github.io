@@ -69,6 +69,21 @@ export default {
             "name": "Niranjan M K",
             "designation": "Team Member",
             "photo": "Niranjan.jpg"
+        },
+        {
+            "name": "Nishchay Pallav",
+            "designation": "Team Member",
+            "photo": "Nishchay.jpg"
+        },
+        {
+            "name": "Apoorva Agrawal",
+            "designation": "Team Member",
+            "photo": "Apoorva.jpg"
+        },
+        {
+            "name": "Krishnapranav",
+            "designation": "Team Member",
+            "photo": "Krishnapranav.jpg"
         }
     ],
 
@@ -110,32 +125,15 @@ export default {
             "photo": "Pooja.jpeg"
         },
         {
-            "name": "Dhiren V Bhandary",
-            "designation": "Team Member",
-            "photo": "Dhiren.jpg"
-        },
-        {
-            "name": "Anandita Tiwari",
-            "designation": "Team Member",
-            "photo": "Anandita.jpg"
-        },
-        {
             "name": "Tahsin Khan",
             "designation": "Team Member",
             "photo": "Tahsin.jpg"
         },
         {
-            "name": "Shivam Tewari",
-            "designation": "Team Member",
-            "photo": "Shivam.jpg"
-        },
-        {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Team Member",
             "photo": "Raghavendra.jpg"
-        },
-       
-       
+        },       
         {
             "name": "Anushka Das",
             "designation": "Team Member",
@@ -145,6 +143,11 @@ export default {
             "name": "Jash Lapsiwala",
             "designation": "Team Member",
             "photo": "Jash.jpg"
+        },
+        {
+            "name": "Manas Priye",
+            "designation": "Team Member",
+            "photo": "Manas.jpg"
         },
         {
             "name": "Chirag Ingle",
@@ -161,6 +164,21 @@ export default {
             "name": "Avadhoot Anant Nadgouda",
             "designation": "Team Member",
             "photo": "Anant.jpg"
+        },
+        {
+            "name": "Akash Gowda H U",
+            "designation": "Team Member",
+            "photo": "Akash.jpg"
+        },
+        {
+            "name": "Srinidhi Srinivas",
+            "designation": "Team Member",
+            "photo": "Srinidhi.jpg"
+        },
+        {
+            "name": "Naisha Kishore",
+            "designation": "Team Member",
+            "photo": "Naisha.jpg"
         }
     ],
 
@@ -204,6 +222,16 @@ export default {
             "name": "J Hariharan",
             "designation": "Team Member",
             "photo": "Hariharan.jpg"
+        },
+        {
+            "name": "Chirag Ingle",
+            "designation": "Team Member",
+            "photo": "Chirag.jpg"
+        },
+        {
+            "name": "Ashna Sanjay Gaude",
+            "designation": "Team Member",
+            "photo": "Ashna.jpg"
         }
     ],
 
