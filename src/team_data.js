@@ -82,6 +82,16 @@ export default {
             "name": "Krishnapranav",
             "designation": "Team Member",
             "photo": "Krishnapranav.jpg"
+        },
+        {
+            "name": "Priyanka Deokar",
+            "designation": "Team Member",
+            "photo": "Priyanka.jpg"
+        },
+        {
+            "name": "J Hariharan",
+            "designation": "Team Member",
+            "photo": "Hariharan.jpg"
         }
     ],
 
