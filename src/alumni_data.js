@@ -65,7 +65,7 @@ export default [
     {
         "name": "Ajit Kadwadkar",
         "batch": "1979",
-        "department": "_",
+        "department": "Mechanical Engineering",
         "photo": "Ajit Kadwadkar.jpg",
     },
     {
