@@ -67,5 +67,11 @@ export default [
         "batch": "1979",
         "department": "_",
         "photo": "Ajit Kadwadkar.jpg",
+    },
+    {
+        "name": "Ramamurthy Krishna",
+        "batch": "1979",
+        "department": "ELectronics & Communication Engineering",
+        "photo": "Ramamurthy.jpg"
     }
 ]
