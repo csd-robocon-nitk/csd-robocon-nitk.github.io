@@ -73,5 +73,77 @@ export default [
         "batch": "1979",
         "department": "ELectronics & Communication Engineering",
         "photo": "Ramamurthy.jpg"
+    },
+    {
+        "name": "Kandanadan",
+        "batch": "2001",
+        "department": "Civil Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Praveen Rao",
+        "batch": "1991",
+        "department": "Mechanical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "S C Balawat",
+        "batch": "1972",
+        "department": "Metallurgy Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Anand Kumar",
+        "batch": "2022",
+        "department": "-",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Ashok Rao",
+        "batch": "1986",
+        "department": "Mechanical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Gopal Bhupal",
+        "batch": "1977",
+        "department": "Metallurgy Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Sreenivas Rao",
+        "batch": "1965",
+        "department": "Mechanical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Prashanth Kamath",
+        "batch": "1995",
+        "department": "Mechanical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Shailesh Gadad",
+        "batch": "1993",
+        "department": "Chemical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Prashanth Samaga",
+        "batch": "1991",
+        "department": "-",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Pankaj Jain",
+        "batch": "1991",
+        "department": "Mechanical Engineering",
+        "photo": "empty photo.jpg",
+    },
+    {
+        "name": "Suresh Sreeniasaiah",
+        "batch": "",
+        "department": "-",
+        "photo": "empty photo.jpg",
     }
 ]
