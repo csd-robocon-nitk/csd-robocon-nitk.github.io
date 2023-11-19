@@ -1,6 +1,7 @@
 import React from "react"
 import "./sponsor.css"
 import sponsors from "../../images/sponsors.png"
+import { Link } from "react-scroll"
 
 export default function Sponsor () {
     return (
@@ -38,7 +39,7 @@ export default function Sponsor () {
                     <h1>GET MORE INFO</h1>
                     <h2>Brochure</h2>
                     <iframe src="https://drive.google.com/file/d/1NZ-4J5EOKL8z-rkPwFhmeJEPw4LTennb/preview" width="100%" height="600" allow="autoplay"></iframe>
-
+                    {/* <iframe src="/assets/CRN Brochure 2024.pdf" width="100%" height="600" allow="autoplay"></iframe> */}
                     <br/>
                     <br/>
                     <br/>
@@ -62,6 +63,15 @@ export default function Sponsor () {
                                     newspaper
                                 </span>
                                 Season Report 2022-23
+                            </div>
+                        </a>
+
+                        <a href = "/donate" target = "_blank">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
+                                Support Us
                             </div>
                         </a>
                     </div>
