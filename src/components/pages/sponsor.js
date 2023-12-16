@@ -71,7 +71,7 @@ export default function Sponsor () {
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
-                                Support Us
+                                Donate Here
                             </div>
                         </a>
                     </div>
