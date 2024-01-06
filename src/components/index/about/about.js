@@ -9,7 +9,7 @@ export default function AboutSection () {
                 <h1>ABU ROBOCON</h1>
                 <h2>An Ultimate Robotics Contest for Undergrads</h2>
                 <p>We build Robots that aim at incredible Precision, Reliability and Speed or in other words Industrial performance.</p>
-                <a className="button" href="https://www.aburobocon2023.com/">Learn More</a>
+                <a className="button" href="https://aburobocon2024.vtv.gov.vn/">Learn More</a>
             </div>
             <div id="right">
                 <img src={image} />

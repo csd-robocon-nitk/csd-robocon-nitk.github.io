@@ -161,7 +161,7 @@ return (
                             </SocialIcons>
                             <SocialIcons style={{marginBottom: "20px"}}>
                                 <SocialIconLink
-                                    href="https://www.youtube.com/@csdroboconnitk9210"
+                                    href="https://www.youtube.com/@csdroboconnitk"
                                     target="_blank"
                                     aria-label="Youtube"
                                 >

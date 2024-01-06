@@ -217,6 +217,11 @@ export default {
             "photo": "Hariharan.jpg"
         },
         {
+            "name": "Apoorva Agrawal",
+            "designation": "Team Member",
+            "photo": "Apoorva.jpg"
+        },
+        {
             "name": "Chirag Ingle",
             "designation": "Team Member",
             "photo": "Chirag.jpg"
