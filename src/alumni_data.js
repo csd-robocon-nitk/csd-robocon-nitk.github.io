@@ -63,7 +63,7 @@ export default [
         "photo": "KV Nayak.jpg",
     },
     {
-        "name": "Ajit Kadwadkar",
+        "name": "Late. Ajit Kadwadkar",
         "batch": "1979",
         "department": "Mechanical Engineering",
         "photo": "Ajit Kadwadkar.jpg",

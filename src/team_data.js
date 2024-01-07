@@ -44,11 +44,6 @@ export default {
             "photo": "Dev Goti.jpg"
         },
         {
-            "name": "Omkar Arvind Jungade",
-            "designation": "Team Member",
-            "photo": "Omkar.jpg"
-        },
-        {
             "name": "N Nagabhushanam",
             "designation": "Team Member",
             "photo": "Bhushan.jpg"
@@ -118,19 +113,9 @@ export default {
             "photo": "Pooja.jpeg"
         },
         {
-            "name": "Tahsin Khan",
-            "designation": "Team Member",
-            "photo": "Tahsin.jpg"
-        },
-        {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Team Member",
             "photo": "Raghavendra.jpg"
-        },       
-        {
-            "name": "Anushka Das",
-            "designation": "Team Member",
-            "photo": "Anushka.jpg"
         },
         {
             "name": "Jash Lapsiwala",
@@ -157,11 +142,6 @@ export default {
             "name": "Avadhoot Anant Nadgouda",
             "designation": "Team Member",
             "photo": "Anant.jpg"
-        },
-        {
-            "name": "Akash Gowda H U",
-            "designation": "Team Member",
-            "photo": "Akash.jpg"
         },
         {
             "name": "Srinidhi Srinivas",
@@ -230,6 +210,11 @@ export default {
             "name": "Ashna Sanjay Gaude",
             "designation": "Team Member",
             "photo": "Ashna.jpg"
+        },
+        {
+            "name": "Akash Gowda H U",
+            "designation": "Team Member",
+            "photo": "Akash.jpg"
         }
     ],
 

@@ -32,7 +32,7 @@ const HeroSection = () => {
         }
 
         if (progress == 100) {
-            setTimeout(() => setVisible(false), 1000)
+            setTimeout(() => setVisible(false), 200)
             return
         }
 
