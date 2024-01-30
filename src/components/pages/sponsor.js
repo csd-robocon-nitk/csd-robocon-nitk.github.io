@@ -2,23 +2,15 @@ import React from "react"
 import "./sponsor.css"
 import sponsors from "../../images/sponsors.png"
 import { Link } from "react-scroll"
+import SponsorsSection from "../index/sponsors/sponsors"
 
 export default function Sponsor () {
     return (
         <>
+            <div className = "nav-placeholder"></div>
+            <SponsorsSection />
             <div id="sponsor-page" className="dark">
-                <div className = "nav-placeholder"></div>
                 <div id = "container">
-                    <h1>SPONSORSHIPS</h1>
-                    <h2>Our Current Sponsors</h2>
-                    <img src = {sponsors} />
-
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
                     <h1>ENDOWMENT FUND</h1>
                     <h2>Account Details</h2>
                     <br/>
