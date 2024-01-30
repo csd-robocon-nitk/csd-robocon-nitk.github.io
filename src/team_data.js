@@ -132,21 +132,10 @@ export default {
             "designation": "Team Member",
             "photo": "Chirag.jpg"
         },
-        
-        {
-            "name": "Pranav Sudheer",
-            "designation": "Team Member",
-            "photo": "Pranav.jpg"
-        },
         {
             "name": "Avadhoot Anant Nadgouda",
             "designation": "Team Member",
             "photo": "Anant.jpg"
-        },
-        {
-            "name": "Srinidhi Srinivas",
-            "designation": "Team Member",
-            "photo": "Srinidhi.jpg"
         },
         {
             "name": "Naisha Kishore",
@@ -215,6 +204,11 @@ export default {
             "name": "Akash Gowda H U",
             "designation": "Team Member",
             "photo": "Akash.jpg"
+        },
+        {
+            "name": "Srinidhi Srinivas",
+            "designation": "Team Member",
+            "photo": "Srinidhi.jpg"
         }
     ],
 
