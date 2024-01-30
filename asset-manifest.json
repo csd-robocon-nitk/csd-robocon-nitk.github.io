@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d2e68628.css",
-    "main.js": "/static/js/main.ab813cbe.js",
+    "main.js": "/static/js/main.9a77edf6.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/LOGO_ROBOCON2024.png": "/static/media/LOGO_ROBOCON2024.99673ace8b83e9375d6b.png",
     "static/media/009.jpg": "/static/media/009.ce88c1d02e334af05edc.jpg",
@@ -34,10 +34,10 @@
     "static/media/altair.png": "/static/media/altair.96e27a02ef9f45985cf2.png",
     "index.html": "/index.html",
     "main.d2e68628.css.map": "/static/css/main.d2e68628.css.map",
-    "main.ab813cbe.js.map": "/static/js/main.ab813cbe.js.map"
+    "main.9a77edf6.js.map": "/static/js/main.9a77edf6.js.map"
   },
   "entrypoints": [
     "static/css/main.d2e68628.css",
-    "static/js/main.ab813cbe.js"
+    "static/js/main.9a77edf6.js"
   ]
 }
