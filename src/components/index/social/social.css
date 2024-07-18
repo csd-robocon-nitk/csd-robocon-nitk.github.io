@@ -108,7 +108,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
 }
   
@@ -147,7 +147,7 @@
     font-size: 14px;
     color: #777777;
 }
-  
+
 #social #instagram #post #footer a {
     text-decoration: none;
     color: #555555;
@@ -155,9 +155,14 @@
     font-weight: bold;
     transition: 0.3s;
 }
-  
+
 #social #instagram #post #footer a:hover {
     color: #f5ebeb;
+}
+
+#social #instagram-container {
+    padding: 0px 20px;
+    position: relative;
 }
 
 #social #left, #social #right {
@@ -175,8 +180,4 @@
 
 #social #right {
     right: -10px;
-}
-
-#instagram-container {
-    padding: 0px 20px;
 }
