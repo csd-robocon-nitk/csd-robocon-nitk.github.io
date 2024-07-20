@@ -1,14 +1,13 @@
 import React from "react"
 import './sponsors.css'
 
-import bosch from '../../../images/bosch.png'
-import ansys from '../../../images/ansys.png'
+import ansys from '../../../images/ansys.svg'
 import signitive from '../../../images/signitive.png'
-import capstone from '../../../images/capstone.jpg'
 import solidworks from '../../../images/solidworks.png'
 import altair from '../../../images/altair.png'
 import altium from '../../../images/altium.png'
-import ingenium from '../../../images/ingenium.webp'
+import delhivery from '../../../images/delhivery.png'
+import janatics from '../../../images/janatics.png'
 
 export default function SponsorsSection () {
     return (
@@ -21,14 +20,13 @@ export default function SponsorsSection () {
                         <img src={bosch} />
                     </div> */}
                     <div className="row">
-                        <img src={bosch} />
                         <img src={ansys} />
                         <img src={signitive} />
-                        <img src={capstone} />
                         <img src={solidworks} />
                         <img src={altair} />
                         <img src={altium} />
-                        <img src={ingenium} />
+                        <img src={delhivery} />
+                        <img src={janatics} />
                     </div>
                 </div>
             </div>
