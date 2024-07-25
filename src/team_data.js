@@ -1,23 +1,18 @@
 export default {
     "Core Team": [
         {
-            "name": "Siddh Narhari",
+            "name": "Jash Lapsiwala",
             "designation": "Captain",
-            "photo": "Siddh.jpg"
+            "photo": "Jash.jpg"
         },
         {
-            "name": "Aryan Rawate",
-            "designation": "Vice-Captain",
-            "photo": "Aryan.jpg"
-        },
-        {
-            "name": "Sriramu A R",
-            "designation": "Technical Head",
-            "photo": "Shriramu.jpg"
+            "name": "Raghavendra Pandurang Jadhav",
+            "designation": "Vice-Captain Technical",
+            "photo": "Raghavendra.jpg"
         },
         {
             "name": "Dev Goti",
-            "designation": "Treasurer",
+            "designation": "Vice-Captain Operational",
             "photo": "Dev Goti.jpg"
         }
     ],
@@ -69,11 +64,6 @@ export default {
             "photo": "Nishchay.jpg"
         },
         {
-            "name": "Apoorva Agrawal",
-            "designation": "Team Member",
-            "photo": "Apoorva.jpg"
-        },
-        {
             "name": "Krishnapranav",
             "designation": "Team Member",
             "photo": "Krishnapranav.jpg"
@@ -91,26 +81,10 @@ export default {
     ],
 
     "Mechanical Team": [
-        
-        {
-            "name": "Hafiz Yunus Kalathil",
-            "designation": "Mech Head",
-            "photo": "Hafiz.jpg"
-        },
         {
             "name": "Harish B",
             "designation": "Mech Head",
             "photo": "Harish.jpg"
-        },
-        {
-            "name": "Matcha Nitin",
-            "designation": "Team Member",
-            "photo": "Nitin.jpg"
-        },
-        {
-            "name": "Pooja M",
-            "designation": "Team Member",
-            "photo": "Pooja.jpeg"
         },
         {
             "name": "Raghavendra Pandurang Jadhav",
@@ -152,33 +126,13 @@ export default {
     "Support Team": [
         {
             "name": "Raghavendra Pandurang Jadhav",
-            "designation": "Media & Web Head",
+            "designation": "Team Member",
             "photo": "Raghavendra.jpg"
-        },
-        {
-            "name": "Shriramu A R",
-            "designation": "Team Member",
-            "photo": "Shriramu.jpg"
-        },
-        {
-            "name": "Aryan Rawate",
-            "designation": "Team Member",
-            "photo": "Aryan.jpg"
         },
         {
             "name": "Joel Jojo Painuthara",
             "designation": "Team Member",
             "photo": "Joel.jpg"
-        },
-        {
-            "name": "Pooja M",
-            "designation": "Team Member",
-            "photo": "Pooja.jpeg"
-        },
-        {
-            "name": "Shivam Tewari",
-            "designation": "Team Member",
-            "photo": "Shivam.jpg"
         },
         {
             "name": "J Hariharan",
@@ -200,16 +154,6 @@ export default {
             "designation": "Team Member",
             "photo": "Ashna.jpg"
         },
-        {
-            "name": "Akash Gowda H U",
-            "designation": "Team Member",
-            "photo": "Akash.jpg"
-        },
-        {
-            "name": "Srinidhi Srinivas",
-            "designation": "Team Member",
-            "photo": "Srinidhi.jpg"
-        }
     ],
 
     "Faculty Advisors": [

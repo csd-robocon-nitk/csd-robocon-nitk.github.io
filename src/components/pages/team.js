@@ -14,20 +14,20 @@ export default function Team () {
 
                 <div className="section">
                     <h3>Core Team</h3>
+                    {/* <div className='flex'>
+                        <TeamCard
+                            {...team_data['Core Team'][0]}
+                        />
+                    </div> */}
                     <div className='flex'>
                         <TeamCard
                             {...team_data['Core Team'][0]}
                         />
-                    </div>
-                    <div className='flex'>
                         <TeamCard
                             {...team_data['Core Team'][1]}
                         />
                         <TeamCard
                             {...team_data['Core Team'][2]}
-                        />
-                        <TeamCard
-                            {...team_data['Core Team'][3]}
                         />
                     </div>
                 </div>
