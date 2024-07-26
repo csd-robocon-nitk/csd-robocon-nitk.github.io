@@ -7,26 +7,31 @@ export default {
         },
         {
             "name": "Raghavendra Pandurang Jadhav",
-            "designation": "Vice-Captain Technical",
+            "designation": "Vice-Captain (Technical)",
             "photo": "Raghavendra.jpg"
         },
         {
             "name": "Dev Goti",
-            "designation": "Vice-Captain Operational",
+            "designation": "Vice-Captain (Operations)",
             "photo": "Dev Goti.jpg"
         }
     ],
 
-    "ECE & P Team": [
+    "EC&P Team": [
         {
             "name": "Sai Aswin Madhavan",
-            "designation": "ECE & P Head ",
+            "designation": "EC&P Head ",
             "photo": "Sai Aswin.jpg"
         },
         {
             "name": "Joel Jojo Painuthara",
-            "designation": "ECE & P Head",
+            "designation": "EC&P Head",
             "photo": "Joel.jpg"
+        },
+        {
+            "name": "Adithya Kasal",
+            "designation": "Treasurer (EC&P)",
+            "photo": "Adithya Kasal.jpg"
         },
         {
             "name": "Prakhar Goel",
@@ -47,11 +52,6 @@ export default {
             "name": "Ashna Sanjay Gaude",
             "designation": "Team Member",
             "photo": "Ashna.jpg"
-        },
-        {
-            "name": "Adithya Kasal",
-            "designation": "Team Member",
-            "photo": "Adithya Kasal.jpg"
         },
         {
             "name": "Niranjan M K",
@@ -87,6 +87,11 @@ export default {
             "photo": "Harish.jpg"
         },
         {
+            "name": "Afeef Bin Ahamed Ali",
+            "designation": "Treasurer (Mech)",
+            "photo": "Afeef.jpg"
+        },
+        {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Team Member",
             "photo": "Raghavendra.jpg"
@@ -116,14 +121,24 @@ export default {
             "designation": "Team Member",
             "photo": "Naisha.jpg"
         },
-        {
-            "name": "Afeef Bin Ahamed Ali",
-            "designation": "Team Member",
-            "photo": "Afeef.jpg"
-        }
     ],
 
     "Support Team": [
+        {
+            "name": "Ashna Sanjay Gaude",
+            "designation": "Marketing Lead",
+            "photo": "Ashna.jpg"
+        },
+        {
+            "name": "Chirag Ingle",
+            "designation": "Media Lead",
+            "photo": "Chirag.jpg"
+        },
+        {
+            "name": "J Hariharan",
+            "designation": "Web Lead",
+            "photo": "Hariharan.jpg"
+        },
         {
             "name": "Raghavendra Pandurang Jadhav",
             "designation": "Team Member",
@@ -135,24 +150,19 @@ export default {
             "photo": "Joel.jpg"
         },
         {
-            "name": "J Hariharan",
-            "designation": "Team Member",
-            "photo": "Hariharan.jpg"
-        },
-        {
             "name": "Apoorva Agrawal",
             "designation": "Team Member",
             "photo": "Apoorva.jpg"
         },
         {
-            "name": "Chirag Ingle",
+            "name": "Rishadd Ranjith",
             "designation": "Team Member",
-            "photo": "Chirag.jpg"
+            "photo": "Rishadd.jpg"
         },
         {
-            "name": "Ashna Sanjay Gaude",
+            "name": "Nisha Shetty",
             "designation": "Team Member",
-            "photo": "Ashna.jpg"
+            "photo": "Nisha.jpg"
         },
     ],
 

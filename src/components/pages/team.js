@@ -35,7 +35,7 @@ export default function Team () {
                 <div className="section">
                     <h3>Electronics and Programming Team</h3>
                     <TeamContent
-                        team={team_data['ECE & P Team']}
+                        team={team_data['EC&P Team']}
                     />
                 </div>
 
