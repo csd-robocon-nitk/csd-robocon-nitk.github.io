@@ -6,33 +6,17 @@ export default function TeamContent ({ team }) {
     return (
         <>
             <div className="flex">
-                {team.map(({ name, photo, designation }, i) => 
+                {team.map(({ name, photo, designation, linkedin, email }, i) => 
                     (
                         photo
                         ?
                         <TeamCard
-                            name={name} photo={photo} designation={designation} position={i}
+                            name={name} photo={photo} designation={designation} position={i} linkedin={linkedin} email={email} 
                         />
                         :
                         null
                     )
                 )}
-            </div>
-
-            <div id="team-content">
-                <ul>
-                    
-                    {team.map(({ name, photo }) =>
-                        (
-                            photo
-                            ?
-                            null
-                            :
-                            <li><span class="material-symbols-outlined">smart_toy</span>{name}</li>
-                        )
-                    )}
-                
-                </ul>
             </div>
         </>
     )

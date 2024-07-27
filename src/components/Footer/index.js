@@ -144,8 +144,8 @@ return (
 			<Heading>Contact Us</Heading>
 			<FooterLink href="https://www.nitk.ac.in/">NITK</FooterLink>
 			<FooterLink href="https://csd.nitk.ac.in/">CSD</FooterLink>
-			<FooterLink href="#">Email-: robocon@nitk.edu.in</FooterLink>
-			<FooterLink href="#">Phone No -: 8890688735</FooterLink>
+			<FooterLink href="#">Email: robocon@nitk.edu.in</FooterLink>
+			<FooterLink href="#">Phone No: <br/> +91 87806 78167</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>

@@ -14,22 +14,9 @@ export default function Team () {
 
                 <div className="section">
                     <h3>Core Team</h3>
-                    {/* <div className='flex'>
-                        <TeamCard
-                            {...team_data['Core Team'][0]}
-                        />
-                    </div> */}
-                    <div className='flex'>
-                        <TeamCard
-                            {...team_data['Core Team'][0]}
-                        />
-                        <TeamCard
-                            {...team_data['Core Team'][1]}
-                        />
-                        <TeamCard
-                            {...team_data['Core Team'][2]}
-                        />
-                    </div>
+                    {
+                        team_data['Core Team'].map(data => <TeamContent team={data} />)
+                    }
                 </div>
 
                 <div className="section">

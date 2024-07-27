@@ -77,6 +77,7 @@
 
 #team-page .section {
     border-bottom: 2px dashed var(--accent);
+    padding: 20px 0px 40px 0px;
 }
 
 #team-page .flex {
@@ -85,7 +86,7 @@
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    padding: 20px 0px;
 }
 
 #team-page h2 {
@@ -107,7 +108,7 @@
     /* gap: 20px; */
 }
 
-#team-page .team-card {
+#team-page .team-card, #team-page .team-details-card {
     border-radius: 8px;
     border: 3px solid var(--accent);
     /* background-color: var(--bg); */
@@ -126,6 +127,11 @@
     /* transition: 0.15s; */
 }
 
+#team-page .team-details-card {
+    padding: 30px 20px;
+    width: 250px;
+}
+
 /* #team-page .team-card:hover {
     margin: -2px 0px 0px -2px;
     box-shadow: 1px 1px 10px var(--accent-light);
@@ -134,10 +140,16 @@
 #team-page .team-card img {
     width: 100px;
     border-radius: 50%;
-    margin: 0px 0px 40px 0px;
+    margin-bottom: 40px;
 }
 
-#team-page .team-card h4 {
+#team-page .team-details-card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#team-page .team-card h4, #team-page .team-details-card h4 {
     font-size: 22px;
     text-align: center;
     padding: 10px 0px;
@@ -146,6 +158,18 @@
 #team-page .team-card p {
     text-align: center;
 }
+
+#team-page .team-details-card .socials {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#team-page .team-details-card .socials a {
+    color: white;
+}
+
 
 #team-page #team-content ul {
     list-style-type: none;
