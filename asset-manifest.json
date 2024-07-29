@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.410a0925.css",
-    "main.js": "/static/js/main.3ef4cd8e.js",
+    "main.js": "/static/js/main.03a9cc75.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/LOGO_ROBOCON2024.png": "/static/media/LOGO_ROBOCON2024.99673ace8b83e9375d6b.png",
     "static/media/009.jpg": "/static/media/009.ce88c1d02e334af05edc.jpg",
@@ -30,13 +30,13 @@
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
     "static/media/delhivery.png": "/static/media/delhivery.a802e7f4f2e00d0ff6bf.png",
     "static/media/altair.png": "/static/media/altair.96e27a02ef9f45985cf2.png",
-    "static/media/ansys.svg": "/static/media/ansys.58eb4fd09be7b0fe947a4a0927f33f97.svg",
+    "static/media/ansys.svg": "/static/media/ansys.3cbce4c33c171482c3d23510e143ac45.svg",
     "index.html": "/index.html",
     "main.410a0925.css.map": "/static/css/main.410a0925.css.map",
-    "main.3ef4cd8e.js.map": "/static/js/main.3ef4cd8e.js.map"
+    "main.03a9cc75.js.map": "/static/js/main.03a9cc75.js.map"
   },
   "entrypoints": [
     "static/css/main.410a0925.css",
-    "static/js/main.3ef4cd8e.js"
+    "static/js/main.03a9cc75.js"
   ]
 }
