@@ -111,12 +111,6 @@ export default {
             "email": "ashnasanjaygaude.221ec112@nitk.edu.in",
         },
         {
-            "name": "Niranjan M K",
-            "photo": "Niranjan.jpg",
-            "linkedin": "http://www.linkedin.com/in/niranjan-mk-ba9b45278",
-            "email": "niranjanmk.221ec232@nitk.edu.in",
-        },
-        {
             "name": "Nishchay Pallav",
             "photo": "Nishchay.jpg",
             "linkedin": "http://linkedin.com/in/nishchaypallav",
@@ -129,17 +123,59 @@ export default {
             "email": "krishnapranav.221me227@nitk.edu.in",
         },
         {
-            "name": "Priyanka Deokar",
-            "photo": "Priyanka.jpg",
-            "linkedin": "https://www.linkedin.com/in/priyanka-deokar29",
-            "email": "deokarpriyanka29@gmail.com",
-        },
-        {
             "name": "J Hariharan",
             "photo": "Hariharan.jpg",
             "linkedin": "https://www.linkedin.com/in/hariharan-j-47aa43244/",
             "email": "jhariharan2004@gmail.com",
-        }
+        },
+        {
+            "name": "Ashmit R Sambrani",
+            "photo": "Ashmit R Sambrani.jpg",
+            "linkedin": "https://www.linkedin.com/in/ashmitsambrani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "ash29062@gmail.com"
+        },
+        {
+            "name": "Ranjit Tanneru",
+            "photo": "Ranjit Tanneru.jpg",
+            "linkedin": "https://www.linkedin.com/in/ranjit-tanneru-47381b267",
+            "email": "ranjittanneru2005@gmail.com"
+        },
+        {
+            "name": "Rohit L",
+            "photo": "Rohit L.jpeg",
+            "linkedin": "https://www.linkedin.com/in/rohit-l-731819290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "rohitlalu.231ec248@nitk.edu.in"
+        },
+        {
+            "name": "Dhruv",
+            "photo": "Dhruv.png",
+            "linkedin": "https://www.linkedin.com/in/dhruv-nayak-6802b427a/",
+            "email": "dhruvnayak.231ai007@nitk.edu.in"
+        },
+        {
+            "name": "Prateek Goel",
+            "photo": "Prateek Goel.jpeg",
+            "linkedin": "",
+            "email": "prateek.231ec142@nitk.edu.in"
+        },
+        {
+            "name": "Rishadd Ranjith",
+            "photo": "Rishadd Ranjith.jpg",
+            "linkedin": "https://in.linkedin.com/in/rishadd-ranjith-082aa4200",
+            "email": "ranjithrishadd@gmail.com"
+        },
+        {
+            "name": "Shamanth P V",
+            "photo": "Shamanth P V.jpeg",
+            "linkedin": "https://www.linkedin.com/in/shamanth-pv-263145262/",
+            "email": "shamanth.231ec255@nitk.edu.in"
+        },
+        {
+            "name": "Dhanya D",
+            "photo": "Dhanya D.jpeg",
+            "linkedin": "https://www.linkedin.com/in/dhanya-dwarakanath-0357032a7",
+            "email": "dhanya.231ec214@nitk.edu.in"
+        },
     ],
 
     "Mechanical Team": [
@@ -185,6 +221,54 @@ export default {
             "linkedin": "http://linkedin.com/in/avadhoot-nadgouda",
             "email": "avadhoot2003@gmail.com",
         },
+        {
+            "name": "Lianna Mascarenhas",
+            "photo": "Lianna Mascarenhas.jpeg",
+            "linkedin": "https://www.linkedin.com/in/liannamascarenhas",
+            "email": "lianna.231me325@nitk.edu.in"
+        },
+        {
+            "name": "Hridya Vinu",
+            "photo": "Hridya Vinu.jpeg",
+            "linkedin": "https://www.linkedin.com/in/hridya-ann-vinu",
+            "email": "hridyavinu.231me220@nitk.edu.in"
+        },
+        {
+            "name": "K P Sreevatsav",
+            "photo": "K P Sreevatsav.jpg",
+            "linkedin": "",
+            "email": "sreevatsavprasath@gmail.com"
+        },
+        {
+            "name": "Santo Davis",
+            "photo": "Santo Davis.jpeg",
+            "linkedin": "https://www.linkedin.com/in/santo-davis-aa5286324/",
+            "email": "santodavis.231me347@nitk.edu.in"
+        },
+        {
+            "name": "Siddharth Shetty",
+            "photo": "Siddharth Shetty.jpeg",
+            "linkedin": "",
+            "email": "siddharthshetty005@gmail.com"
+        },
+        {
+            "name": "Pratham P Palankar",
+            "photo": "Pratham P Palankar.jpeg",
+            "linkedin": "https://www.linkedin.com/in/pratham-palankar-277421293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "palankarpratham@gmail.com"
+        },
+        {
+            "name": "Madhur Shivanna",
+            "photo": "Madhur Shivanna.jpg",
+            "linkedin": "",
+            "email": "madhurshivanna.231ee131@nitk.edu.in"
+        },
+        {
+            "name": "Nisha Shetty",
+            "photo": "Nisha Shetty.png",
+            "linkedin": "www.linkedin.com/in/nisha-shetty06",
+            "email": "nishashetty.231ee237@nitk.edu.in"
+        },
     ],
 
     "Support Team": [
@@ -226,15 +310,58 @@ export default {
         },
         {
             "name": "Rishadd Ranjith",
-            "photo": "Rishadd.jpg",
-            "linkedin": "",
-            "email": "",
+            "photo": "Rishadd Ranjith.jpg",
+            "linkedin": "https://in.linkedin.com/in/rishadd-ranjith-082aa4200",
+            "email": "ranjithrishadd@gmail.com"
         },
         {
             "name": "Nisha Shetty",
-            "photo": "Nisha.jpg",
+            "photo": "Nisha Shetty.png",
+            "linkedin": "www.linkedin.com/in/nisha-shetty06",
+            "email": "nishashetty.231ee237@nitk.edu.in"
+        },
+        {
+            "name": "Karthik Thippeswamy",
+            "photo": "Karthik Thippeswamy.jpeg",
+            "linkedin": "https://www.linkedin.com/in/karthik-t-761636324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "karthik200501.t@gmail.com"
+        },
+        {
+            "name": "Dheemanth J",
+            "photo": "Dheemanth J.jpeg",
+            "linkedin": "https://www.linkedin.com/in/dheemanth-j-9967462a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "dheemanthj.231ec215@nitk.edu.in"
+        },
+        {
+            "name": "Varshini Reddy Pateel",
+            "photo": "Varshini Reddy Pateel.jpeg",
             "linkedin": "",
-            "email": "",
+            "email": "varshini.pateel@gmail.com"
+        },
+    
+        {
+            "name": "Bhavan Kumaar Shan S",
+            "photo": "Bhavan Kumaar Shan.S.jpeg",
+            "linkedin": "",
+            "email": "bksgd711@gmail.com"
+        },
+        {
+            "name": "N Gopala Krishna",
+            "photo": "N Gopala Krishna.jpeg",
+            "linkedin": "www.linkedin.com/in/n-gopala-krishna-qaz4695",
+            "email": "n.gopalakrishna4695@gmail.com"
+        },
+        {
+            "name": "Shanjiv A",
+            "photo": "Shanjiv A.jpeg",
+            "linkedin": "https://www.linkedin.com/in/shanjiv",
+            "email": "shanjiv177@gmail.com"
+        },
+        {
+            "name": "Akshith Vinu",
+            "photo": "Akshith Vinu.jpg",
+            "linkedin": "https://www.linkedin.com/in/akshith-vinu-16782422b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "email": "akshithvinu.231ec105@nitk.edu.in"
         },
     ],
 
@@ -242,12 +369,12 @@ export default {
         {
             "name": "Dr Pruthviraj U",
             "designation": "Associated Faculty, CSD",
-            "photo": "Pruthviraj.jpg"
+            "photo": "Pruthviraj.png"
         },
         {
             "name": "Dr Gangadharan K V",
             "designation": "Associated Faculty, CSD",
-            "photo": "Gangadharan.jpg"
+            "photo": "Gangadharan.png"
         }
     ]
    
