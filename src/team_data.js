@@ -147,7 +147,7 @@ export default {
             "email": "rohitlalu.231ec248@nitk.edu.in"
         },
         {
-            "name": "Dhruv",
+            "name": "Dhruv Nayak",
             "photo": "Dhruv.png",
             "linkedin": "https://www.linkedin.com/in/dhruv-nayak-6802b427a/",
             "email": "dhruvnayak.231ai007@nitk.edu.in"
