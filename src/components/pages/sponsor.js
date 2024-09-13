@@ -30,7 +30,7 @@ export default function Sponsor () {
 
                     <h1>GET MORE INFO</h1>
                     <h2>Brochure</h2>
-                    <iframe src="https://drive.google.com/file/d/1NZ-4J5EOKL8z-rkPwFhmeJEPw4LTennb/preview" width="100%" height="600" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1INHI8PAVUPyMlsGJEyaKg4sT-WHE-aZ2/preview" width="100%" height="600" allow="autoplay"></iframe>
                     {/* <iframe src="/assets/CRN Brochure 2024.pdf" width="100%" height="600" allow="autoplay"></iframe> */}
                     <br/>
                     <br/>
