@@ -5,7 +5,7 @@
 #sponsor-page #container {
     max-width: 900px;
     margin: 0px auto;
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
 }
 
 #sponsor-page img {
