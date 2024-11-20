@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e27e40dd.css",
-    "main.js": "/static/js/main.43760c02.js",
+    "main.css": "/static/css/main.d9fdeda7.css",
+    "main.js": "/static/js/main.46e10a88.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/009.jpg": "/static/media/009.ce88c1d02e334af05edc.jpg",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
@@ -17,7 +17,6 @@
     "static/media/002.jpg": "/static/media/002.76f498bc41e3f5b758dd.jpg",
     "static/media/board.jpg": "/static/media/board.56c666efe86457d628ae.jpg",
     "static/media/001.jpg": "/static/media/001.65b021f5a8b47e7dadf7.jpg",
-    "static/media/sponsors.png": "/static/media/sponsors.cff1d2bc93003058820a.png",
     "static/media/altium.png": "/static/media/altium.ca353164a74e079b166f.png",
     "static/media/003.jpg": "/static/media/003.ef5bc5dfd25d8381bdf2.jpg",
     "static/media/LOGO_ROBOCON2024.png": "/static/media/LOGO_ROBOCON2024.9c3c5e46fda80a861877.png",
@@ -32,11 +31,11 @@
     "static/media/altair.png": "/static/media/altair.96e27a02ef9f45985cf2.png",
     "static/media/ansys.svg": "/static/media/ansys.58eb4fd09be7b0fe947a4a0927f33f97.svg",
     "index.html": "/index.html",
-    "main.e27e40dd.css.map": "/static/css/main.e27e40dd.css.map",
-    "main.43760c02.js.map": "/static/js/main.43760c02.js.map"
+    "main.d9fdeda7.css.map": "/static/css/main.d9fdeda7.css.map",
+    "main.46e10a88.js.map": "/static/js/main.46e10a88.js.map"
   },
   "entrypoints": [
-    "static/css/main.e27e40dd.css",
-    "static/js/main.43760c02.js"
+    "static/css/main.d9fdeda7.css",
+    "static/js/main.46e10a88.js"
   ]
 }
