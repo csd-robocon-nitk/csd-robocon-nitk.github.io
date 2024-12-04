@@ -13,7 +13,7 @@ let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m)
 
 
 const HeroSection = () => {
-    let [ visible, setVisible ] = useState(true)
+    let [ visible, setVisible ] = useState(false)
     let [ progress, setProgress ] = useState(0)
     let [ tagline, setTagline ] = useState(0)
     let [ display, setDisplay ] = useState(true)
@@ -29,6 +29,7 @@ const HeroSection = () => {
             if (taglineFull[tagline] == " ") delay = 300
 
             setTimeout(() => setTagline(t => t+1), delay)
+            return
         }
 
         if (progress == 100) {
