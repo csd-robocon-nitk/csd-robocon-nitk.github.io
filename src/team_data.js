@@ -252,12 +252,6 @@ export default {
             "email": "siddharthshetty005@gmail.com"
         },
         {
-            "name": "Pratham P Palankar",
-            "photo": "Pratham P Palankar.jpeg",
-            "linkedin": "https://www.linkedin.com/in/pratham-palankar-277421293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            "email": "palankarpratham@gmail.com"
-        },
-        {
             "name": "Madhur Shivanna",
             "photo": "Madhur Shivanna.jpg",
             "linkedin": "",

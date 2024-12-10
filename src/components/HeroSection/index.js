@@ -7,7 +7,6 @@ import {
     HeroP
 } from "./HeroElements";
 import Video from "../../videos/robocon.mp4";
-import logo from "../../images/logo.png"
 
 let randint = (m, n) => parseInt(Math.random() * (n-m+1) + m)
 
@@ -88,7 +87,7 @@ const HeroSection = () => {
                 zIndex: 4
             }}>
                 <div style={{position: "relative"}}>
-                    <img src = {logo} style = {{ height: "100px" }} />
+                    <img src = "/logo.png" style = {{ height: "100px" }} />
                     <div style = {{
                         height: "100px",
                         width: `${100-progress}%`,

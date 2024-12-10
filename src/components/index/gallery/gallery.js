@@ -12,10 +12,6 @@ import img7 from '../../../images/gallery/007.jpg'
 import img8 from '../../../images/gallery/008.jpg'
 import img9 from '../../../images/gallery/009.jpg'
 import img10 from '../../../images/gallery/010.jpg'
-import img11 from '../../../images/gallery/011.jpg'
-import img12 from '../../../images/gallery/012.jpg'
-import img13 from '../../../images/gallery/013.jpg'
-import img14 from '../../../images/gallery/014.jpg'
 
 
 
@@ -49,35 +45,27 @@ export default function GallerySection () {
                     <img src={img3} />
                     <img src={img4} />
                     <img src={img5} />
-                    <img src={img6} />
-                    <img src={img7} />
                     <img src={img1} />
                     <img src={img2} />
                     <img src={img3} />
                     <img src={img4} />
                     <img src={img5} />
-                    <img src={img6} />
-                    <img src={img7} />
                 </div>                
             </div>
             <div id="images" ref = {parallaxEffect2.ref}>
                 <div id = "filmstrip"></div>
 
                 <div id="inner">
+                    <img src={img6} />
+                    <img src={img7} />
                     <img src={img8} />
                     <img src={img9} />
                     <img src={img10} />
-                    <img src={img11} />
-                    <img src={img12} />
-                    <img src={img13} />
-                    <img src={img14} />
+                    <img src={img6} />
+                    <img src={img7} />
                     <img src={img8} />
                     <img src={img9} />
                     <img src={img10} />
-                    <img src={img11} />
-                    <img src={img12} />
-                    <img src={img13} />
-                    <img src={img14} />
                 </div>
 
                 <div id = "filmstrip"></div>

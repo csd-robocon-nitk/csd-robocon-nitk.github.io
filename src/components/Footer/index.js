@@ -90,7 +90,6 @@ const Footer = () => {
 export default Footer;*/
 import React from "react";
 import {FaInstagram,FaYoutube, FaLinkedin, } from "react-icons/fa";
-import logo from "../../images/logo.png";
 import {
 Box,
 Container,
@@ -120,7 +119,7 @@ return (
             <Column>
             <Row style={{marginBottom: "30px"}}>
   <NavLogo to="/">
-    <img src={logo} style={{maxHeight: "90px", padding: "05px" }}/>
+    <img src="/logo.png" style={{maxHeight: "90px", padding: "05px" }}/>
   </NavLogo>
 </Row>
 <Row style={{textAlign:"right"}}> 

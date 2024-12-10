@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import logo from "../../images/logo.png";
 import { useLocation } from "react-router-dom";
 
 import {
@@ -40,7 +39,7 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrolNav}>
                     <NavbarContainer>
                         <NavLogo to="/">
-                            <img src={logo} style={{maxHeight: "80px", padding: "10px" }}/>
+                            <img src="/logo.png" style={{maxHeight: "80px", padding: "10px" }}/>
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />

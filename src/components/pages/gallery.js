@@ -10,13 +10,13 @@ export default function Gallery () {
                 <h2>Gallery</h2>
                 <div id="grid">
                     {
-                        (new Array(28)).fill(0).map((el, i) => {
+                        (new Array(24)).fill(0).map((el, i) => {
                             let n = 2-Math.floor(Math.log(i+1)/Math.log(10))
                             let x = ""
                             for (let i=0 ; i<n ; i++) x += "0"
                             x += i+1
 
-                            let path = `${process.env.PUBLIC_URL}/images/gallery/${x}.jpg`
+                            let path = `${process.env.PUBLIC_URL}/images/gallery/new/${x}.jpg`
                             return <img src={path}  key={i} />
                         })
                     }
