@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.86aa1b8f.css",
-    "main.js": "/static/js/main.768e1b78.js",
+    "main.css": "/static/css/main.d9fdeda7.css",
+    "main.js": "/static/js/main.78beb706.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
-    "static/media/ariel.png": "/static/media/ariel.6d670d89730b0e755b55.png",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
     "static/media/005.jpg": "/static/media/005.8f2377c09cccb57abb2d.jpg",
     "static/media/006.jpg": "/static/media/006.2091428b71539d9adc57.jpg",
@@ -13,6 +12,7 @@
     "static/media/004.jpg": "/static/media/004.03b632a233cbd383d24e.jpg",
     "static/media/008.jpg": "/static/media/008.933c41b70e1c5825b6f2.jpg",
     "static/media/010.jpg": "/static/media/010.49671ffe3f95ba1aaadc.jpg",
+    "static/media/board.jpg": "/static/media/board.56c666efe86457d628ae.jpg",
     "static/media/altium.png": "/static/media/altium.ca353164a74e079b166f.png",
     "static/media/LOGO_ROBOCON2024.png": "/static/media/LOGO_ROBOCON2024.9c3c5e46fda80a861877.png",
     "static/media/signitive.png": "/static/media/signitive.204a1a04491dc9b30549.png",
@@ -24,13 +24,13 @@
     "static/media/svg-3.svg": "/static/media/svg-3.61a92f51b2536943eab5525cecd8688c.svg",
     "static/media/delhivery.png": "/static/media/delhivery.a802e7f4f2e00d0ff6bf.png",
     "static/media/altair.png": "/static/media/altair.96e27a02ef9f45985cf2.png",
-    "static/media/ansys.svg": "/static/media/ansys.58eb4fd09be7b0fe947a4a0927f33f97.svg",
+    "static/media/ansys.svg": "/static/media/ansys.3cbce4c33c171482c3d23510e143ac45.svg",
     "index.html": "/index.html",
-    "main.86aa1b8f.css.map": "/static/css/main.86aa1b8f.css.map",
-    "main.768e1b78.js.map": "/static/js/main.768e1b78.js.map"
+    "main.d9fdeda7.css.map": "/static/css/main.d9fdeda7.css.map",
+    "main.78beb706.js.map": "/static/js/main.78beb706.js.map"
   },
   "entrypoints": [
-    "static/css/main.86aa1b8f.css",
-    "static/js/main.768e1b78.js"
+    "static/css/main.d9fdeda7.css",
+    "static/js/main.78beb706.js"
   ]
 }
