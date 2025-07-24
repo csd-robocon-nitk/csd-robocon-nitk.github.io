@@ -115,8 +115,8 @@
     /* color: var(--color); */
     /* min-height: 300px; */
     min-width: 200px;
-    padding: 60px 20px;
-    width: 300px;
+    padding: 30px 20px;
+    width: 250px;
     max-width: 95vw;
 
     display: flex;
@@ -127,10 +127,10 @@
     /* transition: 0.15s; */
 }
 
-#team-page .team-details-card {
+/* #team-page .team-details-card {
     padding: 30px 20px;
     width: 250px;
-}
+} */
 
 /* #team-page .team-card:hover {
     margin: -2px 0px 0px -2px;

@@ -2,96 +2,41 @@ export default {
     "Core Team": [
         [
             {
-                "name": "Jash Lapsiwala",
+                "name": "J Hariharan",
                 "designation": "Captain",
-                "photo": "Jash.jpg"
-            },
-        ],
-        [
-            {
-                "name": "Raghavendra Pandurang Jadhav",
-                "designation": "Vice-Captain (Technical)",
-                "photo": "Raghavendra.jpg"
-            },
-            {
-                "name": "Dev Goti",
-                "designation": "Vice-Captain (Operations)",
-                "photo": "Dev Goti.jpg"
-            }
-        ],
-        [
-            {
-                "name": "Sai Aswin Madhavan",
-                "designation": "EC&P Head ",
-                "photo": "Sai Aswin.jpg"
-            },
-            {
-                "name": "Joel Jojo Painuthara",
-                "designation": "EC&P Head",
-                "photo": "Joel.jpg"
-            },
-            {
-                "name": "Harish B",
-                "designation": "Mech Head",
-                "photo": "Harish.jpg"
-            },
-        ],
-        [
-            {
-                "name": "Adithya Kasal",
-                "designation": "Treasurer (EC&P)",
-                "photo": "Adithya Kasal.jpg"
+                "photo": "Hariharan.jpg"
             },
             {
                 "name": "Afeef Bin Ahamed Ali",
-                "designation": "Treasurer (Mech)",
+                "designation": "Vice-Captain",
                 "photo": "Afeef.jpg"
             },
         ],
         [
             {
-                "name": "Ashna Sanjay Gaude",
-                "designation": "Marketing Lead",
-                "photo": "Ashna.jpg"
+                "name": "Adithya Kasal",
+                "designation": "EC&P Lead",
+                "photo": "Adithya Kasal.jpg"
+            },
+            {
+                "name": "Krishnapranav",
+                "designation": "EC&P Lead",
+                "photo": "Krishnapranav.jpg",
             },
             {
                 "name": "Chirag Ingle",
-                "designation": "Media Lead",
+                "designation": "Mech Lead",
                 "photo": "Chirag.jpg"
             },
             {
-                "name": "J Hariharan",
-                "designation": "Web Lead",
-                "photo": "Hariharan.jpg"
+                "name": "Avadhoot Anant Nadgouda",
+                "designation": "Mech Lead",
+                "photo": "Anant.jpg",
             },
-        ]
+        ],
     ],
 
     "EC&P Team": [
-        {
-            "name": "Joel Jojo Painuthara",
-            "photo": "Joel.jpg",
-            "linkedin": "https://www.linkedin.com/in/joeljojop",
-            "email": "joeljojop@gmail.com",
-        },
-        {
-            "name": "Sai Aswin Madhavan",
-            "photo": "Sai Aswin.jpg",
-            "linkedin": "",
-            "email": "",
-        },
-        {
-            "name": "Prakhar Goel",
-            "photo": "Prakhar.jpg",
-            "linkedin": "",
-            "email": "",
-        },
-        {
-            "name": "Dev Goti",
-            "photo": "Dev Goti.jpg",
-            "linkedin": "https://www.linkedin.com/in/dev-goti",
-            "email": "devgoti1683@gmail.com",
-        },
         {
             "name": "Adithya Kasal",
             "photo": "Adithya Kasal.jpg",
@@ -99,28 +44,16 @@ export default {
             "email": "adithya.kasal@gmail.com",
         },
         {
-            "name": "N Nagabhushanam",
-            "photo": "Bhushan.jpg",
-            "linkedin": "",
-            "email": "",
-        },
-        {
-            "name": "Ashna Sanjay Gaude",
-            "photo": "Ashna.jpg",
-            "linkedin": "https://www.linkedin.com/in/ashna-gaude",
-            "email": "ashnasanjaygaude.221ec112@nitk.edu.in",
-        },
-        {
-            "name": "Nishchay Pallav",
-            "photo": "Nishchay.jpg",
-            "linkedin": "http://linkedin.com/in/nishchaypallav",
-            "email": "nishchaypallav2002@gmail.com",
-        },
-        {
             "name": "Krishnapranav",
             "photo": "Krishnapranav.jpg",
             "linkedin": "https://www.linkedin.com/in/krishnapranav2409",
             "email": "krishnapranav.221me227@nitk.edu.in",
+        },
+        {
+            "name": "N Nagabhushanam",
+            "photo": "Bhushan.jpg",
+            "linkedin": "https://www.linkedin.com/in/nagabhushanam-at-work/",
+            "email": "nnagabhushanam.221cs231@nitk.edu.in",
         },
         {
             "name": "J Hariharan",
@@ -131,7 +64,7 @@ export default {
         {
             "name": "Ashmit R Sambrani",
             "photo": "Ashmit R Sambrani.jpg",
-            "linkedin": "https://www.linkedin.com/in/ashmitsambrani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "linkedin": "https://www.linkedin.com/in/ashmitsambrani",
             "email": "ash29062@gmail.com"
         },
         {
@@ -143,19 +76,13 @@ export default {
         {
             "name": "Rohit L",
             "photo": "Rohit L.jpeg",
-            "linkedin": "https://www.linkedin.com/in/rohit-l-731819290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "linkedin": "https://www.linkedin.com/in/rohit-l-731819290",
             "email": "rohitlalu.231ec248@nitk.edu.in"
-        },
-        {
-            "name": "Dhruv Nayak",
-            "photo": "Dhruv.png",
-            "linkedin": "https://www.linkedin.com/in/dhruv-nayak-6802b427a/",
-            "email": "dhruvnayak.231ai007@nitk.edu.in"
         },
         {
             "name": "Prateek Goel",
             "photo": "Prateek Goel.jpeg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/prateek-goel-90a094294/",
             "email": "prateek.231ec142@nitk.edu.in"
         },
         {
@@ -171,44 +98,14 @@ export default {
             "email": "shamanth.231ec255@nitk.edu.in"
         },
         {
-            "name": "Dhanya D",
-            "photo": "Dhanya D.jpeg",
-            "linkedin": "https://www.linkedin.com/in/dhanya-dwarakanath-0357032a7",
-            "email": "dhanya.231ec214@nitk.edu.in"
+            "name": "Dheemanth J",
+            "photo": "Dheemanth J.jpeg",
+            "linkedin": "https://www.linkedin.com/in/dheemanth-j-9967462a1",
+            "email": "dheemanthj.231ec215@nitk.edu.in"
         },
     ],
 
     "Mechanical Team": [
-        {
-            "name": "Harish B",
-            "photo": "Harish.jpg",
-            "linkedin": "https://www.linkedin.com/in/harish1212",
-            "email": "harishbala1212@gmail.com",
-        },
-        {
-            "name": "Raghavendra Pandurang Jadhav",
-            "photo": "Raghavendra.jpg",
-            "linkedin": "https://www.linkedin.com/in/raghav515/",
-            "email": "rjadhav4103@gmail.com",
-        },
-        {
-            "name": "Jash Lapsiwala",
-            "photo": "Jash.jpg",
-            "linkedin": "https://www.linkedin.com/in/jashlapsiwala/",
-            "email": "lapsiwalajashkumarjanak.211me223@nitk.edu.in",
-        },
-        {
-            "name": "Afeef Bin Ahamed Ali",
-            "photo": "Afeef.jpg",
-            "linkedin": "http://linkedin.com/in/afeef-bin-ahamed-ali",
-            "email": "afeefahamed22@gmail.com",
-        },
-        {
-            "name": "Manas Priye",
-            "photo": "Manas.jpg",
-            "linkedin": "",
-            "email": "",
-        },
         {
             "name": "Chirag Ingle",
             "photo": "Chirag.jpg",
@@ -220,6 +117,18 @@ export default {
             "photo": "Anant.jpg",
             "linkedin": "http://linkedin.com/in/avadhoot-nadgouda",
             "email": "avadhoot2003@gmail.com",
+        },
+        {
+            "name": "Afeef Bin Ahamed Ali",
+            "photo": "Afeef.jpg",
+            "linkedin": "http://linkedin.com/in/afeef-bin-ahamed-ali",
+            "email": "afeefahamed22@gmail.com",
+        },
+        {
+            "name": "Manas Priye",
+            "photo": "Manas.jpg",
+            "linkedin": "https://www.linkedin.com/in/manas-priye-440a432b8/",
+            "email": "manaspriye.221ch027@nitk.edu.in",
         },
         {
             "name": "Lianna Mascarenhas",
@@ -234,27 +143,15 @@ export default {
             "email": "hridyavinu.231me220@nitk.edu.in"
         },
         {
-            "name": "K P Sreevatsav",
-            "photo": "K P Sreevatsav.jpg",
-            "linkedin": "",
-            "email": "sreevatsavprasath@gmail.com"
-        },
-        {
             "name": "Santo Davis",
             "photo": "Santo Davis.jpeg",
             "linkedin": "https://www.linkedin.com/in/santo-davis-aa5286324/",
             "email": "santodavis.231me347@nitk.edu.in"
         },
         {
-            "name": "Siddharth Shetty",
-            "photo": "Siddharth Shetty.jpeg",
-            "linkedin": "",
-            "email": "siddharthshetty005@gmail.com"
-        },
-        {
             "name": "Madhur Shivanna",
             "photo": "Madhur Shivanna.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/madhur-shivanna-7b3042308/",
             "email": "madhurshivanna.231ee131@nitk.edu.in"
         },
         {
@@ -263,27 +160,15 @@ export default {
             "linkedin": "www.linkedin.com/in/nisha-shetty06",
             "email": "nishashetty.231ee237@nitk.edu.in"
         },
+        {
+            "name": "Kavin Narayan",
+            "photo": "Kavin Narayan.png",
+            "linkedin": "http://www.linkedin.com/in/kavin-narayan",
+            "email": "kavinnarayan.231mt021@nitk.edu.in"
+        },
     ],
 
     "Support Team": [
-        {
-            "name": "Raghavendra Pandurang Jadhav",
-            "photo": "Raghavendra.jpg",
-            "linkedin": "https://www.linkedin.com/in/raghav515/",
-            "email": "rjadhav4103@gmail.com",
-        },
-        {
-            "name": "Joel Jojo Painuthara",
-            "photo": "Joel.jpg",
-            "linkedin": "https://www.linkedin.com/in/joeljojop",
-            "email": "joeljojop@gmail.com",
-        },
-        {
-            "name": "Ashna Sanjay Gaude",
-            "photo": "Ashna.jpg",
-            "linkedin": "https://www.linkedin.com/in/ashna-gaude",
-            "email": "ashnasanjaygaude.221ec112@nitk.edu.in",
-        },
         {
             "name": "Chirag Ingle",
             "photo": "Chirag.jpg",
@@ -344,12 +229,6 @@ export default {
             "photo": "N Gopala Krishna.jpeg",
             "linkedin": "www.linkedin.com/in/n-gopala-krishna-qaz4695",
             "email": "n.gopalakrishna4695@gmail.com"
-        },
-        {
-            "name": "Shanjiv A",
-            "photo": "Shanjiv A.jpeg",
-            "linkedin": "https://www.linkedin.com/in/shanjiv",
-            "email": "shanjiv177@gmail.com"
         },
         {
             "name": "Akshith Vinu",
