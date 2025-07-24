@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.245bf959.css",
-    "main.js": "/static/js/main.16b2ab0f.js",
+    "main.js": "/static/js/main.83f9d6ed.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
     "static/media/005.jpg": "/static/media/005.8f2377c09cccb57abb2d.jpg",
@@ -27,10 +27,10 @@
     "static/media/ansys.svg": "/static/media/ansys.58eb4fd09be7b0fe947a4a0927f33f97.svg",
     "index.html": "/index.html",
     "main.245bf959.css.map": "/static/css/main.245bf959.css.map",
-    "main.16b2ab0f.js.map": "/static/js/main.16b2ab0f.js.map"
+    "main.83f9d6ed.js.map": "/static/js/main.83f9d6ed.js.map"
   },
   "entrypoints": [
     "static/css/main.245bf959.css",
-    "static/js/main.16b2ab0f.js"
+    "static/js/main.83f9d6ed.js"
   ]
 }
