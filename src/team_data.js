@@ -34,6 +34,28 @@ export default {
                 "photo": "Anant.jpg",
             },
         ],
+        [
+            {
+                "name": "Ashmit R Sambrani",
+                "designation": "PR Lead",
+                "photo": "Ashmit R Sambrani.jpg"
+            },
+            {
+                "name": "Ranjit Tanneru",
+                "designation": "PR Lead",
+                "photo": "Ranjit Tanneru.jpg"
+            },
+            {
+                "name": "Nisha Shetty",
+                "designation": "PR Lead",
+                "photo": "Nisha Shetty.png"
+            },
+            {
+                "name": "Dheemanth J",
+                "designation": "Treasurer",
+                "photo": "Dheemanth J.jpeg"
+            },
+        ]
     ],
 
     "EC&P Team": [
@@ -162,7 +184,7 @@ export default {
         },
         {
             "name": "Kavin Narayan",
-            "photo": "Kavin Narayan.png",
+            "photo": "Kavin Narayan.jpeg",
             "linkedin": "http://www.linkedin.com/in/kavin-narayan",
             "email": "kavinnarayan.231mt021@nitk.edu.in"
         },
@@ -186,12 +208,18 @@ export default {
             "photo": "Apoorva.jpg",
             "linkedin": "https://www.linkedin.com/in/apoorva-agrawal-8302b825a/",
             "email": "apoorva.agrawal36@gmail.com",
+        },        
+        {
+            "name": "Ashmit R Sambrani",
+            "photo": "Ashmit R Sambrani.jpg",
+            "linkedin": "https://www.linkedin.com/in/ashmitsambrani",
+            "email": "ash29062@gmail.com"
         },
         {
-            "name": "Rishadd Ranjith",
-            "photo": "Rishadd Ranjith.jpg",
-            "linkedin": "https://in.linkedin.com/in/rishadd-ranjith-082aa4200",
-            "email": "ranjithrishadd@gmail.com"
+            "name": "Ranjit Tanneru",
+            "photo": "Ranjit Tanneru.jpg",
+            "linkedin": "https://www.linkedin.com/in/ranjit-tanneru-47381b267",
+            "email": "ranjittanneru2005@gmail.com"
         },
         {
             "name": "Nisha Shetty",
@@ -200,21 +228,27 @@ export default {
             "email": "nishashetty.231ee237@nitk.edu.in"
         },
         {
-            "name": "Karthik Thippeswamy",
-            "photo": "Karthik Thippeswamy.jpeg",
-            "linkedin": "https://www.linkedin.com/in/karthik-t-761636324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            "email": "karthik200501.t@gmail.com"
-        },
-        {
             "name": "Dheemanth J",
             "photo": "Dheemanth J.jpeg",
-            "linkedin": "https://www.linkedin.com/in/dheemanth-j-9967462a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "linkedin": "https://www.linkedin.com/in/dheemanth-j-9967462a1",
             "email": "dheemanthj.231ec215@nitk.edu.in"
+        },
+        {
+            "name": "Rishadd Ranjith",
+            "photo": "Rishadd Ranjith.jpg",
+            "linkedin": "https://in.linkedin.com/in/rishadd-ranjith-082aa4200",
+            "email": "ranjithrishadd@gmail.com"
+        },
+        {
+            "name": "Karthik Thippeswamy",
+            "photo": "Karthik Thippeswamy.jpeg",
+            "linkedin": "https://www.linkedin.com/in/karthik-t-761636324",
+            "email": "karthik200501.t@gmail.com"
         },
         {
             "name": "Varshini Reddy Pateel",
             "photo": "Varshini Reddy Pateel.jpeg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/varshini-reddy-pateel-311460290/",
             "email": "varshini.pateel@gmail.com"
         },
     
@@ -233,7 +267,7 @@ export default {
         {
             "name": "Akshith Vinu",
             "photo": "Akshith Vinu.jpg",
-            "linkedin": "https://www.linkedin.com/in/akshith-vinu-16782422b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "linkedin": "https://www.linkedin.com/in/akshith-vinu-16782422b",
             "email": "akshithvinu.231ec105@nitk.edu.in"
         },
     ],

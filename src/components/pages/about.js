@@ -14,8 +14,6 @@ export default function About () {
     return (
         <div id="about-page" className='dark'>
             <div id="nav-placeholder" />
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
 
             <div id="container">
                 <div class="section">
