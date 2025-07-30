@@ -1,0 +1,43 @@
+#recs-page {
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 40px 15px;
+}
+
+#recs-page h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+#recs-page .link {
+    text-decoration: none;
+    color: white;
+}
+
+#recs-page .link .link-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 10000px;
+    margin: 30px auto;
+}
+
+#recs-page .link .link-content svg {
+    flex-shrink: 0;
+}
+
+#recs-page .link .link-content .link-text :nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#recs-page .link .link-content .link-text :not(:nth-child(1)) {
+    font-size: 15px;
+}
+
+#recs-page h1.note {
+    text-align: center;
+    margin-top: 10px;
+}

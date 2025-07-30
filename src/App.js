@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import About from "./components/pages/about";
 import Vision from "./components/pages/vision";
 import Sponsor from "./components/pages/sponsor";
+import RecsPage from "./components/pages/recs"
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/sponsor" element={<Sponsor />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/vision" element={<Vision />} />
+                <Route path="/recs" element={<RecsPage />} />
             </Routes>
             <Footer />
         </Router>
