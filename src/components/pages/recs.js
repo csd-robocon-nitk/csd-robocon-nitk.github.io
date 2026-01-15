@@ -22,7 +22,7 @@ export default function RecsPage () {
                 </div>
             </a>
 
-            <a className="link" href="https://unstop.com/o/BAbxjfr" target="_blank">
+            <a className="link" href="https://unstop.com/o/jFYczLW" target="_blank">
                 <div className="link-content">
                     <LuCircuitBoard size={40} />
                     <div className="link-text">
@@ -31,7 +31,7 @@ export default function RecsPage () {
                 </div>
             </a>
 
-            <a className="link" href="https://unstop.com/o/jFYczLW" target="_blank">
+            <a className="link" href="https://unstop.com/o/BAbxjfr" target="_blank">
                 <div className="link-content">
                     <FaGears size={40} />
                     <div className="link-text">
