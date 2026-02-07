@@ -144,7 +144,7 @@ return (
 			<FooterLink href="https://www.nitk.ac.in/">NITK</FooterLink>
 			<FooterLink href="https://csd.nitk.ac.in/">CSD</FooterLink>
 			<FooterLink href="#">Email: robocon@nitk.edu.in</FooterLink>
-			<FooterLink href="#">Phone No: <br/> +91 87806 78167</FooterLink>
+			<FooterLink href="#">Phone No: <br/> +91 80500 30224</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
