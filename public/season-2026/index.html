@@ -234,6 +234,111 @@
       margin: 0 auto; line-height: 1.75;
     }
 
+    /* ── Ideafactory rich content block ── */
+    .collab-about {
+      max-width: 1300px; margin: 0 auto 64px;
+      padding: 48px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 48px 80px;
+    }
+    /* Quote — top left */
+    .collab-about-quote {
+      grid-column: 1; grid-row: 1;
+      border-left: 4px solid var(--purple);
+      padding: 6px 0 6px 28px;
+    }
+    .collab-about-quote p {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(18px, 2vw, 24px);
+      color: var(--white); line-height: 1.7;
+      font-weight: 400;
+    }
+    .collab-about-quote cite {
+      display: block; margin-top: 18px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; letter-spacing: 0.4em;
+      color: var(--purple); text-transform: uppercase;
+      font-style: normal;
+    }
+    /* Body — top right, spans both rows */
+    .collab-about-body {
+      grid-column: 2; grid-row: 1 / 3;
+      display: flex; flex-direction: column; gap: 32px;
+      justify-content: center;
+    }
+    .collab-about-body p {
+      font-size: clamp(17px, 1.5vw, 21px); color: var(--muted); line-height: 2.0;
+    }
+    /* Ideafactory image — bottom left */
+    .collab-if-image {
+      grid-column: 1; grid-row: 2;
+      position: relative; overflow: hidden;
+      border: 1px solid var(--border);
+      min-height: 220px;
+    }
+    .collab-if-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.85) saturate(0.9);
+      transition: filter 0.4s;
+    }
+    .collab-if-image:hover img { filter: brightness(1) saturate(1); }
+    /* Decorative corner marks on image */
+    .collab-if-image::before, .collab-if-image::after {
+      content: ''; position: absolute; z-index: 2; pointer-events: none;
+      width: 20px; height: 20px;
+    }
+    .collab-if-image::before {
+      top: 10px; left: 10px;
+      border-top: 2px solid var(--purple); border-left: 2px solid var(--purple);
+    }
+    .collab-if-image::after {
+      bottom: 10px; right: 10px;
+      border-bottom: 2px solid var(--purple); border-right: 2px solid var(--purple);
+    }
+    .collab-if-image-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 10px 16px;
+      background: linear-gradient(to top, rgba(7,16,42,0.85), transparent);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px; letter-spacing: 0.3em;
+      color: var(--muted); text-transform: uppercase;
+      z-index: 2;
+    }
+    /* Facility tags */
+    .collab-facilities {
+      display: flex; flex-wrap: wrap; gap: 14px;
+    }
+    .facility-tag {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 10px 22px; border-radius: 2px; border: 1px solid;
+    }
+    .facility-tag.laser  { color: var(--cyan);  border-color: rgba(0,212,212,0.4);  background: rgba(0,212,212,0.06);  }
+    .facility-tag.print  { color: var(--gold2); border-color: rgba(240,192,64,0.4); background: rgba(240,192,64,0.06); }
+    .facility-tag.mfg    { color: var(--purple);border-color: rgba(124,92,191,0.4); background: rgba(124,92,191,0.06); }
+    /* CTA button */
+    .collab-cta {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--white); text-decoration: none;
+      padding: 18px 40px;
+      border: 1px solid var(--purple);
+      background: rgba(124,92,191,0.1);
+      transition: background 0.3s, color 0.3s;
+      align-self: flex-start;
+    }
+    .collab-cta:hover { background: rgba(124,92,191,0.25); color: #d4bbff; }
+    @media (max-width: 800px) {
+      .collab-about { grid-template-columns: 1fr; grid-template-rows: auto; padding: 32px 20px; gap: 32px; }
+      .collab-about-body  { grid-column: 1; grid-row: auto; }
+      .collab-if-image    { grid-column: 1; grid-row: auto; min-height: 180px; }
+    }
+
     .slabel {
       font-family: 'Share Tech Mono', monospace; font-size: 10px;
       letter-spacing: 0.45em; color: var(--cyan); text-transform: uppercase; margin-bottom: 8px;
@@ -438,16 +543,16 @@
     
     <div class="hero-video-bg">
       <video autoplay muted loop playsinline>
-        <source src="../images/hero-video.mp4" type="video/mp4">
+        <source src="images/hero-video.mp4" type="video/mp4">
       </video>
     </div>
 
     <div class="hero-top-logos">
       <div class="logo-placeholder">
-        <img src="../images/csd-robocon-logo.png" alt="CSD Robocon NITK Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='CSD Robocon NITK'">
+        <img src="images/csd-robocon-logo.png" alt="CSD Robocon NITK Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='CSD Robocon NITK'">
       </div>
       <div class="logo-placeholder">
-        <img src="../images/abu-robocon-logo.png" alt="ABU Robocon 2026 Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='ABU Robocon 2026'">
+        <img src="images/abu-robocon-logo.png" alt="ABU Robocon 2026 Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='ABU Robocon 2026'">
       </div>
     </div>
 
@@ -473,7 +578,7 @@
 
         <div class="track-bot" id="bot1" style="left:95%">
           <div class="bot-placeholder">
-             <img src="../images/bot1-render.png" alt="R1 Bot">
+             <img src="images/bot1-render.png" alt="R1 Bot">
           </div>
           <div class="track-bot-name">R01</div>
         </div>
@@ -494,7 +599,7 @@
 
         <div class="track-bot" id="bot2" style="left:5%">
           <div class="bot-placeholder">
-             <img src="../images/bot2-render.png" alt="R2 Bot">
+             <img src="images/bot2-render.png" alt="R2 Bot">
           </div>
           <div class="track-bot-name">R02</div>
         </div>
@@ -513,18 +618,64 @@
 <section id="ideafactory-poster">
 
   <div class="collab-title-bar reveal">
-    <img src="../images/ideafactory-logo.png" alt="Ideafactory" class="collab-logo"
+    <img src="images/ideafactory-logo.png" alt="Ideafactory" class="collab-logo"
          onerror="this.outerHTML='<span class=\'collab-logo-text\'>IDEA Factory</span>'">
     <span class="collab-x">×</span>
-    <img src="../images/csd-robocon-logo.png" alt="CSD Robocon NITK" class="collab-logo"
+    <img src="images/csd-robocon-logo.png" alt="CSD Robocon NITK" class="collab-logo"
          onerror="this.outerHTML='<span class=\'collab-logo-text robocon\'>CSD Robocon NITK</span>'">
   </div>
 
-  <p class="collab-desc-bar reveal">
-    The advanced facilities at Ideafactory were instrumental in bringing our ideas to reality — 
-    precision laser cutters for complex structural components, and extensive 3D printing for 
-    specialised grippers and mounts across both robots.
-  </p>
+  <!-- ── Ideafactory rich content block ── -->
+  <div class="collab-about reveal">
+
+    <!-- TOP LEFT: quote -->
+    <div class="collab-about-quote">
+      <p>
+        "IDEAFACTORY is a collaborative space where young innovators transform
+        cutting-edge research into impactful solutions for society and the nation."
+      </p>
+      <!-- <cite>— idea.nitk.ac.in</cite> -->
+    </div>
+
+    <!-- RIGHT (spans both rows): description + tags + button -->
+    <div class="collab-about-body">
+      <p>
+        The advanced manufacturing facilities at Ideafactory were instrumental in
+        bringing our designs to life. Precision laser cutters allowed us to fabricate
+        complex aluminium chassis structures and acrylic mounts directly from CAD —
+        reducing iteration time dramatically. Extensive 3D printing gave us the freedom
+        to prototype and refine specialised grippers, sensor mounts, and drive
+        components across both robots without compromise.
+      </p>
+
+      <div class="collab-facilities">
+        <span class="facility-tag laser">Laser Cutting</span>
+        <span class="facility-tag print">3D Printing</span>
+        <span class="facility-tag mfg">Rapid Prototyping</span>
+        <span class="facility-tag mfg">CNC Machining</span>
+      </div>
+
+      <a href="https://idea.nitk.ac.in" target="_blank" rel="noopener" class="collab-cta">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Visit Ideafactory
+      </a>
+    </div>
+
+    <!-- BOTTOM LEFT: Ideafactory image -->
+    <!--
+      Place your Ideafactory photo at:  images/ideafactory-space.jpg
+      Any photo of the lab/facility works. Recommended size: 900×600px or wider.
+    -->
+    <div class="collab-if-image">
+      <img src="images/ideafactory-space.jpg"
+           alt="Ideafactory facilities at NITK"
+           onerror="this.parentNode.style.background='rgba(124,92,191,0.06)';this.style.display='none'"/>
+      <div class="collab-if-image-caption">Ideafactory — NITK Surathkal</div>
+    </div>
+
+  </div>
 
   <div class="bots-stagger">
 
@@ -535,7 +686,7 @@
           <clipPath id="clip-kfs-pick"><circle cx="1090" cy="500" r="78"/></clipPath>
         </defs>
 
-        <image href="../images/r1-render.png"
+        <image href="images/r1-render.png"
                x="0" y="10" width="700" height="600"
                preserveAspectRatio="xMidYMid meet"/>
 
@@ -548,7 +699,7 @@
         <text x="734" y="128" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">GRIPPER</text>
         <line x1="800" y1="150" x2="895" y2="220" stroke="#B27BFF" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
         <circle cx="960" cy="320" r="120" fill="rgba(178,123,255,0.06)" stroke="#B27BFF" stroke-width="1.5" stroke-opacity="0.6"/>
-        <image href="../images/staff-gripper.png" x="850" y="220" width="258" height="258"
+        <image href="images/staff-gripper.png" x="850" y="220" width="258" height="258"
                clip-path="url(#clip-staff)" preserveAspectRatio="xMidYMid slice"/>
 
         <rect x="200" y="660" width="800" height="360" rx="4"
@@ -573,7 +724,7 @@
               fill="rgba(178,123,255,0.07)" stroke="rgba(178,123,255,0.5)" stroke-width="1"/>
         <text x="734" y="484" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">KFS PICKING</text>
         <text x="734" y="504" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">MECHANISM</text>
-        <image href="../images/kfs-picking.png" x="1012" y="422" width="156" height="156"
+        <image href="images/kfs-picking.png" x="1012" y="422" width="156" height="156"
                clip-path="url(#clip-kfs-pick)" preserveAspectRatio="xMidYMid slice"/>
       </svg>
       <div class="bot-diagram-label r1">Robot 01 · R1</div>
@@ -587,7 +738,7 @@
           <clipPath id="clip-kfs-gr"><circle cx="110" cy="400" r="120"/></clipPath>
         </defs>
 
-        <image href="../images/r2-render.png"
+        <image href="images/r2-render.png"
                x="500" y="10" width="700" height="600"
                preserveAspectRatio="xMidYMid meet"/>
 
@@ -600,7 +751,7 @@
         <text x="292" y="128" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">GRIPPER</text>
         <line x1="280" y1="106" x2="196" y2="112" stroke="#D0BDF4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
         <circle cx="110" cy="118" r="120" fill="rgba(208,189,244,0.06)" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.6"/>
-        <image href="../images/spearhead-gripper.png" x="16" y="24" width="258" height="258"
+        <image href="images/spearhead-gripper.png" x="16" y="24" width="258" height="258"
                clip-path="url(#clip-spear)" preserveAspectRatio="xMidYMid slice"/>
 
         <rect x="190" y="660" width="800" height="360" rx="4"
@@ -634,7 +785,7 @@
         <text x="312" y="525" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">KFS GRIPPER</text>
         <line x1="300" y1="510" x2="220" y2="450" stroke="#D0BDF4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
         <circle cx="110" cy="400" r="120" fill="rgba(208,189,244,0.06)" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.6"/>
-        <image href="../images/kfs-gripper.png" x="0" y="280" width="225" height="225"
+        <image href="images/kfs-gripper.png" x="0" y="280" width="225" height="225"
                clip-path="url(#clip-kfs-gr)" preserveAspectRatio="xMidYMid slice"/>
       </svg>
       <div class="bot-diagram-label r2">Robot 02 · R2</div>
@@ -682,7 +833,7 @@
       <div class="slabel" style="font-size: 12px; letter-spacing: 0.15em; color: var(--white);">The Minds Behind the Machines</div>
       
       <div class="team-photo-wrapper">
-        <img src="../images/team-photo.jpg" alt="CSD Robocon NITK Team" onerror="this.outerHTML='<div class=\'ph-box\'>[ Upload team-photo.jpg ]</div>'">
+        <img src="images/team-photo.jpg" alt="CSD Robocon NITK Team" onerror="this.outerHTML='<div class=\'ph-box\'>[ Upload team-photo.jpg ]</div>'">
       </div>
     </div>
 
@@ -692,7 +843,7 @@
         
         <div class="profile-card">
           <div class="profile-img">
-            <img src="../images/director.jpg" alt="Profile 1" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 1</div>'">
+            <img src="images/director.jpg" alt="Profile 1" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 1</div>'">
           </div>
           <div class="profile-name">Prof. B Ravi</div>
           <div class="profile-role">Director, NITK</div>
@@ -700,7 +851,7 @@
         
         <div class="profile-card">
           <div class="profile-img">
-            <img src="../images/Pruthviraj.png" alt="Profile 2" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 2</div>'">
+            <img src="images/Pruthviraj.png" alt="Profile 2" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 2</div>'">
           </div>
           <div class="profile-name">Dr. Pruthviraj U</div>
           <div class="profile-role">Faculty Advisor, CSD Robocon NITK</div>
@@ -714,7 +865,7 @@
 </section>
 
 <footer class="site-footer">
-  <img src="../images/csd-robocon-logo.png" alt="CSR Robocon NITK Logo" class="footer-logo" onerror="this.outerHTML='<div class=\'brand\'>CSR Robocon NITK</div>'">
+  <img src="images/csd-robocon-logo.png" alt="CSR Robocon NITK Logo" class="footer-logo" onerror="this.outerHTML='<div class=\'brand\'>CSR Robocon NITK</div>'">
   <div class="credit">Season 2026 · Kung Fu Quest · In Collaboration with Ideafactory</div>
 </footer>
 
