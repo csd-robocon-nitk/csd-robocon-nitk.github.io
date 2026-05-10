@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Season 2026 — Kung Fu Quest | CSR Robocon NITK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Serif+SC:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      /* ── PURPLE THEME MATCHING THE POSTER ── */
+      --navy:    #170624; /* Deep dark purple background */
+      --navy2:   #25093A; /* Slightly lighter deep purple */
+      --cyan:    #D0BDF4; /* Light lilac for R1 and main accents */
+      --purple:  #8B5CF6; /* Rich mid-purple */
+      --gold:    #E9D5FF; /* Pale purple/white for contrast */
+      --gold2:   #B27BFF; /* Vibrant purple for R2 accents */
+      --crimson: #6D28D9; /* Deep violet */
+      --blue:    #C084FC; /* Soft purple */
+      --white:   #ffffff;
+      --muted:   #A588C2; /* Muted purple-grey for secondary text */
+      --border:  rgba(208, 189, 244, 0.15); /* Lilac border */
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Rajdhani', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(208,189,244,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(208,189,244,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none; z-index: 0;
+    }
+
+    /* Progress bar */
+    .progress-bar { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 2000; }
+    .progress-fill { height: 100%; width: 0%; background: linear-gradient(to right, var(--cyan), var(--gold2)); }
+
+    /* ── HERO & TRACK SCROLL SECTION ── */
+    #hero-track-wrapper {
+      position: relative;
+      height: 250vh; /* scrollable room */
+      background: linear-gradient(155deg, var(--navy) 0%, var(--navy2) 55%, var(--navy) 100%);
+    }
+
+    #track-sticky {
+      position: sticky; top: 0;
+      height: 100vh;
+      display: flex; flex-direction: column;
+      padding-top: 20px;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* Video Background */
+    .hero-video-bg {
+      position: absolute; inset: 0; z-index: 0; overflow: hidden;
+    }
+    .hero-video-bg video {
+      width: 100%; height: 100%; object-fit: cover; opacity: 0.35;
+    }
+    .hero-video-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, var(--navy) 100%);
+    }
+
+    /* Top Logos Layer */
+    .hero-top-logos {
+      position: absolute; top: 40px; left: 0; right: 0;
+      display: flex; justify-content: space-between;
+      padding: 0 48px; pointer-events: none; z-index: 10;
+    }
+    .logo-placeholder {
+      width: clamp(150px, 15vw, 240px); height: clamp(80px, 10vw, 160px);
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      font-family: 'Share Tech Mono', monospace; font-size: clamp(8px, 1vw, 11px); text-transform: uppercase;
+      background: transparent; border-radius: 4px; color: var(--muted);
+    }
+    .logo-placeholder img {
+      max-width: 90%; max-height: 90%; object-fit: contain;
+    }
+
+    /* Title strip */
+    .hero-title-bar {
+      padding: 20px 48px 0;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 6px; position: relative; z-index: 5;
+    }
+    .hero-eyebrow {
+      font-family: 'Share Tech Mono', monospace; font-size: 11px;
+      letter-spacing: 0.5em; color: var(--cyan); text-transform: uppercase;
+    }
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(38px, 6vw, 76px); font-weight: 900; line-height: 0.95;
+      color: var(--white); text-shadow: 0 0 60px rgba(208,189,244,0.3);
+      margin: 0;
+    }
+    .hero-title em { color: var(--cyan); font-style: normal; }
+
+    /* THICK BAR TRACKS */
+    .tracks-container {
+      flex: 1; display: flex; flex-direction: column; 
+      justify-content: flex-end; 
+      gap: 80px; 
+      padding: 0 8% 20vh; 
+      position: relative; z-index: 5;
+    }
+
+    .thick-track {
+      position: relative;
+      height: 48px; 
+      background: rgba(255,255,255,0.03);
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      width: 100%;
+    }
+
+    .thick-tl-fill {
+      position: absolute; top: 0; bottom: 0; width: 0%;
+      border-radius: 24px; transition: width 0.06s linear;
+    }
+    
+    .track-r1 .thick-tl-fill { 
+      background: linear-gradient(270deg, var(--cyan) 0%, rgba(208,189,244,0.15) 100%);
+      right: 0; left: auto; box-shadow: 0 0 25px rgba(208,189,244,0.25);
+    }
+    .track-r2 .thick-tl-fill { 
+      background: linear-gradient(90deg, var(--gold2) 0%, rgba(178,123,255,0.15) 100%);
+      left: 0; right: auto; box-shadow: 0 0 25px rgba(178,123,255,0.25);
+    }
+
+    .track-node {
+      position: absolute; top: 0; bottom: 0;
+      display: flex; justify-content: center; align-items: center; z-index: 2;
+      transform: translateX(-50%);
+    }
+    .node-text {
+      white-space: nowrap;
+      font-family: 'Share Tech Mono', monospace; font-size: 13px; font-weight: bold;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      opacity: 0; transition: opacity 0.4s ease;
+      color: var(--navy); 
+    }
+
+    .track-node.revealed .node-text { opacity: 1; }
+
+    /* Sliding bot Placeholder */
+    .track-bot {
+      position: absolute; top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5; transition: left 0.06s linear;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    
+    .bot-placeholder {
+      background-color: transparent;
+      display: flex; align-items: center; justify-content: center;
+    }
+    
+    .bot-placeholder img {
+      width: 100%; height: 100%; object-fit: contain;
+      mix-blend-mode: screen; 
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+    }
+    
+    .track-r1 .bot-placeholder {
+      height: clamp(280px, 36vw, 520px); 
+      width:  clamp(180px, 23vw, 330px); 
+    }
+    .track-r2 .bot-placeholder {
+      height: clamp(180px, 23vw, 330px); 
+      width:  clamp(280px, 36vw, 520px); 
+    }
+
+    .track-bot-name {
+      position: absolute; bottom: -55px; 
+      font-family: 'Share Tech Mono', monospace; font-size: 10px; letter-spacing: 0.2em;
+      padding: 2px 8px; border-radius: 3px; font-weight: bold;
+    }
+    .track-r1 .track-bot-name { background: var(--cyan);  color: var(--navy); }
+    .track-r2 .track-bot-name { background: var(--gold2); color: var(--navy); }
+
+    /* Scroll hint */
+    .scroll-hint {
+      position: absolute; bottom: 30px; left: 0; right: 0;
+      text-align: center;
+      font-family: 'Share Tech Mono', monospace; font-size: 10px;
+      color: var(--muted); letter-spacing: 0.4em;
+      z-index: 10;
+    }
+    .scroll-hint span { display: block; margin-top: 5px; animation: sBounce 1.6s ease-in-out infinite; }
+    @keyframes sBounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
+
+    /* ── IDEAFACTORY X ROBOCON ── */
+    #ideafactory-poster {
+      position: relative; z-index: 1; padding-bottom: 100px;
+    }
+
+    /* Title bar */
+    .collab-title-bar {
+      display: flex; align-items: center; justify-content: center;
+      gap: 28px; padding: 36px 48px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: rgba(208,189,244,0.03);
+      margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .collab-title-bar .collab-logo {
+      height: clamp(38px, 5.5vw, 64px); 
+      width: auto; object-fit: contain;
+      background: transparent;
+    }
+    .collab-title-bar .collab-logo-text {
+      font-family: 'Cinzel', serif; font-size: clamp(22px, 3.5vw, 40px); font-weight: 700;
+      color: var(--white);
+    }
+    .collab-title-bar .collab-logo-text.robocon { color: var(--cyan); }
+    .collab-title-bar .collab-x {
+      font-family: 'Cinzel', serif; font-size: clamp(20px, 2.5vw, 32px);
+      color: var(--purple); opacity: 0.75;
+    }
+    .collab-desc-bar {
+      text-align: center; padding: 28px 48px 8px;
+      font-size: 15px; color: var(--muted); max-width: 820px;
+      margin: 0 auto; line-height: 1.75;
+    }
+
+    /* ── Ideafactory rich content block ── */
+    .collab-about {
+      max-width: 1300px; margin: 0 auto 64px;
+      padding: 48px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 48px 80px;
+    }
+    /* Quote — top left */
+    .collab-about-quote {
+      grid-column: 1; grid-row: 1;
+      border-left: 4px solid var(--purple);
+      padding: 6px 0 6px 28px;
+    }
+    .collab-about-quote p {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(18px, 2vw, 24px);
+      color: var(--white); line-height: 1.7;
+      font-weight: 400;
+    }
+    .collab-about-quote cite {
+      display: block; margin-top: 18px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; letter-spacing: 0.4em;
+      color: var(--purple); text-transform: uppercase;
+      font-style: normal;
+    }
+    /* Body — top right, spans both rows */
+    .collab-about-body {
+      grid-column: 2; grid-row: 1 / 3;
+      display: flex; flex-direction: column; gap: 32px;
+      justify-content: center;
+    }
+    .collab-about-body p {
+      font-size: clamp(17px, 1.5vw, 21px); color: var(--muted); line-height: 2.0;
+    }
+    /* Ideafactory image — bottom left */
+    .collab-if-image {
+      grid-column: 1; grid-row: 2;
+      position: relative; overflow: hidden;
+      border: 1px solid var(--border);
+      min-height: 220px;
+    }
+    .collab-if-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.85) saturate(0.9);
+      transition: filter 0.4s;
+    }
+    .collab-if-image:hover img { filter: brightness(1) saturate(1); }
+    /* Decorative corner marks on image */
+    .collab-if-image::before, .collab-if-image::after {
+      content: ''; position: absolute; z-index: 2; pointer-events: none;
+      width: 20px; height: 20px;
+    }
+    .collab-if-image::before {
+      top: 10px; left: 10px;
+      border-top: 2px solid var(--purple); border-left: 2px solid var(--purple);
+    }
+    .collab-if-image::after {
+      bottom: 10px; right: 10px;
+      border-bottom: 2px solid var(--purple); border-right: 2px solid var(--purple);
+    }
+    .collab-if-image-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 10px 16px;
+      background: linear-gradient(to top, rgba(7,16,42,0.85), transparent);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px; letter-spacing: 0.3em;
+      color: var(--muted); text-transform: uppercase;
+      z-index: 2;
+    }
+    /* Facility tags */
+    .collab-facilities {
+      display: flex; flex-wrap: wrap; gap: 14px;
+    }
+    .facility-tag {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 10px 22px; border-radius: 2px; border: 1px solid;
+    }
+    .facility-tag.laser  { color: var(--cyan);  border-color: rgba(0,212,212,0.4);  background: rgba(0,212,212,0.06);  }
+    .facility-tag.print  { color: var(--gold2); border-color: rgba(240,192,64,0.4); background: rgba(240,192,64,0.06); }
+    .facility-tag.mfg    { color: var(--purple);border-color: rgba(124,92,191,0.4); background: rgba(124,92,191,0.06); }
+    /* CTA button */
+    .collab-cta {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--white); text-decoration: none;
+      padding: 18px 40px;
+      border: 1px solid var(--purple);
+      background: rgba(124,92,191,0.1);
+      transition: background 0.3s, color 0.3s;
+      align-self: flex-start;
+    }
+    .collab-cta:hover { background: rgba(124,92,191,0.25); color: #d4bbff; }
+    @media (max-width: 800px) {
+      .collab-about { grid-template-columns: 1fr; grid-template-rows: auto; padding: 32px 20px; gap: 32px; }
+      .collab-about-body  { grid-column: 1; grid-row: auto; }
+      .collab-if-image    { grid-column: 1; grid-row: auto; min-height: 180px; }
+    }
+
+    .slabel {
+      font-family: 'Share Tech Mono', monospace; font-size: 10px;
+      letter-spacing: 0.45em; color: var(--cyan); text-transform: uppercase; margin-bottom: 8px;
+    }
+
+    .bots-stagger {
+      width: 100%; margin: 20px 0 0; padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+    .bot-diagram { padding: 0; }
+    .bot-diagram.r2-offset { margin-top: 0px; }
+    .bot-diagram-label {
+      text-align: center; margin-bottom: 8px;
+      font-family: 'Share Tech Mono', monospace; font-size: 10px;
+      letter-spacing: 0.45em; text-transform: uppercase;
+    }
+    .bot-diagram-label.r1 { color: var(--cyan); }
+    .bot-diagram-label.r2 { color: var(--gold2); }
+    .bot-diagram-rule {
+      width: 100%; height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+    }
+    .bot-diag-svg { width: 100%; height: auto; display: block; overflow: visible; }
+    @media (max-width: 800px) {
+      .bots-stagger { grid-template-columns: 1fr; }
+      .bot-diagram.r2-offset { margin-top: 40px; }
+    }
+
+    /* ── VENUE ── */
+    #venue {
+      position: relative; z-index: 1; padding: 90px 48px; text-align: left;
+      background: var(--navy); 
+      overflow: hidden;
+    }
+    
+    #venue::before, #venue::after {
+      content: ''; position: absolute; left: 0; right: 0; height: 4px;
+      background: repeating-linear-gradient(90deg,
+        var(--crimson) 0 12px, transparent 12px 18px,
+        var(--gold2) 18px 30px, transparent 30px 36px,
+        var(--blue) 36px 48px, transparent 48px 54px);
+    }
+    #venue::before { top: 0; } #venue::after { bottom: 0; }
+    
+    .venue-glow { position: absolute; pointer-events: none; border-radius: 50%; }
+    .venue-gl { width:500px;height:500px;top:-200px;left:-200px;
+      background:radial-gradient(circle, rgba(208,189,244,0.07) 0%, transparent 70%); }
+    .venue-gr { width:400px;height:400px;bottom:-150px;right:-150px;
+      background:radial-gradient(circle, rgba(178,123,255,0.08) 0%, transparent 70%); }
+    .venue-eye { font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.45em;color:var(--gold);margin-bottom:12px; }
+    
+    .venue-title { font-family:'Cinzel',serif;font-size:clamp(28px,4vw,50px);font-weight:900; margin: 0; }
+    .venue-title span { color:var(--gold2); }
+    .venue-hanzi { font-family:'Noto Serif SC',serif;font-size:16px;color:var(--gold);letter-spacing:.4em;margin-top:8px; }
+    .venue-orn { font-size:36px;margin:12px 0;opacity:.45; color: var(--gold); }
+    .venue-desc {
+      margin-top:20px;color:var(--white);font-size:13px;max-width:700px;line-height:1.8; text-transform: uppercase; font-family: 'Share Tech Mono', monospace; letter-spacing: 0.1em;
+    }
+
+    .venue-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .venue-text-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .venue-video-side {
+      width: 100%;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+      border: 1px solid var(--border);
+    }
+    .video-wrapper iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    }
+
+    /* Mobile overrides for Venue */
+    @media (max-width: 900px) {
+      .venue-container { grid-template-columns: 1fr; text-align: center; }
+      .venue-text-side { align-items: center; }
+    }
+
+    /* ── OUR TEAM (UPDATED LAYOUT) ── */
+    #our-team {
+      position: relative; z-index: 1; padding: 100px 48px;
+      background: var(--navy); border-top: 1px solid var(--border);
+    }
+    
+    .team-container {
+      display: flex; 
+      flex-direction: column; 
+      gap: 60px;
+      max-width: 1100px; 
+      margin: 0 auto; 
+    }
+    
+    .team-photo-side { 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+    }
+    
+    .team-photo-wrapper {
+      width: 100%; border-radius: 8px; overflow: hidden;
+      border: 1px solid var(--border); box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+      background: rgba(255,255,255,0.03);
+      margin-top: 24px;
+    }
+    .team-photo-wrapper img { width: 100%; height: auto; display: block; object-fit: cover;}
+    .ph-box { 
+      height: 400px; display: flex; align-items: center; justify-content: center; 
+      color: var(--muted); font-family: 'Share Tech Mono', monospace; font-size: 12px; 
+    }
+
+    /* Thanks block now stretches across below the photo */
+    .team-thanks-side {
+      width: 100%;
+      background: rgba(208,189,244,0.03);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .thanks-title {
+      font-family: 'Rajdhani', sans-serif; font-size: 32px; color: var(--white); font-weight: 700;
+      margin-top: 0; margin-bottom: 40px; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .profiles-wrapper {
+      display: flex; gap: 60px; justify-content: center; flex-wrap: wrap;
+    }
+    .profile-card {
+      display: flex; flex-direction: column; align-items: center;
+      min-width: 140px;
+    }
+    .profile-img {
+      width: 140px; height: 140px; border-radius: 50%;
+      border: 2px solid var(--cyan); overflow: hidden; margin-bottom: 18px;
+      background: rgba(255,255,255,0.05); box-shadow: 0 0 20px rgba(208,189,244,0.15);
+    }
+    .profile-img img { width: 100%; height: 100%; object-fit: cover; }
+    .ph-circ { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 10px; font-family: monospace;}
+    .profile-name {
+      font-family: 'Rajdhani', sans-serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 4px;
+    }
+    .profile-role {
+      font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;
+    }
+
+    /* Site footer */
+    .site-footer {
+      position: relative; z-index: 1;
+      background: var(--navy); border-top: 1px solid var(--border);
+      padding: 26px 48px; display: flex;
+      align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-logo {
+      height: clamp(24px, 4vw, 36px); 
+      width: auto;
+      object-fit: contain;
+    }
+    .site-footer .credit { font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted); }
+
+    /* Reveal utility */
+    .reveal { opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease; }
+    .reveal.vis { opacity:1;transform:none; }
+
+    @media (max-width: 768px) {
+      .hero-top-logos { top: 20px; padding: 0 20px; }
+      .logo-placeholder { font-size: 8px; padding: 5px; height: 70px;}
+      .hero-title-bar { padding: 80px 20px 0; }
+      .tracks-container { padding: 0 5% 10vh; gap: 180px; }
+      .node-text { font-size: 9px; }
+      
+      #ideafactory-poster, #venue, #our-team, .site-footer { padding-left: 20px; padding-right: 20px; }
+      .profiles-wrapper { gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="progress-bar"><div class="progress-fill" id="pFill"></div></div>
+
+<div id="hero-track-wrapper">
+  <div id="track-sticky">
+    
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="images/hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="hero-top-logos">
+      <div class="logo-placeholder">
+        <img src="images/csd-robocon-logo.png" alt="CSD Robocon NITK Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='CSD Robocon NITK'">
+      </div>
+      <div class="logo-placeholder">
+        <img src="images/abu-robocon-logo.png" alt="ABU Robocon 2026 Logo" onerror="this.style.display='none'; this.parentNode.innerHTML='ABU Robocon 2026'">
+      </div>
+    </div>
+
+    <div class="hero-title-bar">
+      <div class="hero-eyebrow">CSR Robocon NITK &nbsp;·&nbsp; ABU Robocon 2026</div>
+      <h1 class="hero-title">KUNG FU <em>QUEST</em></h1>
+    </div>
+
+    <div class="tracks-container">
+      
+      <div class="thick-track track-r1" id="track1">
+        <div class="thick-tl-fill" id="l1"></div>
+        
+        <div class="track-node" style="left: 25%" data-pos="0.25" data-track="1">
+          <div class="node-text">Weapon Assembly</div>
+        </div>
+        <div class="track-node" style="left: 50%" data-pos="0.50" data-track="1">
+          <div class="node-text">KFS Picking</div>
+        </div>
+        <div class="track-node" style="left: 75%" data-pos="0.75" data-track="1">
+          <div class="node-text">Staff Picking</div>
+        </div>
+
+        <div class="track-bot" id="bot1" style="left:95%">
+          <div class="bot-placeholder">
+             <img src="images/bot1-render.png" alt="R1 Bot">
+          </div>
+          <div class="track-bot-name">R01</div>
+        </div>
+      </div>
+
+      <div class="thick-track track-r2" id="track2">
+        <div class="thick-tl-fill" id="l2"></div>
+        
+        <div class="track-node" style="left: 25%" data-pos="0.25" data-track="2">
+          <div class="node-text">Spearhead Picking</div>
+        </div>
+        <div class="track-node" style="left: 50%" data-pos="0.50" data-track="2">
+          <div class="node-text">Autonomous Navigation</div>
+        </div>
+        <div class="track-node" style="left: 75%" data-pos="0.75" data-track="2">
+          <div class="node-text">Variable Height Climbing</div>
+        </div>
+
+        <div class="track-bot" id="bot2" style="left:5%">
+          <div class="bot-placeholder">
+             <img src="images/bot2-render.png" alt="R2 Bot">
+          </div>
+          <div class="track-bot-name">R02</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      SCROLL TO EXPLORE
+      <span>↓</span>
+    </div>
+
+  </div>
+</div>
+
+<section id="ideafactory-poster">
+
+  <div class="collab-title-bar reveal">
+    <img src="images/ideafactory-logo.png" alt="Ideafactory" class="collab-logo"
+         onerror="this.outerHTML='<span class=\'collab-logo-text\'>IDEA Factory</span>'">
+    <span class="collab-x">×</span>
+    <img src="images/csd-robocon-logo.png" alt="CSD Robocon NITK" class="collab-logo"
+         onerror="this.outerHTML='<span class=\'collab-logo-text robocon\'>CSD Robocon NITK</span>'">
+  </div>
+
+  <!-- ── Ideafactory rich content block ── -->
+  <div class="collab-about reveal">
+
+    <!-- TOP LEFT: quote -->
+    <div class="collab-about-quote">
+      <p>
+        "IDEAFACTORY is a collaborative space where young innovators transform
+        cutting-edge research into impactful solutions for society and the nation."
+      </p>
+      <!-- <cite>— idea.nitk.ac.in</cite> -->
+    </div>
+
+    <!-- RIGHT (spans both rows): description + tags + button -->
+    <div class="collab-about-body">
+      <p>
+        The advanced manufacturing facilities at Ideafactory were instrumental in
+        bringing our designs to life. Precision laser cutters allowed us to fabricate
+        complex aluminium chassis structures and acrylic mounts directly from CAD —
+        reducing iteration time dramatically. Extensive 3D printing gave us the freedom
+        to prototype and refine specialised grippers, sensor mounts, and drive
+        components across both robots without compromise.
+      </p>
+
+      <div class="collab-facilities">
+        <span class="facility-tag laser">Laser Cutting</span>
+        <span class="facility-tag print">3D Printing</span>
+        <span class="facility-tag mfg">Rapid Prototyping</span>
+        <span class="facility-tag mfg">CNC Machining</span>
+      </div>
+
+      <a href="https://idea.nitk.ac.in" target="_blank" rel="noopener" class="collab-cta">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Visit Ideafactory
+      </a>
+    </div>
+
+    <!-- BOTTOM LEFT: Ideafactory image -->
+    <!--
+      Place your Ideafactory photo at:  images/ideafactory-space.jpg
+      Any photo of the lab/facility works. Recommended size: 900×600px or wider.
+    -->
+    <div class="collab-if-image">
+      <img src="images/ideafactory-space.jpg"
+           alt="Ideafactory facilities at NITK"
+           onerror="this.parentNode.style.background='rgba(124,92,191,0.06)';this.style.display='none'"/>
+      <div class="collab-if-image-caption">Ideafactory — NITK Surathkal</div>
+    </div>
+
+  </div>
+
+  <div class="bots-stagger">
+
+    <div class="bot-diagram reveal">
+      <svg class="bot-diag-svg" viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip-staff">  <circle cx="960" cy="320" r="120"/></clipPath>
+          <clipPath id="clip-kfs-pick"><circle cx="1090" cy="500" r="78"/></clipPath>
+        </defs>
+
+        <image href="images/r1-render.png"
+               x="0" y="10" width="700" height="600"
+               preserveAspectRatio="xMidYMid meet"/>
+
+        <line x1="720" y1="118" x2="540" y2="320" stroke="#B27BFF" stroke-width="1.5" stroke-opacity="0.7"/>
+        <circle cx="540" cy="320" r="4" fill="#B27BFF" fill-opacity="0.9"/>
+        <rect x="722" y="62" width="174" height="88" rx="3"
+              fill="rgba(178,123,255,0.07)" stroke="rgba(178,123,255,0.5)" stroke-width="1"/>
+        <text x="734" y="88"  fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">3D PRINTED</text>
+        <text x="734" y="108" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">STAFF</text>
+        <text x="734" y="128" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">GRIPPER</text>
+        <line x1="800" y1="150" x2="895" y2="220" stroke="#B27BFF" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+        <circle cx="960" cy="320" r="120" fill="rgba(178,123,255,0.06)" stroke="#B27BFF" stroke-width="1.5" stroke-opacity="0.6"/>
+        <image href="images/staff-gripper.png" x="850" y="220" width="258" height="258"
+               clip-path="url(#clip-staff)" preserveAspectRatio="xMidYMid slice"/>
+
+        <rect x="200" y="660" width="800" height="360" rx="4"
+              fill="rgba(255,255,255,0.03)" stroke="rgba(178,123,255,0.18)" stroke-width="1"/>
+        <foreignObject x="200" y="660" width="800" height="360">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: 0 20px; text-align: center; font-family: 'Rajdhani', sans-serif;">
+            
+            <h3 style="color: #D0BDF4; font-size: 42px; margin: 0 0 20px 0; letter-spacing: 4px; font-weight: 700; text-transform: uppercase;">
+              Robot R1
+            </h3>
+            
+            <p style="color: #E9D5FF; font-size: 26px; line-height: 1.6; margin: 0; opacity: 0.85;">
+              A manually operated robot which uses a 4 wheeled holonomic drive to navigate the arena. It picks up and assembles weapons using a specialized pneumatic gripper. It also picks and places R1 KFS blocks using a servo tray mechanism, while using the assembled weeapons to fight the opponent KFS.
+            </p>
+            
+          </div>
+        </foreignObject>
+
+        <line x1="720" y1="500" x2="300" y2="280" stroke="#B27BFF" stroke-width="1.5" stroke-opacity="0.7"/>
+        <circle cx="300" cy="280" r="4" fill="#B27BFF" fill-opacity="0.9"/>
+        <rect x="722" y="460" width="174" height="60" rx="3"
+              fill="rgba(178,123,255,0.07)" stroke="rgba(178,123,255,0.5)" stroke-width="1"/>
+        <text x="734" y="484" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">KFS PICKING</text>
+        <text x="734" y="504" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">MECHANISM</text>
+        <image href="images/kfs-picking.png" x="1012" y="422" width="156" height="156"
+               clip-path="url(#clip-kfs-pick)" preserveAspectRatio="xMidYMid slice"/>
+      </svg>
+      <div class="bot-diagram-label r1">Robot 01 · R1</div>
+      <div class="bot-diagram-rule"></div>
+    </div>
+
+    <div class="bot-diagram r2-offset reveal" style="transition-delay:0.15s">
+      <svg class="bot-diag-svg" viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip-spear"> <circle cx="110" cy="118" r="120"/></clipPath>
+          <clipPath id="clip-kfs-gr"><circle cx="110" cy="400" r="120"/></clipPath>
+        </defs>
+
+        <image href="images/r2-render.png"
+               x="500" y="10" width="700" height="600"
+               preserveAspectRatio="xMidYMid meet"/>
+
+        <line x1="460" y1="118" x2="720" y2="280" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.7"/>
+        <circle cx="720" cy="280" r="4" fill="#D0BDF4" fill-opacity="0.9"/>
+        <rect x="280" y="62" width="182" height="88" rx="3"
+              fill="rgba(208,189,244,0.07)" stroke="rgba(208,189,244,0.5)" stroke-width="1"/>
+        <text x="292" y="88"  fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">3D PRINTED</text>
+        <text x="292" y="108" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">SPEARHEAD</text>
+        <text x="292" y="128" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">GRIPPER</text>
+        <line x1="280" y1="106" x2="196" y2="112" stroke="#D0BDF4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+        <circle cx="110" cy="118" r="120" fill="rgba(208,189,244,0.06)" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.6"/>
+        <image href="images/spearhead-gripper.png" x="16" y="24" width="258" height="258"
+               clip-path="url(#clip-spear)" preserveAspectRatio="xMidYMid slice"/>
+
+        <rect x="190" y="660" width="800" height="360" rx="4"
+              fill="rgba(255,255,255,0.03)" stroke="rgba(208,189,244,0.18)" stroke-width="1"/>
+        <foreignObject x="200" y="660" width="800" height="360">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: 0 20px; text-align: center; font-family: 'Rajdhani', sans-serif;">
+            
+            <h3 style="color: #B27BFF; font-size: 42px; margin: 0 0 20px 0; letter-spacing: 4px; font-weight: 700; text-transform: uppercase;">
+              Robot R2
+            </h3>
+            
+            <p style="color: #E9D5FF; font-size: 26px; line-height: 1.6; margin: 0; opacity: 0.85;">
+              A completely autonomous robot that uses an array of Lidars, IR sensors and cameras to navigate the game field using a Mecanum drive. R2 navigates the differing elevations of the Meihua Forest using ball screws and a secondary drive. It also has a special gantry system on which pneumatic grippers are situated to pick up and place R2 KFS.
+            </p>
+            
+          </div>
+        </foreignObject>
+
+        <line x1="480" y1="340" x2="660" y2="350" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.7"/>
+        <circle cx="660" cy="350" r="4" fill="#D0BDF4" fill-opacity="0.9"/>
+        <rect x="290" y="306" width="188" height="60" rx="3"
+              fill="rgba(208,189,244,0.07)" stroke="rgba(208,189,244,0.5)" stroke-width="1"/>
+        <text x="302" y="330" fill="#E9D5FF" font-family="monospace" font-size="20" letter-spacing="2">CLIMBING</text>
+        <text x="302" y="350" fill="#E9D5FF" font-family="monospace" font-size="20" letter-spacing="2">MECHANISM</text>
+
+        <line x1="480" y1="500" x2="960" y2="480" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.7"/>
+        <circle cx="960" cy="480" r="4" fill="#D0BDF4" fill-opacity="0.9"/>
+        <rect x="300" y="480" width="182" height="60" rx="3"
+              fill="rgba(208,189,244,0.07)" stroke="rgba(208,189,244,0.5)" stroke-width="1"/>
+        <text x="312" y="505" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">LASER CUT</text>
+        <text x="312" y="525" fill="#E9D5FF" font-family="monospace" font-size="18" letter-spacing="2">KFS GRIPPER</text>
+        <line x1="300" y1="510" x2="220" y2="450" stroke="#D0BDF4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+        <circle cx="110" cy="400" r="120" fill="rgba(208,189,244,0.06)" stroke="#D0BDF4" stroke-width="1.5" stroke-opacity="0.6"/>
+        <image href="images/kfs-gripper.png" x="0" y="280" width="225" height="225"
+               clip-path="url(#clip-kfs-gr)" preserveAspectRatio="xMidYMid slice"/>
+      </svg>
+      <div class="bot-diagram-label r2">Robot 02 · R2</div>
+      <div class="bot-diagram-rule"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="venue">
+  <div class="venue-glow venue-gl"></div>
+  <div class="venue-glow venue-gr"></div>
+  
+  <div class="venue-container reveal">
+    <div class="venue-text-side">
+      <div class="venue-eye">Competition Venue</div>
+      <div class="venue-orn">⛩</div>
+      <h2 class="venue-title">Hong Kong, <span>China</span></h2>
+      <div class="venue-hanzi">香港 · 中国</div>
+      <p class="venue-desc">
+        ABU Robocon is an international robotics competition for university students in the Asia-Pacific region, organized by the Asia-Pacific Broadcasting Union. Teams design robots each year to complete a new themed challenge using engineering and innovation.
+      </p>
+    </div>
+    
+    <div class="venue-video-side">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/HL3Va9hd-0o?si=qo0wKj4YWCP0AtnW" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="our-team">
+  <div class="team-container reveal">
+    
+    <div class="team-photo-side">
+      <h2 class="venue-title" style="margin-bottom: 8px;">Our <span style="color: var(--purple);">Team</span></h2>
+      <div class="slabel" style="font-size: 12px; letter-spacing: 0.15em; color: var(--white);">The Minds Behind the Machines</div>
+      
+      <div class="team-photo-wrapper">
+        <img src="images/team-photo.jpg" alt="CSD Robocon NITK Team" onerror="this.outerHTML='<div class=\'ph-box\'>[ Upload team-photo.jpg ]</div>'">
+      </div>
+    </div>
+
+    <div class="team-thanks-side">
+      <h3 class="thanks-title">Special Thanks To</h3>
+      <div class="profiles-wrapper">
+        
+        <div class="profile-card">
+          <div class="profile-img">
+            <img src="images/director.jpg" alt="Profile 1" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 1</div>'">
+          </div>
+          <div class="profile-name">Prof. B Ravi</div>
+          <div class="profile-role">Director, NITK</div>
+        </div>
+        
+        <div class="profile-card">
+          <div class="profile-img">
+            <img src="images/Pruthviraj.png" alt="Profile 2" onerror="this.outerHTML='<div class=\'ph-circ\'>Photo 2</div>'">
+          </div>
+          <div class="profile-name">Dr. Pruthviraj U</div>
+          <div class="profile-role">Faculty Advisor, CSD Robocon NITK</div>
+          <div class="profile-role">PIC Ideafactory</div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="images/csd-robocon-logo.png" alt="CSR Robocon NITK Logo" class="footer-logo" onerror="this.outerHTML='<div class=\'brand\'>CSR Robocon NITK</div>'">
+  <div class="credit">Season 2026 · Kung Fu Quest · In Collaboration with Ideafactory</div>
+</footer>
+
+<script>
+  /* Progress bar */
+  const pFill = document.getElementById('pFill');
+
+  /* Track elements */
+  const wrapper = document.getElementById('hero-track-wrapper');
+  const bot1    = document.getElementById('bot1');
+  const bot2    = document.getElementById('bot2');
+  const l1      = document.getElementById('l1');
+  const l2      = document.getElementById('l2');
+  const nodes1  = document.querySelectorAll('[data-track="1"]');
+  const nodes2  = document.querySelectorAll('[data-track="2"]');
+
+  const START = 5;   // %
+  const END   = 95;  // %
+
+  function updateTracks() {
+    const rect     = wrapper.getBoundingClientRect();
+    const wH       = wrapper.offsetHeight;
+    const vH       = window.innerHeight;
+    const scrolled = -rect.top;
+    const scrollable = wH - vH;
+    
+    // Calculate percentage, locking between 0 and 1
+    const p = Math.min(1, Math.max(0, scrolled / scrollable));
+
+    // R1 from RIGHT to LEFT
+    const p1 = p; 
+    const left1 = END - (p1 * (END - START));
+
+    // R2 from LEFT to RIGHT (slight delay)
+    const p2 = Math.min(1, Math.max(0, (p - 0.1) / 0.9));
+    const left2 = START + (p2 * (END - START));
+
+    // Update Bot Positions
+    bot1.style.left = left1 + '%';
+    bot2.style.left = left2 + '%';
+
+    // Update Line Fills
+    // l1 fills from right, so width increases as bot moves left
+    l1.style.width = Math.max(0, 100 - left1) + '%';
+    // l2 fills from left, width increases as bot moves right
+    l2.style.width = Math.max(0, left2) + '%';
+
+    // Light up nodes for R1 (Moving left: node reveals if bot's position is <= node's position)
+    nodes1.forEach(n => {
+      const nPos = parseFloat(n.dataset.pos) * 100;
+      const revealed = left1 <= nPos;
+      n.classList.toggle('revealed', revealed);
+    });
+
+    // Light up nodes for R2 (Moving right: node reveals if bot's position is >= node's position)
+    nodes2.forEach(n => {
+      const nPos = parseFloat(n.dataset.pos) * 100;
+      const revealed = left2 >= nPos;
+      n.classList.toggle('revealed', revealed);
+    });
+  }
+
+  /* Reveal observer */
+  const revObs = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+  /* Main scroll handler */
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    pFill.style.width = pct + '%';
+    updateTracks();
+  }, { passive: true });
+
+  updateTracks(); // init on load
+</script>
+</body>
+</html>
