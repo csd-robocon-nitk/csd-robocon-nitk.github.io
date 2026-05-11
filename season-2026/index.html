@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Season 2026 — Kung Fu Quest | CSD Robocon NITK</title>
+  <title>Season 2026 — Kung Fu Quest | CSR Robocon NITK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Serif+SC:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
@@ -139,41 +139,19 @@
     }
 
     .track-node {
-      position: absolute; 
-      top: 0; 
-      bottom: 0;
-      
-      /* CRITICAL: Forces the container to take up exactly the space between points */
-      width: 25%; 
-      
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      z-index: 2;
+      position: absolute; top: 0; bottom: 0;
+      display: flex; justify-content: center; align-items: center; z-index: 2;
       transform: translateX(-50%);
     }
-
     .node-text {
-      /* CRITICAL: Forces text to respect the new 25% container boundary */
-      width: 100%;
-      padding: 0 10px; /* Adds a safety buffer so neighboring text never touches */
-      
-      white-space: normal;
-      text-align: center;
-      line-height: 1.2;
-      word-break: break-word;
-
-      font-family: 'Share Tech Mono', monospace; 
-      font-size: 13px; 
-      font-weight: bold;
-      letter-spacing: 0.15em; 
-      text-transform: uppercase;
-      opacity: 0; 
-      transition: opacity 0.4s ease;
+      white-space: nowrap;
+      font-family: 'Share Tech Mono', monospace; font-size: 13px; font-weight: bold;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      opacity: 0; transition: opacity 0.4s ease;
       color: var(--navy); 
     }
 
-    .track-node.revealed .node-text { opacity: 1;  }
+    .track-node.revealed .node-text { opacity: 1; }
 
     /* Sliding bot Placeholder */
     .track-bot {
@@ -579,7 +557,7 @@
     </div>
 
     <div class="hero-title-bar">
-      <div class="hero-eyebrow">CSD Robocon NITK &nbsp;·&nbsp; ABU Robocon 2026</div>
+      <div class="hero-eyebrow">CSR Robocon NITK &nbsp;·&nbsp; ABU Robocon 2026</div>
       <h1 class="hero-title">KUNG FU <em>QUEST</em></h1>
     </div>
 
@@ -647,15 +625,19 @@
          onerror="this.outerHTML='<span class=\'collab-logo-text robocon\'>CSD Robocon NITK</span>'">
   </div>
 
+  <!-- ── Ideafactory rich content block ── -->
   <div class="collab-about reveal">
 
+    <!-- TOP LEFT: quote -->
     <div class="collab-about-quote">
       <p>
         "IDEAFACTORY is a collaborative space where young innovators transform
         cutting-edge research into impactful solutions for society and the nation."
       </p>
-      </div>
+      <!-- <cite>— idea.nitk.ac.in</cite> -->
+    </div>
 
+    <!-- RIGHT (spans both rows): description + tags + button -->
     <div class="collab-about-body">
       <p>
         The advanced manufacturing facilities at Ideafactory were instrumental in
@@ -681,6 +663,11 @@
       </a>
     </div>
 
+    <!-- BOTTOM LEFT: Ideafactory image -->
+    <!--
+      Place your Ideafactory photo at:  images/ideafactory-space.jpg
+      Any photo of the lab/facility works. Recommended size: 900×600px or wider.
+    -->
     <div class="collab-if-image">
       <img src="images/ideafactory-space.jpg"
            alt="Ideafactory facilities at NITK"
@@ -878,7 +865,7 @@
 </section>
 
 <footer class="site-footer">
-  <img src="images/csd-robocon-logo.png" alt="CSD Robocon NITK Logo" class="footer-logo" onerror="this.outerHTML='<div class=\'brand\'>CSD Robocon NITK</div>'">
+  <img src="images/csd-robocon-logo.png" alt="CSR Robocon NITK Logo" class="footer-logo" onerror="this.outerHTML='<div class=\'brand\'>CSR Robocon NITK</div>'">
   <div class="credit">Season 2026 · Kung Fu Quest · In Collaboration with Ideafactory</div>
 </footer>
 
