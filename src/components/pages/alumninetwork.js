@@ -17,7 +17,9 @@ export default function AlumniNetwork() {
                                 <img src={`${process.env.PUBLIC_URL}/images/team/${photo}`} alt={name} />
                             ) : null}
                             <h4>{name}</h4>
-                            {designation ? <p className="designation">{designation}</p> : null}
+                            <p className="designation">
+                                {designation ? `${designation}, Batch of 2026` : "Batch of 2026"}
+                            </p>
                             <div className="socials">
                                 {linkedin ? <a href={linkedin} target="_blank" rel="noreferrer"><FaLinkedin size={27} /></a> : null}
                                 {email ? <a href={`mailto:${email}`}><MdEmail size={31} /></a> : null}
