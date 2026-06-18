@@ -2,87 +2,102 @@ export default {
     "Core Team": [
         [
             {
-                "name": "J Hariharan",
-                "designation": "Captain",
-                "photo": "Hariharan.jpg"
-            },
-            {
-                "name": "Afeef Bin Ahamed Ali",
-                "designation": "Vice-Captain",
-                "photo": "Afeef.jpg"
-            },
-        ],
-        [
-            {
-                "name": "Adithya Kasal",
-                "designation": "EC&P Lead",
-                "photo": "Adithya Kasal.jpg"
-            },
-            {
-                "name": "Krishnapranav",
-                "designation": "EC&P Lead",
-                "photo": "Krishnapranav.jpg",
-            },
-            {
-                "name": "Chirag Ingle",
-                "designation": "Mech Lead",
-                "photo": "Chirag.jpg"
-            },
-            {
-                "name": "Avadhoot Anant Nadgouda",
-                "designation": "Mech Lead",
-                "photo": "Anant.jpg",
-            },
-        ],
-        [
-            {
-                "name": "Ashmit R Sambrani",
-                "designation": "PR Lead",
-                "photo": "Ashmit R Sambrani.jpg"
-            },
-            {
                 "name": "Ranjit Tanneru",
-                "designation": "PR Lead",
+                "designation": "Captain",
                 "photo": "Ranjit Tanneru.jpg"
             },
             {
+                "name": "Ashmit R Sambrani",
+                "designation": "Vice Captain",
+                "photo": "Ashmit R Sambrani.jpg"
+            },
+            {
                 "name": "Nisha Shetty",
-                "designation": "PR Lead",
+                "designation": "Vice Captain",
                 "photo": "Nisha Shetty.png"
+            }
+        ],
+        [
+            {
+                "name": "Adarsh Bellamane",
+                "designation": "Web Lead",
+                "photo": "Adarsh.jpeg"
             },
             {
                 "name": "Dheemanth J",
-                "designation": "Treasurer",
+                "designation": "Electronics & Programming Lead",
                 "photo": "Dheemanth J.jpeg"
             },
+            {
+                "name": "Rohit L",
+                "designation": "Electronics & Programming Lead",
+                "photo": "Rohit L.jpeg"
+            }
+        ],
+        [
+            {
+                "name": "Lianna Mascarenhas",
+                "designation": "Mechanical Subsystem Lead",
+                "photo": "Lianna Mascarenhas.jpeg"
+            },
+            {
+                "name": "Kavin Narayan",
+                "designation": "Mechanical Subsystem Lead",
+                "photo": "Kavin Narayan.jpeg"
+            },
+            {
+                "name": "A. Karthika",
+                "designation": "Treasurer",
+                "photo": "Karthika.jpg"
+            },
+            {
+                "name": "Rohini V",
+                "designation": "Treasurer",
+                "photo": "Rohini.jpeg"
+            }
+        ],
+        [
+            {
+                "name": "Aniruddh Yelluri",
+                "designation": "Electronics and Programming Secretary",
+                "photo": "Yelluri.jpg"
+            },
+            {
+                "name": "Samip Sorathia",
+                "designation": "Electronics and Programming Secretary",
+                "photo": "Samip.jpg"
+            },
+            {
+                "name": "P Yaagh Aiyappa",
+                "designation": "Mechanical Secretary",
+                "photo": "Yaagh.jpeg"
+            },
+            {
+                "name": "Kshihtij Praveen Narayanan",
+                "designation": "Mechanical Secretary",
+                "photo": "Kshitij.jpg"
+            }
+        ],
+        [
+            {
+                "name": "Juhi Arora",
+                "designation": "Public Relations Lead",
+                "photo": "empty photo.jpg"
+            },
+            {
+                "name": "Vibha Ramesh Rao",
+                "designation": "Public Relations Lead",
+                "photo": "empty photo.jpg"
+            },
+            {
+                "name": "Dhruva S",
+                "designation": "Public Relations Lead",
+                "photo": "empty photo.jpg"
+            }
         ]
     ],
 
     "EC&P Team": [
-        {
-            "name": "Adithya Kasal",
-            "photo": "Adithya Kasal.jpg",
-            "linkedin": "https://www.linkedin.com/in/adithya-kasal-130a5b27b/",
-            "email": "adithya.kasal@gmail.com",
-        },
-        {
-            "name": "Krishnapranav",
-            "photo": "Krishnapranav.jpg",
-            "linkedin": "https://www.linkedin.com/in/krishnapranav2409",
-            "email": "krishnapranav.221me227@nitk.edu.in",
-        },
-        {
-            "name": "N Nagabhushanam",
-            "photo": "Bhushan.jpg",
-            "linkedin": "https://www.linkedin.com/in/nagabhushanam-at-work/",
-            "email": "nnagabhushanam.221cs231@nitk.edu.in",
-        },
-        {
-            "name": "J Hariharan",
-            "photo": "Hariharan.jpg",
-            "linkedin": "https://www.linkedin.com/in/hariharan-j-47aa43244/",
-            "email": "jhariharan2004@gmail.com",
-        },
         {
             "name": "Ashmit R Sambrani",
             "photo": "Ashmit R Sambrani.jpg",
@@ -114,86 +129,62 @@ export default {
             "email": "dheemanthj.231ec215@nitk.edu.in"
         },
         {
-            name: "Adarsh Bellamane",
-            photo: "Adarsh.jpeg",
-            linkedin: "https://www.linkedin.com/in/adarsh-bellamane-aa0874331",
-            email: "adarsh.241it004@nitk.edu.in",
+            "name": "Adarsh Bellamane",
+            "photo": "Adarsh.jpeg",
+            "linkedin": "https://www.linkedin.com/in/adarsh-bellamane-aa0874331",
+            "email": "adarsh.241it004@nitk.edu.in"
         },
         {
-            name: "Shivani S",
-            photo: "Shivani.jpg",
-            linkedin: "https://www.linkedin.com/in/shivani-s-8a1949324",
-            email: "shivani.241ee155@nitk.edu.in",
+            "name": "Shivani S",
+            "photo": "Shivani.jpg",
+            "linkedin": "https://www.linkedin.com/in/shivani-s-8a1949324",
+            "email": "shivani.241ee155@nitk.edu.in"
         },
         {
-            name: "Malla Anirudh Karthikeya",
-            photo: "Malla.png",
-            linkedin: "https://www.linkedin.com/in/malla-anirudh-69aba5317/",
-            email: "mallaanirudhkarthikeya.241ai023@nitk.edu.in",
+            "name": "Malla Anirudh Karthikeya",
+            "photo": "Malla.png",
+            "linkedin": "https://www.linkedin.com/in/malla-anirudh-69aba5317/",
+            "email": "mallaanirudhkarthikeya.241ai023@nitk.edu.in"
         },
         {
-            name: "Aniruddh Yelluri",
-            photo: "Yelluri.jpg",
-            linkedin: "https://www.linkedin.com/in/aniruddh-yelluri/",
-            email: "aniruddhyelluri.241me311@nitk.edu.in",
+            "name": "Aniruddh Yelluri",
+            "photo": "Yelluri.jpg",
+            "linkedin": "https://www.linkedin.com/in/aniruddh-yelluri/",
+            "email": "aniruddhyelluri.241me311@nitk.edu.in"
         },
         {
-            name: "Ritesh Suresh Ashtkar",
-            photo: "Ritesh.jpeg",
-            linkedin: "https://www.linkedin.com/in/ritesh-suresh-ashtkar",
-            email: "riteshashtkar.241me145@nitk.edu.in",
+            "name": "Ritesh Suresh Ashtkar",
+            "photo": "Ritesh.jpeg",
+            "linkedin": "https://www.linkedin.com/in/ritesh-suresh-ashtkar",
+            "email": "riteshashtkar.241me145@nitk.edu.in"
         },
         {
-            name: "Samip Sorathia",
-            photo: "Samip.jpg",
-            linkedin: "https://www.linkedin.com/in/samipsorathia",
-            email: "samipsorathia.241ec248@nitk.edu.in",
+            "name": "Samip Sorathia",
+            "photo": "Samip.jpg",
+            "linkedin": "https://www.linkedin.com/in/samipsorathia",
+            "email": "samipsorathia.241ec248@nitk.edu.in"
         },
         {
-            name: "Rohini V",
-            photo: "Rohini.jpeg",
-            linkedin: "https://www.linkedin.com/in/rohini-v-028ba6345/",
-            email: "rohiniv.241ee149@nitk.edu.in",
+            "name": "Rohini V",
+            "photo": "Rohini.jpeg",
+            "linkedin": "https://www.linkedin.com/in/rohini-v-028ba6345/",
+            "email": "rohiniv.241ee149@nitk.edu.in"
         },
         {
-            name: "Pratham Aditya Mohan",
-            photo: "Pratham.jpg",
-            linkedin: "https://www.linkedin.com/in/pratham-aditya-mohan-76193132b",
-            email: "prathamadityamohan.241ee141@nitk.edu.in",
+            "name": "Pratham Aditya Mohan",
+            "photo": "Pratham.jpg",
+            "linkedin": "https://www.linkedin.com/in/pratham-aditya-mohan-76193132b",
+            "email": "prathamadityamohan.241ee141@nitk.edu.in"
         },
         {
-            name: "Chavada Vishva Anilkumar",
-            photo: "Vishva.jpg",
-            linkedin: "https://www.linkedin.com/in/vishva-chavada-650410321",
-            email: "chavadavishvaanilkumar.241ec212@nitk.edu.in",
-        },
+            "name": "Chavada Vishva Anilkumar",
+            "photo": "Vishva.jpg",
+            "linkedin": "https://www.linkedin.com/in/vishva-chavada-650410321",
+            "email": "chavadavishvaanilkumar.241ec212@nitk.edu.in"
+        }
     ],
 
     "Mechanical Team": [
-        {
-            "name": "Chirag Ingle",
-            "photo": "Chirag.jpg",
-            "linkedin": "https://www.linkedin.com/in/chiragingle",
-            "email": "chiragingle.221me223@nitk.edu.in",
-        },
-        {
-            "name": "Avadhoot Anant Nadgouda",
-            "photo": "Anant.jpg",
-            "linkedin": "http://linkedin.com/in/avadhoot-nadgouda",
-            "email": "avadhoot2003@gmail.com",
-        },
-        {
-            "name": "Afeef Bin Ahamed Ali",
-            "photo": "Afeef.jpg",
-            "linkedin": "http://linkedin.com/in/afeef-bin-ahamed-ali",
-            "email": "afeefahamed22@gmail.com",
-        },
-        {
-            "name": "Manas Priye",
-            "photo": "Manas.jpg",
-            "linkedin": "https://www.linkedin.com/in/manas-priye-440a432b8/",
-            "email": "manaspriye.221ch027@nitk.edu.in",
-        },
         {
             "name": "Lianna Mascarenhas",
             "photo": "Lianna Mascarenhas.jpeg",
@@ -219,62 +210,50 @@ export default {
             "email": "kavinnarayan.231mt021@nitk.edu.in"
         },
         {
-            name: "Siddharth Mohapatra",
-            photo: "Siddharth.jpg",
-            linkedin: "https://www.linkedin.com/in/siddharth-mohapatra-0599082a7",
-            email: "siddharthmohapatra.241me354@nitk.edu.in",
+            "name": "Siddharth Mohapatra",
+            "photo": "Siddharth.jpg",
+            "linkedin": "https://www.linkedin.com/in/siddharth-mohapatra-0599082a7",
+            "email": "siddharthmohapatra.241me354@nitk.edu.in"
         },
         {
-            name: "P Yaagh Aiyappa",
-            photo: "Yaagh.jpeg",
-            linkedin: "https://www.linkedin.com/in/yaaghaiyappa",
-            email: "yaaghaiyappa.241me240@nitk.edu.in",
+            "name": "P Yaagh Aiyappa",
+            "photo": "Yaagh.jpeg",
+            "linkedin": "https://www.linkedin.com/in/yaaghaiyappa",
+            "email": "yaaghaiyappa.241me240@nitk.edu.in"
         },
         {
-            name: "A. Karthika",
-            photo: "Karthika.jpg",
-            linkedin: "https://www.linkedin.com/in/a-karthika-479583331",
-            email: "akarthika.241me201@nitk.edu.in",
+            "name": "A. Karthika",
+            "photo": "Karthika.jpg",
+            "linkedin": "https://www.linkedin.com/in/a-karthika-479583331",
+            "email": "akarthika.241me201@nitk.edu.in"
         },
         {
-            name: "Kshihtij Praveen Narayanan",
-            photo: "Kshitij.jpg",
-            linkedin: "https://www.linkedin.com/in/kshihtij-praveen-61a532330/",
-            email: "kshihtijpraveennarayanan.241me331@nitk.edu.in",
+            "name": "Kshihtij Praveen Narayanan",
+            "photo": "Kshitij.jpg",
+            "linkedin": "https://www.linkedin.com/in/kshihtij-praveen-61a532330/",
+            "email": "kshihtijpraveennarayanan.241me331@nitk.edu.in"
         },
         {
-            name: "Haarshith Sankar Sasidhr",
-            photo: "Haarshith.jpg",
-            linkedin: "https://www.linkedin.com/in/haarshith-sankar/",
-            email: "haarshithsankarsasidhr.241me125@nitk.edu.in",
+            "name": "Haarshith Sankar Sasidhr",
+            "photo": "Haarshith.jpg",
+            "linkedin": "https://www.linkedin.com/in/haarshith-sankar/",
+            "email": "haarshithsankarsasidhr.241me125@nitk.edu.in"
         },
         {
-            name: "Tejas Vivek Mallurwar",
-            photo: "Tejas.jpeg",
-            linkedin: "https://github.com/IQOOSOULxTejas",
-            email: "tejasvivekmallurwar.241me358@nitk.edu.in",
-        },
+            "name": "Tejas Vivek Mallurwar",
+            "photo": "Tejas.jpeg",
+            "linkedin": "https://github.com/IQOOSOULxTejas",
+            "email": "tejasvivekmallurwar.241me358@nitk.edu.in"
+        }
     ],
 
     "Support Team": [
         {
-            "name": "Chirag Ingle",
-            "photo": "Chirag.jpg",
-            "linkedin": "https://www.linkedin.com/in/chiragingle",
-            "email": "chiragingle.221me223@nitk.edu.in",
-        },
-        {
-            "name": "J Hariharan",
-            "photo": "Hariharan.jpg",
-            "linkedin": "https://www.linkedin.com/in/hariharan-j-47aa43244/",
-            "email": "jhariharan2004@gmail.com",
-        },
-        {
             "name": "Apoorva Agrawal",
             "photo": "Apoorva.jpg",
             "linkedin": "https://www.linkedin.com/in/apoorva-agrawal-8302b825a/",
-            "email": "apoorva.agrawal36@gmail.com",
-        },        
+            "email": "apoorva.agrawal36@gmail.com"
+        },
         {
             "name": "Ashmit R Sambrani",
             "photo": "Ashmit R Sambrani.jpg",
@@ -311,7 +290,6 @@ export default {
             "linkedin": "https://www.linkedin.com/in/varshini-reddy-pateel-311460290/",
             "email": "varshini.pateel@gmail.com"
         },
-    
         {
             "name": "Bhavan Kumaar Shan S",
             "photo": "Bhavan Kumaar Shan.S.jpeg",
@@ -331,23 +309,23 @@ export default {
             "email": "akshithvinu.231ec105@nitk.edu.in"
         },
         {
-            name: "K Balasankar Menon",
-            photo: "Balasankar.webp",
-            linkedin: "https://www.linkedin.com/in/k-balasankar-menon-54826a321",
-            email: "kbalasankarmenon.241ec222@nitk.edu.in",
+            "name": "K Balasankar Menon",
+            "photo": "Balasankar.webp",
+            "linkedin": "https://www.linkedin.com/in/k-balasankar-menon-54826a321",
+            "email": "kbalasankarmenon.241ec222@nitk.edu.in"
         },
         {
-            name: "Vemula Puneeth",
-            photo: "Vemula Puneeth.jpg",
-            linkedin: "https://linkedin.com",
-            email: "vemulapuneeth.241ee263@nitk.edu.in",
+            "name": "Vemula Puneeth",
+            "photo": "Vemula Puneeth.jpg",
+            "linkedin": "https://linkedin.com",
+            "email": "vemulapuneeth.241ee263@nitk.edu.in"
         },
         {
-            name: "Tarun P",
-            photo: "Tarun.jpg",
-            linkedin: "linkedin.com/in/tarun-p-b488a7337",
-            email: "tarun.241cs160@nitk.edu.in",
-        },
+            "name": "Tarun P",
+            "photo": "Tarun.jpg",
+            "linkedin": "linkedin.com/in/tarun-p-b488a7337",
+            "email": "tarun.241cs160@nitk.edu.in"
+        }
     ],
 
     "Faculty Advisors": [
@@ -362,5 +340,4 @@ export default {
             "photo": "Gangadharan.png"
         }
     ]
-   
 }

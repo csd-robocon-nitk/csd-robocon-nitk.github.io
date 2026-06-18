@@ -87,10 +87,26 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
+                                    to="/alumni"
+                                    active={path=="/alumni"}
+                                >
+                                    Alumni
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
                                     to="/sponsor"
                                     active={path=="/sponsor"}
                                 >
                                     Sponsor
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
+                                    to="/brochure"
+                                    active={path=="/brochure"}
+                                >
+                                    Brochure
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

@@ -31,8 +31,14 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="/supporters" onClick={toggle}>
                         Supporters
                     </SidebarLink>
+                    <SidebarLink to="/alumni" onClick={toggle}>
+                        Alumni
+                    </SidebarLink>
                     <SidebarLink to="/sponsor" onClick={toggle}>
                         Sponsor
+                    </SidebarLink>
+                    <SidebarLink to="/brochure" onClick={toggle}>
+                        Brochure
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>

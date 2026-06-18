@@ -10,8 +10,7 @@ export default function Sponsor () {
                 <div id = "container">
                     <h1>GET MORE INFO</h1>
                     <h2>Brochure</h2>
-                    <iframe src="https://drive.google.com/file/d/1HrX8ESqx7rDWGqDYlClGSEgNdkh8fYpB/preview" width="100%" height="600" allow="autoplay"></iframe>
-                    {/* <iframe src="/assets/CRN Brochure 2024.pdf" width="100%" height="600" allow="autoplay"></iframe> */}
+                    <iframe src={process.env.PUBLIC_URL + "/assets/CRN Brochure 2026_compressed.pdf"} width="100%" height="600" allow="autoplay" title="Brochure"></iframe>
                     <br/>
                     <br/>
                     <br/>
