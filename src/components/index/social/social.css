@@ -1,183 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+
 #social {
-    /* background-image: url('../../../../public/images/gallery/istockphoto-1369748264-612x612.jpg');
-    background-size: cover;
-    background-position: center; */
     background-color: var(--bg);
-    padding: 50px max(20px, calc((100vw - 1100px)/2));
+    padding: 60px max(20px, calc((100vw - 1400px)/2));
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #fffdfd;
-  }
-  
-  #social #videos {
+}
+
+/* Floating Animations for Bots */
+@keyframes floatLeftBot {
+    0% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-12px) rotate(1deg); }
+    100% { transform: translateY(0) rotate(-1deg); }
+}
+
+@keyframes floatRightBot {
+    0% { transform: translateY(0) rotate(1deg); }
+    50% { transform: translateY(-10px) rotate(-1deg); }
+    100% { transform: translateY(0) rotate(1deg); }
+}
+
+/* ── COMBINED SEASON 2026 BANNER ── */
+#season-2026-banner {
+    background: linear-gradient(135deg, #12041d 0%, #200732 100%);
+    border: 1px solid rgba(208, 189, 244, 0.25);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    padding: 20px 0px;
+    flex-direction: row;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(139, 92, 246, 0.15);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    width: 100%;
+    margin: 10px 0 40px 0;
+    min-height: 380px;
+}
+
+#season-2026-banner:hover {
+    border-color: rgba(178, 123, 255, 0.6);
+    box-shadow: 0 30px 70px rgba(139, 92, 246, 0.35), inset 0 0 40px rgba(139, 92, 246, 0.25);
+}
+
+#season-2026-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(139, 92, 246, 0.18) 0%, transparent 75%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Background video styling */
+#season-2026-banner .banner-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* MAIN BANNER AREA (Left part) */
+#season-2026-banner .banner-main-area {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Flex Columns for Bots */
+#season-2026-banner .bot-column {
+    width: 25%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  #social #videos iframe {
-    border-radius: 10px;
-    --width: calc(200px + 100vw / 5);
-    width: var(--width);
-    height: calc(var(--width) / 1.6);
-    box-shadow: 0 4px 8px rgba(238, 232, 232, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  #social #videos iframe:hover {
-    transform: scale(1.05);
-  }
-  
-  #social #videos .video-title {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#season-2026-banner .bot-column.left-col {
+    justify-content: flex-start;
+    animation: floatLeftBot 6s ease-in-out infinite;
+}
+
+#season-2026-banner .bot-column.right-col {
+    justify-content: flex-end;
+    animation: floatRightBot 6s ease-in-out infinite 0.5s;
+}
+
+#season-2026-banner .bot-column img {
+    max-height: 270px;
+    max-width: 115%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6));
+}
+
+/* Hover sliding animations */
+#season-2026-banner:hover .bot-column.left-col {
+    transform: translateX(30px) scale(1.06);
+}
+
+#season-2026-banner:hover .bot-column.right-col {
+    transform: translateX(-30px) scale(1.06);
+}
+
+/* Banner Content Column */
+#season-2026-banner .banner-content {
+    width: 48%;
     text-align: center;
-  }
-
-@media (max-width: 850px) {
-    #social #videos {
-        flex-direction: column;
-    }
-
-    #social #videos iframe {
-      
-        --width: min(500px, 90vw);
-    }
-}
-
-
-
-
-#social #instagram {
-    padding: 20px;
-    overflow: hidden;
-    display: flex;
-    gap: 20px;
-    background-color: #eeebf1;
-    border-radius: 20px;
-}
-  
-#social #instagram #post {
-    height: 100%;
-    padding: 20px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    width: 300px;
-    border-radius: 15px;
-    width: 300px;
-    transition: 0.3s;
-    background-color: #f0c5ff;
-    box-shadow: 0px 3px 10px rgba(165, 12, 12, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-  
-#social #instagram #post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-  
-#social #instagram #post #media {
-    width: 100%;
-    height: 250px;
-    height: 250px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-  
-#social #instagram #post p {
-    text-align: justify;
-    font-size: 16px;
-    font-size: 16px;
-    width: 100%;
-    line-height: 1.5;
-    color: #444444;
-    margin-bottom: 15px;
-    height: 90px;
-    overflow: hidden;
-    line-height: 1.5;
-    color: #444444;
-    margin-bottom: 15px;
-    height: 90px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    -webkit-box-orient: vertical;
-}
-  
-#social #instagram #post #header {
-    display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 15px;
 }
-  
-#social #instagram #post #header #logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
+
+#season-2026-banner .banner-eyebrow {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.5em;
+    color: #D0BDF4;
+    text-transform: uppercase;
 }
-  
-#social #instagram #post #header a {
-    text-decoration: none;
-    color: #333333;
-}
-  
-#social #instagram #post #header h5 {
-    font-size: 18px;
-    font-weight: bold;
+
+#season-2026-banner .banner-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(28px, 4vw, 54px);
+    font-weight: 900;
+    color: #ffffff;
     margin: 0;
+    letter-spacing: 3px;
+    text-shadow: 0 0 40px rgba(208, 189, 244, 0.35);
+    line-height: 1.15;
 }
-  
-#social #instagram #post #footer {
-    display: flex;
+
+#season-2026-banner .banner-title span {
+    color: #B27BFF;
+}
+
+#season-2026-banner .banner-link {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-}
-  
-#social #instagram #post #footer span {
+    gap: 12px;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 14px;
-    color: #777777;
-}
-
-#social #instagram #post #footer a {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #ffffff;
     text-decoration: none;
-    color: #555555;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
+    padding: 14px 32px;
+    border: 1px solid #8B5CF6;
+    background: rgba(139, 92, 246, 0.18);
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-#social #instagram #post #footer a:hover {
-    color: #f5ebeb;
+#season-2026-banner .banner-link:hover {
+    background: rgba(139, 92, 246, 0.38);
+    border-color: #B27BFF;
+    box-shadow: 0 0 25px rgba(178, 123, 255, 0.45);
 }
 
-#social #instagram-container {
-    padding: 0px 20px;
-    position: relative;
+#season-2026-banner .banner-link .arrow {
+    transition: transform 0.3s ease;
 }
 
-#social #left, #social #right {
-    color: black;
-    user-select: none;
-    font-size: 40px;
-    position: absolute;
-    top: 40%;
-    cursor: pointer;
+#season-2026-banner .banner-link:hover .arrow {
+    transform: translateX(8px);
 }
 
-#social #left {
-    left: -10px;
+/* VIDEOS SIDEBAR (Right part) */
+#season-2026-banner .banner-videos-sidebar {
+    width: 380px;
+    background: rgba(12, 5, 20, 0.78);
+    backdrop-filter: blur(8px);
+    border-left: 1px solid rgba(208, 189, 244, 0.2);
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-shrink: 0;
 }
 
-#social #right {
-    right: -10px;
+#season-2026-banner .banner-videos-sidebar h3 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #D0BDF4;
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-align: center;
+    border-bottom: 1px solid rgba(208, 189, 244, 0.2);
+    padding-bottom: 10px;
+    width: 100%;
+    text-shadow: 0 0 10px rgba(208, 189, 244, 0.3);
+}
+
+#season-2026-banner .sidebar-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+#season-2026-banner .sidebar-videos iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, border-color 0.3s, box-shadow 0.3s;
+}
+
+#season-2026-banner .sidebar-videos iframe:hover {
+    transform: scale(1.04);
+    border-color: rgba(178, 123, 255, 0.5);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.25);
+}
+
+/* ── RESPONSIVE DESIGN ── */
+@media (max-width: 1200px) {
+    #season-2026-banner .banner-videos-sidebar {
+        width: 330px;
+        padding: 25px 18px;
+    }
+    #season-2026-banner .sidebar-videos iframe {
+        height: 160px;
+    }
+}
+
+@media (max-width: 950px) {
+    #season-2026-banner {
+        flex-direction: column;
+    }
+    
+    #season-2026-banner .banner-main-area {
+        padding: 50px 35px;
+    }
+
+    #season-2026-banner .banner-videos-sidebar {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid rgba(208, 189, 244, 0.2);
+        padding: 35px 25px;
+        background: rgba(12, 5, 20, 0.9);
+    }
+
+    #season-2026-banner .sidebar-videos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #season-2026-banner .sidebar-videos iframe {
+        width: 45%;
+        max-width: 340px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 650px) {
+    #season-2026-banner .banner-main-area {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    #season-2026-banner .bot-column {
+        width: 100%;
+        justify-content: center !important;
+    }
+    #season-2026-banner .bot-column img {
+        max-height: 140px;
+    }
+    #season-2026-banner .banner-content {
+        width: 100%;
+        order: -1;
+    }
+    #season-2026-banner:hover .bot-column.left-col {
+        transform: translateY(-8px) scale(1.05);
+    }
+    #season-2026-banner:hover .bot-column.right-col {
+        transform: translateY(-8px) scale(1.05);
+    }
+
+    #season-2026-banner .sidebar-videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #season-2026-banner .sidebar-videos iframe {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+    }
 }

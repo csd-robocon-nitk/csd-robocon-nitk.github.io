@@ -139,12 +139,16 @@
 
 #team-page .team-card img {
     width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 40px;
 }
 
 #team-page .team-details-card img {
     width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -159,14 +163,14 @@
     text-align: center;
 }
 
-#team-page .team-details-card .socials {
+#team-page .team-details-card .socials, #team-page .team-card .socials {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-top: 5px;
 }
 
-#team-page .team-details-card .socials a {
+#team-page .team-details-card .socials a, #team-page .team-card .socials a {
     color: white;
 }
 

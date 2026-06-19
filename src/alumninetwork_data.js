@@ -43,15 +43,24 @@ const alumninetwork_data = [
     },
     {
         "name": "N Nagabhushanam",
+        "designation": "EC&P Team Member",
         "photo": "Bhushan.jpg",
         "linkedin": "https://www.linkedin.com/in/nagabhushanam-at-work/",
         "email": "nnagabhushanam.221cs231@nitk.edu.in"
     },
     {
         "name": "Manas Priye",
+        "designation": "Mechanical Team Member",
         "photo": "Manas.jpg",
         "linkedin": "https://www.linkedin.com/in/manas-priye-440a432b8/",
         "email": "manaspriye.221ch027@nitk.edu.in"
+    },
+    {
+        "name": "Apoorva Agrawal",
+        "designation": "Support Team Member",
+        "photo": "Apoorva.jpg",
+        "linkedin": "https://www.linkedin.com/in/apoorva-agrawal-8302b825a/",
+        "email": "apoorva.agrawal36@gmail.com"
     }
 ];
 

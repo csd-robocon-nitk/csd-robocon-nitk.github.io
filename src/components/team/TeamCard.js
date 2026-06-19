@@ -15,6 +15,10 @@ export default function TeamCard ({ name, photo, designation, position: i, linke
             }
             <h4>{name}</h4>
             <p>{designation}</p>
+            <div className="socials">
+                {linkedin ? <a href={linkedin} target="_blank"><FaLinkedin size={27} /></a> : null }
+                {email ? <a href={`mailto:${email}`}><MdEmail size={31} /></a> : null }
+            </div>
         </div>
     )
 
