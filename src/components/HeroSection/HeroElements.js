@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: #080311;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,20 +11,17 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
-    :before {
+    &:before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.2) 0%,
-                rgba(0, 0, 0, 0.6) 100%
-            ),
-            linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+        background: radial-gradient(circle at center, rgba(159, 107, 255, 0.12) 0%, rgba(10, 5, 20, 0.8) 100%),
+                    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
         z-index: 2;
+        pointer-events: none;
     }
 `;
 
@@ -50,42 +47,62 @@ export const VideoBg = styled.div`
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
-    position: 1200px;
-    padding: 8-x 24px;
+    padding: 8px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 55px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(38px, 6vw, 75px);
+    font-weight: 800;
     text-align: center;
     margin: 0;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff 40%, #D0BDF4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 40px rgba(159, 107, 255, 0.25);
+    line-height: 1.15;
+    text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
-        font-size: 42px;
-    }
-
-    @media screen and (max-width: 400px) {
-        font-size: 35px;
+        font-size: clamp(32px, 5vw, 48px);
+        letter-spacing: 1px;
     }
 `;
 
 export const HeroP = styled.p`
-    color: #fff;
-    font-size: 35px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #B27BFF;
+    font-size: clamp(16px, 2.5vw, 28px);
     font-weight: 500;
     text-align: center;
-    max-width: 600px;
-    font-family: 'Kanit';
+    max-width: 800px;
+    letter-spacing: 0.3em;
+    margin-top: 25px;
+    text-shadow: 0 0 15px rgba(178, 123, 255, 0.6);
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
 
-    @media screen and (max-width: 768px) {
-        font-size: 30px;
+    &.cursor::after {
+        content: '|';
+        animation: blink 1s step-end infinite;
+        color: #B27BFF;
+        margin-left: 3px;
+        font-weight: 900;
     }
 
-    @media screen and (max-width: 400px) {
-        font-size: 24px;
+    @keyframes blink {
+        from, to { color: transparent }
+        50% { color: #B27BFF; }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: clamp(14px, 2.2vw, 20px);
+        letter-spacing: 0.18em;
     }
 `;
 
