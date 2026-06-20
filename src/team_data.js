@@ -21,16 +21,16 @@ export default {
                 "photo": "Nisha Shetty.png",
                 "linkedin": "https://www.linkedin.com/in/nisha-shetty06",
                 "email": "nishashetty.231ee237@nitk.edu.in"
+            },
+            {
+                "name": "Shamanth P V",
+                "designation": "Honorary Core",
+                "photo": "Shamanth P V.jpeg",
+                "linkedin": "https://www.linkedin.com/in/shamanth-pv-263145262/",
+                "email": "shamanth.231ec255@nitk.edu.in"
             }
         ],
         [
-            {
-                "name": "Adarsh Bellamane",
-                "designation": "Web Lead",
-                "photo": "Adarsh.jpeg",
-                "linkedin": "https://www.linkedin.com/in/adarsh-bellamane-aa0874331",
-                "email": "adarsh.241it004@nitk.edu.in"
-            },
             {
                 "name": "Dheemanth J",
                 "designation": "Electronics & Programming Lead",
@@ -44,9 +44,7 @@ export default {
                 "photo": "Rohit L.jpeg",
                 "linkedin": "https://www.linkedin.com/in/rohit-l-731819290",
                 "email": "rohitlalu.231ec248@nitk.edu.in"
-            }
-        ],
-        [
+            },
             {
                 "name": "Lianna Mascarenhas",
                 "designation": "Mechanical Subsystem Lead",
@@ -60,6 +58,15 @@ export default {
                 "photo": "Kavin Narayan.jpeg",
                 "linkedin": "http://www.linkedin.com/in/kavin-narayan",
                 "email": "kavinnarayan.231mt021@nitk.edu.in"
+            }
+        ],
+        [
+            {
+                "name": "Adarsh Bellamane",
+                "designation": "Web Lead",
+                "photo": "Adarsh.jpeg",
+                "linkedin": "https://www.linkedin.com/in/adarsh-bellamane-aa0874331",
+                "email": "adarsh.241it004@nitk.edu.in"
             },
             {
                 "name": "A. Karthika",

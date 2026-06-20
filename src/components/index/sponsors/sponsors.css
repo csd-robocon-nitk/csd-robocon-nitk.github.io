@@ -4,36 +4,154 @@
 }
 
 #sponsors #container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
-#sponsors #container #images {
-    width: 100%;
-    margin-top: 70px;
+/* Season Sponsors - Prime Highlight */
+#season-sponsors-highlight {
+    background-color: rgba(159, 107, 255, 0.04);
+    border: 1px solid rgba(159, 107, 255, 0.2);
+    border-radius: 24px;
+    padding: 50px 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#season-sponsors-highlight h2 {
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+    color: var(--accent-light);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.role-section {
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    /* gap: 100px; */
 }
 
-#sponsors #container #images .row {
+.role-section:last-child {
+    margin-bottom: 0px;
+}
+
+.sponsor-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.sponsor-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.gold {
+    background: linear-gradient(135deg, #ffe082 0%, #ffb300 100%);
+    color: #3e2723;
+    box-shadow: 0 4px 15px rgba(255, 179, 0, 0.35);
+}
+
+.silver {
+    background: linear-gradient(135deg, #ffffff 0%, #cfd8dc 100%);
+    color: #263238;
+    box-shadow: 0 4px 15px rgba(207, 216, 220, 0.25);
+}
+
+.logos-row {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px 60px;
+    width: 100%;
 }
 
-#sponsors #container #images img {
-    max-width: min(200px, 100%);
+.logos-row img {
+    max-width: 200px;
+    height: 75px;
+    object-fit: contain;
+    filter: brightness(98%);
+    transition: all 0.3s ease;
 }
 
+.logos-row img:hover {
+    filter: brightness(100%) drop-shadow(0 0 15px rgba(159, 107, 255, 0.3));
+}
 
-@media (max-width: 650px) {
-    #sponsors #container #images .row {
-        flex-direction: column;
-        gap: 50px;
+/* Past Sponsors */
+#past-sponsors-container {
+    text-align: center;
+    border-top: 1px dashed rgba(159, 107, 255, 0.2);
+    padding-top: 60px;
+}
+
+#past-sponsors-container h2 {
+    font-size: calc(20px + 0.8vw);
+    font-weight: 600;
+    color: var(--color);
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.past-logos img {
+    max-width: 150px;
+    height: 55px;
+    filter: grayscale(40%) brightness(85%);
+    opacity: 0.85;
+}
+
+.past-logos img:hover {
+    filter: grayscale(0%) brightness(100%);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    #sponsors {
+        padding: 60px 20px;
+    }
+    
+    #season-sponsors-highlight {
+        padding: 35px 20px;
+        margin-bottom: 50px;
+    }
+
+    #season-sponsors-highlight h2 {
+        margin-bottom: 35px;
+    }
+
+    .role-section {
+        margin-bottom: 35px;
+    }
+    
+    .logos-row {
+        gap: 25px 35px;
+    }
+    
+    .logos-row img {
+        max-width: 150px;
+        height: 60px;
+    }
+    
+    .past-logos img {
+        max-width: 120px;
+        height: 45px;
     }
 }
