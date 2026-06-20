@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d983860d.css",
-    "main.js": "/static/js/main.fe2af958.js",
+    "main.css": "/static/css/main.aa6029d6.css",
+    "main.js": "/static/js/main.31d46b49.js",
     "static/media/robocon.mp4": "/static/media/robocon.07a2bb7c588abcc41100.mp4",
     "static/media/background_alumni.png": "/static/media/background_alumni.b0bf38809e67e4081480.png",
     "static/media/005.jpg": "/static/media/005.8f2377c09cccb57abb2d.jpg",
@@ -26,11 +26,11 @@
     "static/media/altair.png": "/static/media/altair.96e27a02ef9f45985cf2.png",
     "static/media/ansys.svg": "/static/media/ansys.58eb4fd09be7b0fe947a4a0927f33f97.svg",
     "index.html": "/index.html",
-    "main.d983860d.css.map": "/static/css/main.d983860d.css.map",
-    "main.fe2af958.js.map": "/static/js/main.fe2af958.js.map"
+    "main.aa6029d6.css.map": "/static/css/main.aa6029d6.css.map",
+    "main.31d46b49.js.map": "/static/js/main.31d46b49.js.map"
   },
   "entrypoints": [
-    "static/css/main.d983860d.css",
-    "static/js/main.fe2af958.js"
+    "static/css/main.aa6029d6.css",
+    "static/js/main.31d46b49.js"
   ]
 }
