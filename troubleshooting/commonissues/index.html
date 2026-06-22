@@ -6,21 +6,49 @@
     <title>Troubleshooting | CRN</title>
 
     <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            font-family: Helvetica, Verdana, Arial, sans-serif;
+            text-align: center;
+        }
+
         h1 {
             font-size: 120px;
-            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
             font-family: Helvetica, Verdana, Arial;
         }
 
-        img {
-            display: block;
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             max-width: 95%;
-            margin: 0px auto;
+            margin: 0 auto;
         }
 
-        @media (max-width: 700px) {
+        .row img {
+            width: 30%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            display: block;
+        }
+
+        @media (max-width: 800px) {
             h1 {
                 font-size: 80px;
+            }
+            .row {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .row img {
+                width: 90%;
+                max-height: 400px;
             }
         }
 
@@ -32,7 +60,14 @@
     </style>
 </head>
 <body>
+
     <h1>Skill issue.</h1>
 
-    <img src="/images/skillissue.gif" alt="">
+    <div class="row">
+        <img src="hari.webp" alt="Hari 1">
+        <img src="/images/skillissue.gif" alt="Skill Issue GIF">
+        <img src="hari 2.jpeg" alt="Hari 2">
+    </div>
+
+</body>
 </html>
