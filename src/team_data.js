@@ -224,12 +224,6 @@ export default {
             "email": "prathamadityamohan.241ee141@nitk.edu.in"
         },
         {
-            "name": "Chavada Vishva Anilkumar",
-            "photo": "Vishva.jpg",
-            "linkedin": "https://www.linkedin.com/in/vishva-chavada-650410321",
-            "email": "chavadavishvaanilkumar.241ec212@nitk.edu.in"
-        },
-        {
             "name": "Krishnendu Dutta",
             "photo": "Krishnendu Dutta.jpg",
             "linkedin": "https://www.linkedin.com/in/krishnendu-dutta-536315381?utm_source=share_via&utm_content=profile&utm_medium=member_android",
@@ -322,6 +316,12 @@ export default {
             "email": "juhiarora.241me327@nitk.edu.in"
         },
         {
+            "name": "Tanav Chavare",
+            "photo": "Tanav Chavare.jpg",
+            "linkedin": "https://www.linkedin.com",
+            "email": "chavaretanav.241me259@nitk.edu.in"
+        },
+        {
             "name": "Anuj",
             "photo": "Anuj.jpeg",
             "linkedin": "https://www.linkedin.com/in/anuj-choudhary-4456423a1?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
@@ -344,12 +344,6 @@ export default {
             "photo": "Chinmay Raikar.png",
             "linkedin": "https://www.linkedin.com/in/chinmay-raikar-173070392?utm_source=share_via&utm_content=profile&utm_medium=member_android",
             "email": "chinmayraghavendraraikar.251ec213@nitk.edu.in"
-        },
-        {
-            "name": "Tanav Chavare",
-            "photo": "Tanav Chavare.jpg",
-            "linkedin": "https://www.linkedin.com",
-            "email": "chavaretanav.241me259@nitk.edu.in"
         }
     ],
     "Support Team": [
@@ -439,7 +433,7 @@ export default {
         },
         {
             "name": "Yuvaraj S",
-            "photo": "Yuvaraj S.jpg",
+            "photo": "empty photo.jpg",
             "linkedin": "https://www.linkedin.com",
             "email": "yuvarajs.251ai050@nitk.edu.in"
         }

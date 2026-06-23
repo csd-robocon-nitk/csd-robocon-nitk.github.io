@@ -6,7 +6,7 @@
 
 #alumni-network-page #container {
     margin: 0px auto;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 40px 20px;
 }
 
@@ -32,7 +32,7 @@
     border: 3px solid var(--accent);
     min-width: 200px;
     padding: 30px 20px;
-    width: 250px;
+    width: 230px;
     max-width: 95vw;
 
     display: flex;
@@ -74,4 +74,13 @@
 
 #alumni-network-page .alumni-card .socials a:hover {
     color: var(--accent-light);
+}
+
+#alumni-network-page .batch-heading {
+    text-align: center;
+    margin: 40px 0px 10px 0px;
+    font-size: calc(18px + 0.8vw);
+    font-weight: 600;
+    color: var(--accent);
+    width: 100%;
 }
